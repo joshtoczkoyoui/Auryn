@@ -77,7 +77,7 @@ def get_engine_dir(options)
     end
 
     # For react projects, check for package.json one directory down to read engine version
-    packageJson = File.expand_path(File.join(__dir__, "..", "package.json"))
+    packageJson = File.expand_path(File.join(__dir__, "..", "..", "package.json"))
     if File.exist?(File.absolute_path(packageJson))
         file = File.read(packageJson)
         pkgHash = JSON.parse(file)
