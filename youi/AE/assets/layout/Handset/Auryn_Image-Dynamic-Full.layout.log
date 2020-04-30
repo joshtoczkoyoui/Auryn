@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 522
         y: 288
-        z: 0
       }
       scale {
         x: 1.6
@@ -24,18 +23,10 @@ activecomp {
         z: 333
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIImageView"
   bgcolor {
@@ -60,5 +51,4 @@ sources {
   }
   width: 1044
   height: 576
-  copy_source: false
 }

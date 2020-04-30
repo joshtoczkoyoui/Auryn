@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Live-Asset"
   width: 848
   height: 233
-  defaultcameradistance: 1177.7778
+  defaultcameradistance: 1177.77783
   layer {
     name: "Background"
     id: 690012635
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 424
         y: 116.5
-        z: 0
       }
       scale {
         x: 1
@@ -19,23 +18,13 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -46,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 424
         y: 0.5
-        z: 0
       }
       scale {
         x: 1
@@ -55,22 +43,13 @@ activecomp {
       }
       position {
         x: 853
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -81,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -91,21 +69,13 @@ activecomp {
       position {
         x: 6.5
         y: 13.019351
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012640
   }
   layer {
@@ -116,7 +86,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -125,22 +94,14 @@ activecomp {
       }
       position {
         x: 312.939
-        y: 0.010167369
-        z: 0
+        y: 0.0101673687
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -151,7 +112,6 @@ activecomp {
       anchorPoint {
         x: 46
         y: 46
-        z: 0
       }
       scale {
         x: 1
@@ -160,22 +120,14 @@ activecomp {
       }
       position {
         x: 312
-        y: 0.48064861
-        z: 0
+        y: 0.480648607
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -186,7 +138,6 @@ activecomp {
       anchorPoint {
         x: 8
         y: 13
-        z: 0
       }
       scale {
         x: 1
@@ -195,22 +146,14 @@ activecomp {
       }
       position {
         x: 314.5
-        y: 0.48064861
-        z: 0
+        y: 0.480648607
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.05
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -221,7 +164,6 @@ activecomp {
       anchorPoint {
         x: 77
         y: 116.5
-        z: 0
       }
       scale {
         x: 1
@@ -230,22 +172,13 @@ activecomp {
       }
       position {
         x: -347
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.6
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690012644
   }
   layer {
@@ -256,7 +189,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -266,21 +198,13 @@ activecomp {
       position {
         x: 348
         y: 179.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Container-Details"
@@ -290,7 +214,6 @@ activecomp {
       anchorPoint {
         x: 317.5
         y: 58.5
-        z: 0
       }
       scale {
         x: 1
@@ -300,21 +223,13 @@ activecomp {
       position {
         x: 463.5
         y: 101.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "SCALE"
@@ -322,9 +237,6 @@ activecomp {
     sourceid: 690012838
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -334,21 +246,13 @@ activecomp {
       position {
         x: 424
         y: 116.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -379,13 +283,9 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 848
   height: 233
-  copy_source: false
 }
 sources {
   uid: 690015331
@@ -394,7 +294,6 @@ sources {
   width: 848
   height: 1
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -405,13 +304,11 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 690012736
-  srctype: AE_COMP_SRC
   name: "Auryn_Progress-Bar.layout"
   width: 96
   height: 96
@@ -424,7 +321,6 @@ sources {
   width: 92
   height: 92
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -435,13 +331,11 @@ sources {
   width: 16
   height: 26
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 690012646
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Live-Asset.layout"
   width: 154
   height: 233
@@ -449,7 +343,6 @@ sources {
 }
 sources {
   uid: 690012711
-  srctype: AE_COMP_SRC
   name: "Auryn_Metadata.layout"
   width: 400
   height: 50
@@ -457,7 +350,6 @@ sources {
 }
 sources {
   uid: 690015536
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Details.layout"
   width: 635
   height: 117
@@ -468,5 +360,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

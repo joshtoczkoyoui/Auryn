@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Container-Movies"
   width: 1920
   height: 900
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Movies"
     id: 259873
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 450
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 960
         y: 450
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -55,7 +46,6 @@ activecomp {
 }
 sources {
   uid: 463
-  srctype: AE_COMP_SRC
   name: "Auryn_Movies.layout"
   width: 1920
   height: 900

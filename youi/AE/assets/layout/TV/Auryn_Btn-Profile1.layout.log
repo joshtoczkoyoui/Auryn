@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Profile1"
   width: 250
   height: 400
-  defaultcameradistance: 347.22223
+  defaultcameradistance: 347.222229
   layer {
     name: "Profile-Buster.png"
     id: 259618
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 204.5
         y: 204.5
-        z: 0
       }
       scale {
         x: 0.5789
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 125
         y: 110
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Circle-Btn-Profile.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 207.5
         y: 207.5
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 204.5
         y: 204.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.02
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 259618
   }
   layer {
@@ -80,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 123
         y: 21
-        z: 0
       }
       scale {
         x: 1
@@ -90,21 +71,13 @@ activecomp {
       position {
         x: 123
         y: 357
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.7
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 43
@@ -115,14 +88,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-ExtraBold"
-      isPointText: false
       boundsWidth: 249
       boundsHeight: 42
       isLabel: true
       text: "Robert"
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-overflow"
@@ -137,7 +108,6 @@ activecomp {
       anchorPoint {
         x: 282
         y: 55
-        z: 0
       }
       scale {
         x: 1
@@ -147,21 +117,12 @@ activecomp {
       position {
         x: 123
         y: 372
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 100
@@ -172,14 +133,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-ExtraBold"
-      isPointText: false
       boundsWidth: 567
       boundsHeight: 112
       isLabel: true
       text: "Robert"
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-overflow"
@@ -194,7 +153,6 @@ activecomp {
       anchorPoint {
         x: 123
         y: 21
-        z: 0
       }
       scale {
         x: 1
@@ -204,21 +162,13 @@ activecomp {
       position {
         x: 123
         y: 428
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 19
@@ -229,11 +179,9 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 249
       boundsHeight: 25
       isLabel: true
-      text: ""
       multiline: true
       isAllCaps: true
     }
@@ -250,7 +198,6 @@ activecomp {
       anchorPoint {
         x: 17.5
         y: 17.5
-        z: 0
       }
       scale {
         x: 1
@@ -260,21 +207,12 @@ activecomp {
       position {
         x: 61
         y: -77
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 259624
   }
   layer {
@@ -283,33 +221,22 @@ activecomp {
     sourceid: 690016380
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
-        x: 1.7274141
-        y: 1.7274141
+        x: 1.72741413
+        y: 1.72741413
         z: 1
       }
       position {
         x: 204.5
         y: 204.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 259618
   }
   layer {
@@ -320,7 +247,6 @@ activecomp {
       anchorPoint {
         x: 23.5
         y: 23.5
-        z: 0
       }
       scale {
         x: 1
@@ -328,23 +254,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 312.87225
-        y: 74.48912
-        z: 0
+        x: 312.872253
+        y: 74.4891205
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 259619
   }
   classname: "CYIPushButtonView"
@@ -370,7 +287,6 @@ sources {
   width: 409
   height: 409
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -381,7 +297,6 @@ sources {
   width: 415
   height: 415
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -390,8 +305,8 @@ sources {
   srctype: AE_FONT_SRC
   name: "Montserrat-ExtraBold"
   copy_source: true
-  file_name: "yi_Montserrat-Extra Bold.otf"
-  style_name: "Extra Bold"
+  file_name: "yi_Montserrat-ExtraBold.otf"
+  style_name: "ExtraBold"
 }
 sources {
   uid: 4
@@ -408,7 +323,6 @@ sources {
   width: 35
   height: 35
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -417,7 +331,6 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
 sources {
   uid: 690016376
@@ -426,7 +339,6 @@ sources {
   width: 47
   height: 47
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

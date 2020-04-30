@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Metadata"
   width: 400
   height: 50
-  defaultcameradistance: 555.55554
+  defaultcameradistance: 555.555542
   layer {
     name: "Text-TimeRemaining"
     id: 690012711
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 0.17199707
         y: 12.875
-        z: 0
       }
       scale {
         x: 1
@@ -19,25 +18,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 94.011993
-        y: 31.38707
-        z: 0
+        x: 94.0119934
+        y: 31.3870697
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 16
       fontColor {
         alpha: 1
@@ -46,14 +36,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 763
       boundsHeight: 24
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -73,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 24.5
         y: 18
-        z: 0
       }
       scale {
         x: 1
@@ -83,21 +69,13 @@ activecomp {
       position {
         x: 62
         y: 25
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -137,7 +115,6 @@ sources {
 }
 sources {
   uid: 690012694
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Live-Logo.layout"
   width: 49
   height: 36

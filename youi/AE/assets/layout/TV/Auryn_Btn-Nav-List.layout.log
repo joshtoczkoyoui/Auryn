@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Nav-List"
   width: 150
   height: 120
-  defaultcameradistance: 208.33333
+  defaultcameradistance: 208.333328
   layer {
     name: "Backdrop-Gradient-Small.png"
     id: 690014319
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 292
         y: 0.5
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,14 @@ activecomp {
       position {
         x: 75
         y: -90
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
       rotationZ: 90
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "title"
@@ -45,7 +37,6 @@ activecomp {
       anchorPoint {
         x: 100
         y: 21.5
-        z: 0
       }
       scale {
         x: 1
@@ -53,23 +44,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 74.159828
-        y: 93.458122
-        z: 0
+        x: 74.1598282
+        y: 93.4581223
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 17
@@ -80,7 +63,6 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 200
       boundsHeight: 33
       isLabel: true
@@ -97,7 +79,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 27.5
-        z: 0
       }
       scale {
         x: 1
@@ -105,23 +86,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: -2
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690014322
   }
   layer {
@@ -130,9 +102,6 @@ activecomp {
     sourceid: 690017005
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -142,21 +111,13 @@ activecomp {
       position {
         x: 75
         y: 40
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Toggled-Container"
@@ -166,7 +127,6 @@ activecomp {
       anchorPoint {
         x: 75
         y: 60
-        z: 0
       }
       scale {
         x: 1
@@ -176,21 +136,13 @@ activecomp {
       position {
         x: 75
         y: 60
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Nav-Icon-Toggled"
@@ -200,7 +152,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 27.5
-        z: 0
       }
       scale {
         x: 1
@@ -210,21 +161,12 @@ activecomp {
       position {
         x: 75
         y: 38
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -256,7 +198,6 @@ sources {
   width: 292
   height: 1
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -270,7 +211,6 @@ sources {
 }
 sources {
   uid: 690016212
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-Icon.layout"
   width: 60
   height: 55
@@ -281,11 +221,9 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
 sources {
   uid: 690015309
-  srctype: AE_COMP_SRC
   name: "Auryn_Toggled-Container.layout"
   width: 150
   height: 120
@@ -293,7 +231,6 @@ sources {
 }
 sources {
   uid: 690016200
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-Icon-Toggled.layout"
   width: 60
   height: 55

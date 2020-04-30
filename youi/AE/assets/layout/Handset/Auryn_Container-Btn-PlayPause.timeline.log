@@ -4,7 +4,6 @@ tracks {
   targetname: "Btn-PlayPause"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -14,34 +13,26 @@ tracks {
   targetid: 690017026
   targetname: "Btn-PlayPause"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1
     inttype: AE_INTERP_HOLD
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1.5
     inttype: AE_INTERP_HOLD
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2
     inttype: AE_INTERP_HOLD
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2.5
     inttype: AE_INTERP_HOLD
-    fvalue1: 0
   }
   trackName: "Opacity"
 }
@@ -53,8 +44,6 @@ markers {
     targetid: 690017026
     binding: OPACITY
   }
-  alltracks: false
-  looping: false
 }
 markers {
   starttime: 2
@@ -64,6 +53,4 @@ markers {
     targetid: 690017026
     binding: OPACITY
   }
-  alltracks: false
-  looping: false
 }

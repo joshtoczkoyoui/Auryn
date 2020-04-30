@@ -2,16 +2,15 @@ activecomp {
   name: "Auryn_Layout-PDP-Meta-Body"
   width: 736
   height: 293
-  defaultcameradistance: 1022.2222
+  defaultcameradistance: 1022.22223
   layer {
     name: "Text-Featured"
     id: 690015213
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0.86399841
-        y: -0.00010299683
-        z: 0
+        x: 0.863998413
+        y: -0.000102996826
       }
       scale {
         x: 1
@@ -19,25 +18,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 480.81036
+        x: 480.810364
         y: 49.999897
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 20
       fontColor {
         alpha: 1
@@ -46,15 +35,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 257
       boundsHeight: 242
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       leading: 35
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -76,9 +62,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 2.0720062
-        y: 0.5598793
-        z: 0
+        x: 2.07200623
+        y: 0.559879303
       }
       scale {
         x: 1
@@ -86,25 +71,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 481.27618
+        x: 481.276184
         y: 4.41988
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 19
       fontColor {
         alpha: 1
@@ -113,7 +88,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 265
       boundsHeight: 30
       isLabel: true
@@ -133,9 +107,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0.24000549
-        y: -0.00010299683
-        z: 0
+        x: 0.240005493
+        y: -0.000102996826
       }
       scale {
         x: 1
@@ -143,25 +116,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: 49.999897
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 20
       fontColor {
         alpha: 1
@@ -170,15 +132,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 425
       boundsHeight: 238
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       leading: 35
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -200,9 +159,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0.86799622
-        y: 0.41987991
-        z: 0
+        x: 0.867996216
+        y: 0.419879913
       }
       scale {
         x: 1
@@ -212,23 +170,13 @@ activecomp {
       position {
         x: 0.5
         y: 4.41988
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 19
       fontColor {
         alpha: 1
@@ -237,7 +185,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 365
       boundsHeight: 30
       isLabel: true

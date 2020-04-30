@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Nav-Logo"
   width: 178
   height: 160
-  defaultcameradistance: 247.22223
+  defaultcameradistance: 247.222229
   layer {
     name: "Youi_Filled_logo-large_2.png"
     id: 1701
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 957
         y: 884
-        z: 0
       }
       scale {
         x: 0.092
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 89
         y: 80
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -51,7 +42,6 @@ sources {
   width: 1914
   height: 1768
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

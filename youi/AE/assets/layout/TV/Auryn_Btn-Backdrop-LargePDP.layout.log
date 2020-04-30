@@ -11,31 +11,22 @@ activecomp {
       anchorPoint {
         x: 445.5
         y: 294.5
-        z: 0
       }
       scale {
-        x: 0.9779287
-        y: 0.9779287
+        x: 0.977928698
+        y: 0.977928698
         z: 1
       }
       position {
         x: 522
-        y: 288.49213
-        z: 0
+        y: 288.492126
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 690015264
   }
   layer {
@@ -46,31 +37,22 @@ activecomp {
       anchorPoint {
         x: 522
         y: 288
-        z: 0
       }
       scale {
-        x: 1.0225694
-        y: 1.0225694
+        x: 1.02256942
+        y: 1.02256942
         z: 1
       }
       position {
         x: 445.5
         y: 294.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.8
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "PlayIcon_PDP.png"
@@ -80,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 87
         y: 87
-        z: 0
       }
       scale {
         x: 0.6
@@ -90,21 +71,12 @@ activecomp {
       position {
         x: 445
         y: 294
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 38"
@@ -114,7 +86,6 @@ activecomp {
       anchorPoint {
         x: 445.5
         y: 3
-        z: 0
       }
       scale {
         x: 1
@@ -124,21 +95,12 @@ activecomp {
       position {
         x: 445.5
         y: 588
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 38"
@@ -148,7 +110,6 @@ activecomp {
       anchorPoint {
         x: 445.5
         y: 3
-        z: 0
       }
       scale {
         x: 1
@@ -158,21 +119,12 @@ activecomp {
       position {
         x: 445.5
         y: 2
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 39"
@@ -182,7 +134,6 @@ activecomp {
       anchorPoint {
         x: 3
         y: 290
-        z: 0
       }
       scale {
         x: 1
@@ -192,21 +143,12 @@ activecomp {
       position {
         x: 889
         y: 295
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 39"
@@ -216,7 +158,6 @@ activecomp {
       anchorPoint {
         x: 3
         y: 290
-        z: 0
       }
       scale {
         x: 1
@@ -226,21 +167,12 @@ activecomp {
       position {
         x: 2
         y: 295
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -268,17 +200,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 891
   height: 589
-  copy_source: false
 }
 sources {
   uid: 1246
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Full.layout"
   width: 1044
   height: 576
@@ -291,7 +218,6 @@ sources {
   width: 174
   height: 174
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -306,7 +232,6 @@ sources {
   }
   width: 891
   height: 6
-  copy_source: false
 }
 sources {
   uid: 690016247
@@ -319,5 +244,4 @@ sources {
   }
   width: 6
   height: 580
-  copy_source: false
 }

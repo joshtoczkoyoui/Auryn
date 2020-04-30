@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Live-Asset"
   width: 991
   height: 344
-  defaultcameradistance: 1376.3889
+  defaultcameradistance: 1376.38892
   layer {
     name: "Dark Gray Solid 5"
     id: 1406
@@ -10,32 +10,23 @@ activecomp {
     transform {
       anchorPoint {
         x: 468
-        y: 175.47475
-        z: 0
+        y: 175.474747
       }
       scale {
-        x: 2.1175213
+        x: 2.11752129
         y: 1
         z: 1
       }
       position {
         x: 991
-        y: 175.47475
-        z: 0
+        y: 175.474747
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic-Live-Asset"
@@ -43,9 +34,7 @@ activecomp {
     sourceid: 1270
     transform {
       anchorPoint {
-        x: 0
         y: 172
-        z: 0
       }
       scale {
         x: 1
@@ -53,23 +42,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: 172
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Progress-Bar"
@@ -77,9 +57,7 @@ activecomp {
     sourceid: 1847
     transform {
       anchorPoint {
-        x: 0
         y: 8
-        z: 0
       }
       scale {
         x: 1
@@ -87,23 +65,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: 344
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Metadata"
@@ -113,7 +82,6 @@ activecomp {
       anchorPoint {
         x: 205
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -123,21 +91,13 @@ activecomp {
       position {
         x: 768
         y: 293
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Details"
@@ -147,7 +107,6 @@ activecomp {
       anchorPoint {
         x: 183
         y: 86
-        z: 0
       }
       scale {
         x: 1
@@ -157,21 +116,13 @@ activecomp {
       position {
         x: 746
         y: 121.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "PlayIcon.png"
@@ -181,7 +132,6 @@ activecomp {
       anchorPoint {
         x: 38
         y: 38
-        z: 0
       }
       scale {
         x: 1.5
@@ -191,21 +141,13 @@ activecomp {
       position {
         x: 262.5
         y: 172
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -242,11 +184,9 @@ sources {
   }
   width: 468
   height: 344
-  copy_source: false
 }
 sources {
   uid: 1270
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Live-Asset.layout"
   width: 525
   height: 344
@@ -254,7 +194,6 @@ sources {
 }
 sources {
   uid: 1847
-  srctype: AE_COMP_SRC
   name: "Auryn_Progress-Bar.layout"
   width: 525
   height: 8
@@ -262,7 +201,6 @@ sources {
 }
 sources {
   uid: 1636
-  srctype: AE_COMP_SRC
   name: "Auryn_Metadata.layout"
   width: 410
   height: 50
@@ -270,7 +208,6 @@ sources {
 }
 sources {
   uid: 1172
-  srctype: AE_COMP_SRC
   name: "Auryn_Details.layout"
   width: 366
   height: 172
@@ -283,7 +220,6 @@ sources {
   width: 76
   height: 76
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

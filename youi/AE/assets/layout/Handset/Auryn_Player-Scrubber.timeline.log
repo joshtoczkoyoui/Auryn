@@ -4,7 +4,6 @@ tracks {
   targetname: "Max-Track"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -15,7 +14,6 @@ tracks {
   targetname: "MinTrack"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -26,7 +24,6 @@ tracks {
   targetname: "MinTrack"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.02
     fvalue2: 1
@@ -42,7 +39,7 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.6666667
+    timeOffset: 2.66666675
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
     fvalue2: 1
@@ -56,47 +53,40 @@ tracks {
   targetname: "Thumb"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 tracks {
-  binding: POSITION
   targetid: 1815
   targetname: "Thumb"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
-    fvalue1: -685.66791
+    fvalue1: -685.667908
     fvalue2: 50
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 1
     inttype: AE_INTERP_LINEAR
-    fvalue1: -685.66791
+    fvalue1: -685.667908
     fvalue2: 50
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.6659975
+    timeOffset: 2.66599751
     inttype: AE_INTERP_LINEAR
-    fvalue1: 782.80872
+    fvalue1: 782.808716
     fvalue2: 50
-    fvalue3: 0
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.6666667
+    timeOffset: 2.66666675
     inttype: AE_INTERP_LINEAR
-    fvalue1: 785.66479
+    fvalue1: 785.664795
     fvalue2: 50
-    fvalue3: 0
   }
   trackName: "Position"
 }
@@ -105,31 +95,23 @@ tracks {
   targetid: 1815
   targetname: "Thumb"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3.25
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3.5
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3.75
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
@@ -142,7 +124,6 @@ tracks {
   targetname: "Thumb"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
     fvalue2: 0.6
@@ -160,32 +141,32 @@ tracks {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 4.01666
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.61815661
-    fvalue2: 0.61815661
+    fvalue1: 0.618156612
+    fvalue2: 0.618156612
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.0333204
+    timeOffset: 4.03332043
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.72720152
-    fvalue2: 0.72720152
+    fvalue1: 0.727201521
+    fvalue2: 0.727201521
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.0499806
+    timeOffset: 4.04998064
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.84924477
-    fvalue2: 0.84924477
+    fvalue1: 0.849244773
+    fvalue2: 0.849244773
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.0666409
+    timeOffset: 4.06664085
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.9105497
     fvalue2: 0.9105497
@@ -194,34 +175,34 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.0833011
+    timeOffset: 4.08330107
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.9467572
-    fvalue2: 0.9467572
+    fvalue1: 0.946757197
+    fvalue2: 0.946757197
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.0999613
+    timeOffset: 4.09996128
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.96981692
-    fvalue2: 0.96981692
+    fvalue1: 0.969816923
+    fvalue2: 0.969816923
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.1166215
+    timeOffset: 4.11662149
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.98463166
-    fvalue2: 0.98463166
+    fvalue1: 0.984631658
+    fvalue2: 0.984631658
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.1332817
+    timeOffset: 4.13328171
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.99370867
     fvalue2: 0.99370867
@@ -230,16 +211,16 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.1499419
+    timeOffset: 4.14994192
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.99851716
-    fvalue2: 0.99851716
+    fvalue1: 0.998517156
+    fvalue2: 0.998517156
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 4.1666665
+    timeOffset: 4.16666651
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
     fvalue2: 1
@@ -257,59 +238,59 @@ tracks {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 5.01666
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.99857557
-    fvalue2: 0.99857557
+    fvalue1: 0.998575568
+    fvalue2: 0.998575568
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.0333204
+    timeOffset: 5.03332043
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.99384004
-    fvalue2: 0.99384004
+    fvalue1: 0.993840039
+    fvalue2: 0.993840039
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.0499806
+    timeOffset: 5.04998064
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.98485833
-    fvalue2: 0.98485833
+    fvalue1: 0.984858334
+    fvalue2: 0.984858334
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.0666409
+    timeOffset: 5.06664085
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.97017527
-    fvalue2: 0.97017527
+    fvalue1: 0.970175266
+    fvalue2: 0.970175266
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.0833011
+    timeOffset: 5.08330107
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.9473123
-    fvalue2: 0.9473123
+    fvalue1: 0.947312295
+    fvalue2: 0.947312295
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.0999613
+    timeOffset: 5.09996128
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.91143912
-    fvalue2: 0.91143912
+    fvalue1: 0.911439121
+    fvalue2: 0.911439121
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.1166215
+    timeOffset: 5.11662149
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.85084635
     fvalue2: 0.85084635
@@ -318,25 +299,25 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.1332817
+    timeOffset: 5.13328171
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.73039144
-    fvalue2: 0.73039144
+    fvalue1: 0.730391443
+    fvalue2: 0.730391443
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.1499419
+    timeOffset: 5.14994192
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0.6190716
-    fvalue2: 0.6190716
+    fvalue1: 0.619071603
+    fvalue2: 0.619071603
     fvalue3: 1
     isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 5.1666665
+    timeOffset: 5.16666651
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
     fvalue2: 0.6
@@ -350,14 +331,13 @@ tracks {
   targetname: "ScalePropCenterAnchor"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 markers {
   starttime: 1
-  duration: 1.6666666
+  duration: 1.66666663
   name: "ScrollStart"
   tracksSelection {
     targetid: 1814
@@ -365,11 +345,8 @@ markers {
   }
   tracksSelection {
     targetid: 1815
-    binding: POSITION
   }
-  alltracks: false
   id: 28
-  looping: false
 }
 markers {
   starttime: 3
@@ -379,9 +356,7 @@ markers {
     targetid: 1815
     binding: OPACITY
   }
-  alltracks: false
   id: 30
-  looping: false
 }
 markers {
   starttime: 3.5
@@ -391,31 +366,25 @@ markers {
     targetid: 1815
     binding: OPACITY
   }
-  alltracks: false
   id: 29
-  looping: false
 }
 markers {
   starttime: 4
-  duration: 0.16666667
+  duration: 0.166666672
   name: "FocusIn"
   tracksSelection {
     targetid: 1815
     binding: SCALE
   }
-  alltracks: false
   id: 21
-  looping: false
 }
 markers {
   starttime: 5
-  duration: 0.16666667
+  duration: 0.166666672
   name: "FocusOut"
   tracksSelection {
     targetid: 1815
     binding: SCALE
   }
-  alltracks: false
   id: 22
-  looping: false
 }

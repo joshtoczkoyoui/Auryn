@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Nav-Search"
   width: 60
   height: 60
-  defaultcameradistance: 83.333336
+  defaultcameradistance: 83.3333359
   layer {
     name: "Backdrop-Gradient-Small.png"
     id: 585
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 292
         y: 0.5
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,14 @@ activecomp {
       position {
         x: 30
         y: -96
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
       rotationZ: 90
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Icon-Search.png"
@@ -45,7 +37,6 @@ activecomp {
       anchorPoint {
         x: 22.5
         y: 23.5
-        z: 0
       }
       scale {
         x: 0.76
@@ -53,23 +44,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 30.034828
-        y: 29.95812
-        z: 0
+        x: 30.0348282
+        y: 29.9581203
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Icon-Search-Active.png"
@@ -79,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 17.5
         y: 17.5
-        z: 0
       }
       scale {
         x: 1
@@ -89,21 +71,12 @@ activecomp {
       position {
         x: 30
         y: 30
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -128,7 +101,6 @@ sources {
   width: 292
   height: 1
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -139,7 +111,6 @@ sources {
   width: 45
   height: 47
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -150,7 +121,6 @@ sources {
   width: 35
   height: 35
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

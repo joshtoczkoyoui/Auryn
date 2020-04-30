@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Live-Indicator"
   width: 100
   height: 40
-  defaultcameradistance: 138.88889
+  defaultcameradistance: 138.888885
   layer {
     name: "Live-Icon"
     id: 1439
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 17.5
         y: 17.5
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 20.75
         y: 20
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "LIVE"
@@ -44,8 +35,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 32
-        y: 14.59991
-        z: 0
+        y: 14.5999098
       }
       scale {
         x: 1
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 61.5
         y: 27.1
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 20
@@ -80,13 +62,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 64
       boundsHeight: 17
       isLabel: true
       text: "LIVE"
       multiline: true
-      isAllCaps: false
     }
   }
   bgcolor {
@@ -99,7 +79,6 @@ activecomp {
 }
 sources {
   uid: 1425
-  srctype: AE_COMP_SRC
   name: "Auryn_Live-Icon.layout"
   width: 35
   height: 35

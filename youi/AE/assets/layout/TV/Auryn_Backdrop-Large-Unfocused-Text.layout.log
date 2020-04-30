@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Backdrop-Large-Unfocused-Text"
   width: 938
   height: 200
-  defaultcameradistance: 1302.7778
+  defaultcameradistance: 1302.77783
   layer {
     name: "Unfocus-Text-Title"
     id: 690016780
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 90.5
-        z: 0
       }
       scale {
         x: 1
@@ -21,23 +20,14 @@ activecomp {
       position {
         x: 282.76
         y: 174
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 48
       fontColor {
         alpha: 1
@@ -46,11 +36,9 @@ activecomp {
         blue: 0.93332993984222412
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 861
       boundsHeight: 104
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

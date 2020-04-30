@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Profile"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Btn-Profile3"
     id: 712
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 125
         y: 200
-        z: 0
       }
       scale {
         x: 1
@@ -24,18 +23,10 @@ activecomp {
         z: 250
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 717
   }
   layer {
@@ -46,7 +37,6 @@ activecomp {
       anchorPoint {
         x: 125
         y: 200
-        z: 0
       }
       scale {
         x: 1
@@ -59,18 +49,10 @@ activecomp {
         z: 325
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 717
   }
   layer {
@@ -81,7 +63,6 @@ activecomp {
       anchorPoint {
         x: 125
         y: 200
-        z: 0
       }
       scale {
         x: 1
@@ -94,18 +75,10 @@ activecomp {
         z: 500
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 717
   }
   layer {
@@ -116,7 +89,6 @@ activecomp {
       anchorPoint {
         x: 440
         y: 60
-        z: 0
       }
       scale {
         x: 1
@@ -125,22 +97,13 @@ activecomp {
       }
       position {
         x: 539.72
-        y: 368.28012
-        z: 0
+        y: 368.280121
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 38
@@ -151,13 +114,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 1722
       boundsHeight: 68
       isLabel: true
       text: "Who\342\200\231s Watching?"
       multiline: true
-      isAllCaps: false
     }
   }
   layer {
@@ -168,7 +129,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -178,21 +138,13 @@ activecomp {
       position {
         x: 45
         y: -113
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 718
   }
   layer {
@@ -203,7 +155,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -213,21 +164,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScalePropTopRightAnchor"
@@ -236,8 +179,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 100
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -246,22 +187,13 @@ activecomp {
       }
       position {
         x: 1920
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -284,7 +216,6 @@ activecomp {
 }
 sources {
   uid: 259687
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Profile3.layout"
   width: 250
   height: 400
@@ -292,7 +223,6 @@ sources {
 }
 sources {
   uid: 259648
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Profile2.layout"
   width: 250
   height: 400
@@ -300,7 +230,6 @@ sources {
 }
 sources {
   uid: 259618
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Profile1.layout"
   width: 250
   height: 400
@@ -316,7 +245,6 @@ sources {
 }
 sources {
   uid: 690011939
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Back.layout"
   width: 100
   height: 100
@@ -327,5 +255,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

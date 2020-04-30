@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Player-Controls"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Gradient-Player_2.png"
     id: 1767
@@ -11,31 +11,21 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 274
-        z: 0
       }
       scale {
         x: 1920
-        y: 1.080292
+        y: 1.08029199
         z: 1
       }
       position {
         x: 960
         y: 1044
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Player-Controls-Layout"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 540
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +44,12 @@ activecomp {
       position {
         x: 50
         y: -158
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1777
   }
   layer {
@@ -80,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 40
-        z: 0
       }
       scale {
         x: 1
@@ -90,21 +69,13 @@ activecomp {
       position {
         x: -190
         y: 282
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1776
   }
   layer {
@@ -113,9 +84,6 @@ activecomp {
     sourceid: 690017045
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -125,21 +93,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Container-Btn-PlayPause"
@@ -149,7 +109,6 @@ activecomp {
       anchorPoint {
         x: 75
         y: 75
-        z: 0
       }
       scale {
         x: 2
@@ -159,21 +118,12 @@ activecomp {
       position {
         x: 50
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1778
   }
   layer {
@@ -182,9 +132,6 @@ activecomp {
     sourceid: 305
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -194,21 +141,12 @@ activecomp {
       position {
         x: 68
         y: -113
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1775
   }
   layer {
@@ -217,9 +155,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 699.09631
-        y: 33.17926
-        z: 0
+        x: 699.096313
+        y: 33.1792603
       }
       scale {
         x: 1
@@ -229,21 +166,12 @@ activecomp {
       position {
         x: 50
         y: -35.918457
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 44
@@ -254,11 +182,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 1398
       boundsHeight: 153
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -281,7 +207,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 540
-        z: 0
       }
       scale {
         x: 1
@@ -291,21 +216,13 @@ activecomp {
       position {
         x: 50
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1780
   }
   layer {
@@ -314,9 +231,6 @@ activecomp {
     sourceid: 1480
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -324,23 +238,13 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropBottomRightAnchor"
@@ -350,7 +254,6 @@ activecomp {
       anchorPoint {
         x: 100
         y: 100
-        z: 0
       }
       scale {
         x: 1
@@ -360,21 +263,13 @@ activecomp {
       position {
         x: 1920
         y: 1080
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropBottomAnchor"
@@ -384,7 +279,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 100
-        z: 0
       }
       scale {
         x: 1
@@ -394,21 +288,13 @@ activecomp {
       position {
         x: 960
         y: 1080
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropCenterAnchor"
@@ -418,7 +304,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -428,21 +313,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropTopAnchor"
@@ -451,8 +328,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 50
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -461,22 +336,13 @@ activecomp {
       }
       position {
         x: 960
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleHeightPropCenterAnchor"
@@ -486,7 +352,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -496,21 +361,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -531,13 +388,11 @@ sources {
   width: 1
   height: 548
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 690014663
-  srctype: AE_COMP_SRC
   name: "Auryn_Player-Controls-Layout.layout"
   width: 1920
   height: 1080
@@ -545,7 +400,6 @@ sources {
 }
 sources {
   uid: 462
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-TvGuide.layout"
   width: 400
   height: 80
@@ -556,11 +410,9 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
 sources {
   uid: 690017026
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Btn-PlayPause.layout"
   width: 150
   height: 150
@@ -568,7 +420,6 @@ sources {
 }
 sources {
   uid: 305
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Back.layout"
   width: 100
   height: 100
@@ -584,7 +435,6 @@ sources {
 }
 sources {
   uid: 690014592
-  srctype: AE_COMP_SRC
   name: "Auryn_Live-TvGuide.layout"
   width: 1920
   height: 1080
@@ -595,5 +445,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 533.5
         y: 600
-        z: 0
       }
       scale {
         x: 1.8
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 540
         y: 1080
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 522
         y: 288
-        z: 0
       }
       scale {
         x: 1.875
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 540
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Gradient-Player_2.png"
@@ -79,31 +61,22 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 548
-        z: 0
       }
       scale {
-        x: 2039.2172
-        y: 0.66024607
+        x: 2039.21716
+        y: 0.660246074
         z: 1
       }
       position {
         x: 540
         y: 1080
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Details"
@@ -113,7 +86,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -123,23 +95,14 @@ activecomp {
       position {
         x: 501.76
         y: 989.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.76
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 26
       fontColor {
         alpha: 1
@@ -148,14 +111,11 @@ activecomp {
         blue: 0.92548996210098267
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 953
       boundsHeight: 83
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -174,7 +134,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -184,23 +143,14 @@ activecomp {
       position {
         x: 500.76
         y: 925.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 49
       fontColor {
         alpha: 1
@@ -209,14 +159,11 @@ activecomp {
         blue: 0.92548996210098267
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 953
       boundsHeight: 54
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -233,9 +180,7 @@ activecomp {
     sourceid: 690015184
     transform {
       anchorPoint {
-        x: 0
         y: 76
-        z: 0
       }
       scale {
         x: 1.54
@@ -245,21 +190,13 @@ activecomp {
       position {
         x: 90
         y: 988
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -287,17 +224,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 1067
   height: 600
-  copy_source: false
 }
 sources {
   uid: 1246
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Full.layout"
   width: 1044
   height: 576
@@ -310,7 +242,6 @@ sources {
   width: 1
   height: 548
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -329,7 +260,6 @@ sources {
   width: 76
   height: 76
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

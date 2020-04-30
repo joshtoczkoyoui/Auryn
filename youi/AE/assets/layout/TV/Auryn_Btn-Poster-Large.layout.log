@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Poster-Large"
   width: 400
   height: 600
-  defaultcameradistance: 555.55554
+  defaultcameradistance: 555.555542
   layer {
     name: "Background"
     id: 266
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 188
         y: 288
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 200
         y: 300
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 188
         y: 288
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 200
         y: 300
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.8
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 6"
@@ -79,31 +61,21 @@ activecomp {
       anchorPoint {
         x: 400
         y: 2
-        z: 0
       }
       scale {
         x: 0.0001
-        y: 0.95238096
+        y: 0.952380955
         z: 1
       }
       position {
-        x: 378.4762
-        y: 4.1904764
-        z: 0
+        x: 378.476196
+        y: 4.19047642
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 267
   }
   layer {
@@ -114,31 +86,21 @@ activecomp {
       anchorPoint {
         x: 400
         y: 2
-        z: 0
       }
       scale {
         x: 0.0001
-        y: 0.95238096
+        y: 0.952380955
         z: 1
       }
       position {
-        x: 378.4762
-        y: 571.80951
-        z: 0
+        x: 378.476196
+        y: 571.809509
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 267
   }
   layer {
@@ -149,31 +111,21 @@ activecomp {
       anchorPoint {
         x: 4
         y: 300
-        z: 0
       }
       scale {
         x: 0.0001
-        y: 0.95238096
+        y: 0.952380955
         z: 1
       }
       position {
-        x: 378.4762
+        x: 378.476196
         y: 288
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 267
   }
   layer {
@@ -184,31 +136,21 @@ activecomp {
       anchorPoint {
         x: 4
         y: 300
-        z: 0
       }
       scale {
         x: 0.0001
-        y: 0.95238096
+        y: 0.952380955
         z: 1
       }
       position {
-        x: 1.3333334
+        x: 1.33333337
         y: 288
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 267
   }
   layer {
@@ -219,7 +161,6 @@ activecomp {
       anchorPoint {
         x: 65
         y: 65
-        z: 0
       }
       scale {
         x: 0.5
@@ -229,21 +170,12 @@ activecomp {
       position {
         x: 200
         y: 303
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Btn-Play.png"
@@ -253,7 +185,6 @@ activecomp {
       anchorPoint {
         x: 15
         y: 25
-        z: 0
       }
       scale {
         x: 0.6
@@ -263,21 +194,12 @@ activecomp {
       position {
         x: 201
         y: 303
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -305,17 +227,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 376
   height: 576
-  copy_source: false
 }
 sources {
   uid: 284
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-2x3.layout"
   width: 376
   height: 576
@@ -332,7 +249,6 @@ sources {
   }
   width: 400
   height: 4
-  copy_source: false
 }
 sources {
   uid: 920
@@ -345,7 +261,6 @@ sources {
   }
   width: 400
   height: 4
-  copy_source: false
 }
 sources {
   uid: 918
@@ -358,7 +273,6 @@ sources {
   }
   width: 4
   height: 600
-  copy_source: false
 }
 sources {
   uid: 916
@@ -371,7 +285,6 @@ sources {
   }
   width: 4
   height: 600
-  copy_source: false
 }
 sources {
   uid: 797
@@ -380,7 +293,6 @@ sources {
   width: 130
   height: 130
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -391,7 +303,6 @@ sources {
   width: 40
   height: 50
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

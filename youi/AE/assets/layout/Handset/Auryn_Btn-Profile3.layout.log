@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Profile3"
   width: 1006
   height: 416
-  defaultcameradistance: 1397.2222
+  defaultcameradistance: 1397.22217
   layer {
     name: "Dark Gray Solid 6"
     id: 950
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 499
         y: 204
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 503
         y: 208
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Profile-Tobias.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 204.5
         y: 204.5
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 204.5
         y: 208
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Name"
@@ -78,8 +60,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 123
-        y: 46.999981
-        z: 0
+        y: 46.9999809
       }
       scale {
         x: 1
@@ -88,24 +69,15 @@ activecomp {
       }
       position {
         x: 569
-        y: 237.8615
-        z: 0
+        y: 237.861496
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 44
       fontColor {
         alpha: 1
@@ -114,7 +86,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 343
       boundsHeight: 67
       isLabel: true
@@ -136,7 +107,6 @@ activecomp {
       anchorPoint {
         x: 123
         y: 21
-        z: 0
       }
       scale {
         x: 1
@@ -144,23 +114,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 549.21942
+        x: 549.219421
         y: 272
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 33
@@ -171,13 +132,10 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 249
       boundsHeight: 25
       isLabel: true
-      text: ""
       multiline: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -192,7 +150,6 @@ activecomp {
       anchorPoint {
         x: 503
         y: 2
-        z: 0
       }
       scale {
         x: 1
@@ -202,21 +159,12 @@ activecomp {
       position {
         x: 503
         y: 414
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "White Solid 30"
@@ -226,7 +174,6 @@ activecomp {
       anchorPoint {
         x: 503
         y: 2
-        z: 0
       }
       scale {
         x: 1
@@ -236,21 +183,12 @@ activecomp {
       position {
         x: 503
         y: 2
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "White Solid 31"
@@ -260,7 +198,6 @@ activecomp {
       anchorPoint {
         x: 2
         y: 204
-        z: 0
       }
       scale {
         x: 1
@@ -270,21 +207,12 @@ activecomp {
       position {
         x: 2
         y: 208
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "White Solid 31"
@@ -294,7 +222,6 @@ activecomp {
       anchorPoint {
         x: 2
         y: 204
-        z: 0
       }
       scale {
         x: 1
@@ -304,21 +231,12 @@ activecomp {
       position {
         x: 1004
         y: 208
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Icon-Check-Profile-Handset.png"
@@ -328,7 +246,6 @@ activecomp {
       anchorPoint {
         x: 25
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -338,21 +255,12 @@ activecomp {
       position {
         x: 941
         y: 65
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -381,7 +289,6 @@ sources {
   }
   width: 998
   height: 408
-  copy_source: false
 }
 sources {
   uid: 259950
@@ -390,7 +297,6 @@ sources {
   width: 409
   height: 409
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -421,7 +327,6 @@ sources {
   }
   width: 1006
   height: 4
-  copy_source: false
 }
 sources {
   uid: 690016488
@@ -434,7 +339,6 @@ sources {
   }
   width: 4
   height: 408
-  copy_source: false
 }
 sources {
   uid: 690016601
@@ -443,7 +347,6 @@ sources {
   width: 50
   height: 50
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

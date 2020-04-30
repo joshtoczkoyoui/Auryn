@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Backdrop-Small"
   width: 536
   height: 468
-  defaultcameradistance: 744.44446
+  defaultcameradistance: 744.444458
   layer {
     name: "Black Solid 6"
     id: 410
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 267
         y: 150
-        z: 0
       }
       scale {
         x: 1.56
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 268
         y: 234
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 261
         y: 144
-        z: 0
       }
       scale {
         x: 1.625
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 268
         y: 234
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Gradient-Player_2.png"
@@ -79,7 +61,6 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 548
-        z: 0
       }
       scale {
         x: 553.5
@@ -89,21 +70,13 @@ activecomp {
       position {
         x: 268
         y: 468
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Title"
@@ -112,8 +85,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 219.09024
-        y: 26.639847
-        z: 0
+        y: 26.6398468
       }
       scale {
         x: 1
@@ -122,22 +94,14 @@ activecomp {
       }
       position {
         x: 268
-        y: 425.63983
-        z: 0
+        y: 425.639832
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 36
@@ -148,14 +112,11 @@ activecomp {
         blue: 0.92548996210098267
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 438
       boundsHeight: 54
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -192,17 +153,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 534
   height: 300
-  copy_source: false
 }
 sources {
   uid: 1258
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Half.layout"
   width: 522
   height: 288
@@ -215,7 +171,6 @@ sources {
   width: 1
   height: 548
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

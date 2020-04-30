@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Container-Layout-PDP-Top"
   width: 1760
   height: 687
-  defaultcameradistance: 2444.4443
+  defaultcameradistance: 2444.44434
   layer {
     name: "Layout-PDP-Meta"
     id: 690016257
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 424
         y: 294.5
-        z: 0
       }
       scale {
         x: 1
@@ -24,18 +23,10 @@ activecomp {
         z: 1000
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Container-Btn-Backdrop-LargePDP"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 445.5
         y: 343.5
-        z: 0
       }
       scale {
         x: 1
@@ -58,18 +48,10 @@ activecomp {
         z: 1000
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -82,7 +64,6 @@ activecomp {
 }
 sources {
   uid: 342
-  srctype: AE_COMP_SRC
   name: "Auryn_Layout-PDP-Meta.layout"
   width: 848
   height: 589
@@ -90,7 +71,6 @@ sources {
 }
 sources {
   uid: 690015282
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Btn-Backdrop-LargePDP.layout"
   width: 891
   height: 687

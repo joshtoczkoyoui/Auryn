@@ -4,22 +4,18 @@ tracks {
   targetname: "Player-Scrubber-Container"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 tracks {
-  binding: POSITION
   targetid: 690014960
   targetname: "Player-Scrubber-Container"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 960
     fvalue2: 963
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -27,21 +23,22 @@ tracks {
     inttype: AE_INTERP_HOLD
     fvalue1: 960
     fvalue2: 963
-    fvalue3: 0
+  }
+  keytimes {
+    datatype: AE_FLOAT_VECTOR_DATA
+    timeOffset: 1.49979925
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 960
+    fvalue2: 963
+    isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 1.5
     inttype: AE_INTERP_HOLD
-    sInTangentX: 0
-    sInTangentY: 0
-    sInTangentZ: 0
-    sOutTangentX: 0
-    sOutTangentY: 32.166668
-    sOutTangentZ: 0
+    sOutTangentY: 32.1666679
     fvalue1: 960
     fvalue2: 963
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -49,21 +46,13 @@ tracks {
     inttype: AE_INTERP_HOLD
     fvalue1: 960
     fvalue2: 1156
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 3.5
     inttype: AE_INTERP_HOLD
-    sInTangentX: -0
-    sInTangentY: -0
-    sInTangentZ: -0
-    sOutTangentX: 0
-    sOutTangentY: 0
-    sOutTangentZ: 0
     fvalue1: 960
     fvalue2: 1156
-    fvalue3: 0
   }
   trackName: "Position"
 }
@@ -72,34 +61,26 @@ tracks {
   targetid: 690014960
   targetname: "Player-Scrubber-Container"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1
     inttype: AE_INTERP_HOLD
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1.5
     inttype: AE_INTERP_HOLD
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3
     inttype: AE_INTERP_HOLD
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 3.5
     inttype: AE_INTERP_HOLD
-    fvalue1: 0
   }
   trackName: "Opacity"
 }
@@ -109,22 +90,18 @@ tracks {
   targetname: "Video-TextDetails"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 tracks {
-  binding: POSITION
   targetid: 690014961
   targetname: "Video-TextDetails"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 790
     fvalue2: 696
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -132,21 +109,22 @@ tracks {
     inttype: AE_INTERP_HOLD
     fvalue1: 790
     fvalue2: 696
-    fvalue3: 0
+  }
+  keytimes {
+    datatype: AE_FLOAT_VECTOR_DATA
+    timeOffset: 1.49979925
+    inttype: AE_INTERP_LINEAR
+    fvalue1: 790
+    fvalue2: 696
+    isCookedKeytime: true
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 1.5
     inttype: AE_INTERP_HOLD
-    sInTangentX: 0
-    sInTangentY: 0
-    sInTangentZ: 0
-    sOutTangentX: 0
     sOutTangentY: 20.333334
-    sOutTangentZ: 0
     fvalue1: 790
     fvalue2: 696
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
@@ -154,21 +132,13 @@ tracks {
     inttype: AE_INTERP_HOLD
     fvalue1: 790
     fvalue2: 818
-    fvalue3: 0
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 3.5
     inttype: AE_INTERP_HOLD
-    sInTangentX: -0
-    sInTangentY: -0
-    sInTangentZ: -0
-    sOutTangentX: 0
-    sOutTangentY: 0
-    sOutTangentZ: 0
     fvalue1: 790
     fvalue2: 818
-    fvalue3: 0
   }
   trackName: "Position"
 }
@@ -178,7 +148,6 @@ markers {
   name: "Set-VOD"
   tracksSelection {
     targetid: 690014960
-    binding: POSITION
   }
   tracksSelection {
     targetid: 690014960
@@ -186,10 +155,7 @@ markers {
   }
   tracksSelection {
     targetid: 690014961
-    binding: POSITION
   }
-  alltracks: false
-  looping: false
 }
 markers {
   starttime: 3
@@ -197,7 +163,6 @@ markers {
   name: "Set-Live"
   tracksSelection {
     targetid: 690014960
-    binding: POSITION
   }
   tracksSelection {
     targetid: 690014960
@@ -205,8 +170,5 @@ markers {
   }
   tracksSelection {
     targetid: 690014961
-    binding: POSITION
   }
-  alltracks: false
-  looping: false
 }

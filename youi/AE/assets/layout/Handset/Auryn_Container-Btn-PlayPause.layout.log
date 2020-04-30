@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Container-Btn-PlayPause"
   width: 150
   height: 150
-  defaultcameradistance: 208.33333
+  defaultcameradistance: 208.333328
   layer {
     name: "Btn-PlayPause"
     id: 690017026
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 75
         y: 75
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 75
         y: 75
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -47,7 +38,6 @@ activecomp {
 }
 sources {
   uid: 781
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-PlayPause.layout"
   width: 150
   height: 150

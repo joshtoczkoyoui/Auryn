@@ -11,31 +11,22 @@ activecomp {
       anchorPoint {
         x: 263.5
         y: 0.5
-        z: 0
       }
       scale {
-        x: 2.049336
+        x: 2.04933596
         y: 187
         z: 1
       }
       position {
         x: 540
         y: 2026.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "item-gravity"
       value: "bottom"
@@ -49,7 +40,6 @@ activecomp {
       anchorPoint {
         x: 540
         y: 93.5
-        z: 0
       }
       scale {
         x: 1
@@ -59,21 +49,13 @@ activecomp {
       position {
         x: 540
         y: 2026.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "item-gravity"
       value: "bottom"
@@ -87,7 +69,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 30
-        z: 0
       }
       scale {
         x: 1.5
@@ -95,23 +76,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 979.9682
-        y: -0.21424198
-        z: 0
+        x: 979.968201
+        y: -0.214241982
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "item-gravity"
       value: "top-right"
@@ -133,7 +105,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 30
-        z: 0
       }
       scale {
         x: 1.5
@@ -142,22 +113,13 @@ activecomp {
       }
       position {
         x: 853.69519
-        y: -2.7221932
-        z: 0
+        y: -2.72219324
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "margin-right"
       value: "168"
@@ -179,7 +141,6 @@ activecomp {
       anchorPoint {
         x: 501
         y: 93.5
-        z: 0
       }
       scale {
         x: 1
@@ -189,21 +150,12 @@ activecomp {
       position {
         x: 540
         y: 1903.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "item-gravity"
       value: "bottom"
@@ -215,9 +167,6 @@ activecomp {
     sourceid: 1701
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 0.6
@@ -226,22 +175,13 @@ activecomp {
       }
       position {
         x: 78.785759
-        y: -33.21423
-        z: 0
+        y: -33.2142296
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "margin-top"
       value: "20"
@@ -285,7 +225,6 @@ sources {
   width: 527
   height: 1
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -294,17 +233,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 1080
   height: 187
-  copy_source: false
 }
 sources {
   uid: 672
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Nav-Profile.layout"
   width: 60
   height: 60
@@ -312,7 +246,6 @@ sources {
 }
 sources {
   uid: 724
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Nav-Search.layout"
   width: 60
   height: 60
@@ -320,7 +253,6 @@ sources {
 }
 sources {
   uid: 690014353
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-List.layout"
   width: 1002
   height: 187
@@ -328,7 +260,6 @@ sources {
 }
 sources {
   uid: 1701
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-Logo.layout"
   width: 178
   height: 160

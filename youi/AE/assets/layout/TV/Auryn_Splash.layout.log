@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Splash"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Slash-TV.png"
     id: 187
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 2113.5
         y: 1024
-        z: 0
       }
       scale {
         x: 0.455
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Logo-Hex.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 267.5
         y: 246.5
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 50
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 194
   }
   layer {
@@ -80,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 154.5
         y: 71
-        z: 0
       }
       scale {
         x: 1
@@ -88,23 +69,13 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 191
   }
   layer {
@@ -115,31 +86,19 @@ activecomp {
       anchorPoint {
         x: 551.5
         y: 255
-        z: 0
       }
       scale {
-        x: 0.27810431
-        y: 0.27810431
+        x: 0.278104305
+        y: 0.278104305
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 191
   }
   layer {
@@ -148,9 +107,6 @@ activecomp {
     sourceid: 690017054
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -160,21 +116,13 @@ activecomp {
       position {
         x: 50
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 194
   }
   layer {
@@ -185,7 +133,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -195,21 +142,12 @@ activecomp {
       position {
         x: 50
         y: 144
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 193
   }
   layer {
@@ -220,7 +158,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 100
-        z: 0
       }
       scale {
         x: 1
@@ -230,21 +167,13 @@ activecomp {
       position {
         x: 960
         y: 1080
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScalePropCenterAnchor"
@@ -254,7 +183,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -264,21 +192,13 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -295,7 +215,6 @@ sources {
   width: 4227
   height: 2048
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -306,7 +225,6 @@ sources {
   width: 535
   height: 493
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -317,7 +235,6 @@ sources {
   width: 309
   height: 142
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -328,7 +245,6 @@ sources {
   width: 1103
   height: 510
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -337,11 +253,9 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
 sources {
   uid: 212
-  srctype: AE_COMP_SRC
   name: "Auryn_Loader.layout"
   width: 100
   height: 100
@@ -352,5 +266,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

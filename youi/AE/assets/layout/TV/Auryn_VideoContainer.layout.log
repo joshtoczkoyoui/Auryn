@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_VideoContainer"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Image-Background"
     id: 690012089
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 540
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 960
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Gradient-Squeeze.png"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 480
         y: 0.5
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +44,12 @@ activecomp {
       position {
         x: -270
         y: 539.078
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "UpNext-Countdown"
@@ -79,7 +59,6 @@ activecomp {
       anchorPoint {
         x: 136
         y: 32
-        z: 0
       }
       scale {
         x: 1
@@ -89,21 +68,12 @@ activecomp {
       position {
         x: 117
         y: 738
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Button-UpNext-Primary"
@@ -113,7 +83,6 @@ activecomp {
       anchorPoint {
         x: 430
         y: 99
-        z: 0
       }
       scale {
         x: 1
@@ -123,21 +92,12 @@ activecomp {
       position {
         x: 407.25
         y: 893
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Video"
@@ -145,9 +105,6 @@ activecomp {
     sourceid: 306
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -155,23 +112,12 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -186,7 +132,6 @@ activecomp {
 }
 sources {
   uid: 467
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Background.layout"
   width: 1920
   height: 1080
@@ -199,13 +144,11 @@ sources {
   width: 960
   height: 1
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 767
-  srctype: AE_COMP_SRC
   name: "Auryn_UpNext-Countdown.layout"
   width: 272
   height: 64
@@ -213,7 +156,6 @@ sources {
 }
 sources {
   uid: 223
-  srctype: AE_COMP_SRC
   name: "Auryn_Button-UpNext-Primary.layout"
   width: 860
   height: 198
@@ -221,7 +163,6 @@ sources {
 }
 sources {
   uid: 306
-  srctype: AE_COMP_SRC
   name: "Auryn_Video.layout"
   width: 1920
   height: 1080

@@ -9,9 +9,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 101.59588
-        y: -0.00016403198
-        z: 0
+        x: 101.595879
+        y: -0.000164031982
       }
       scale {
         x: 1
@@ -19,23 +18,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 111.03012
+        x: 111.030121
         y: 82.44
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.6
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 23
@@ -46,7 +37,6 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 200
       boundsHeight: 33
       isLabel: true
@@ -63,7 +53,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 27.5
-        z: 0
       }
       scale {
         x: 1
@@ -73,21 +62,12 @@ activecomp {
       position {
         x: 112.25
         y: 42
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Nav-Icon"
@@ -97,7 +77,6 @@ activecomp {
       anchorPoint {
         x: 30
         y: 27.5
-        z: 0
       }
       scale {
         x: 1
@@ -107,21 +86,13 @@ activecomp {
       position {
         x: 112.25
         y: 42
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -151,7 +122,6 @@ sources {
 }
 sources {
   uid: 690015906
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-Icon-Toggled.layout"
   width: 60
   height: 55
@@ -159,7 +129,6 @@ sources {
 }
 sources {
   uid: 690015921
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav-Icon.layout"
   width: 60
   height: 55

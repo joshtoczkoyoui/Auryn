@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 540
         y: 960
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 540
         y: 960
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Hex-Large.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 1230
         y: 1140
-        z: 0
       }
       scale {
         x: 0.245
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 48
         y: 53
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1903
   }
   layer {
@@ -80,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 551.5
         y: 255
-        z: 0
       }
       scale {
         x: 0.314
@@ -89,22 +70,14 @@ activecomp {
       }
       position {
         x: 48.5
-        y: 49.999969
-        z: 0
+        y: 49.9999695
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1903
   }
   layer {
@@ -115,7 +88,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -125,21 +97,12 @@ activecomp {
       position {
         x: 50
         y: 184
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1902
   }
   layer {
@@ -150,7 +113,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 100
-        z: 0
       }
       scale {
         x: 1
@@ -160,21 +122,13 @@ activecomp {
       position {
         x: 540
         y: 1920
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScalePropCenterAnchor"
@@ -184,7 +138,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -194,21 +147,13 @@ activecomp {
       position {
         x: 540
         y: 960
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -225,7 +170,6 @@ sources {
   width: 1080
   height: 1920
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -236,7 +180,6 @@ sources {
   width: 2460
   height: 2280
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -247,13 +190,11 @@ sources {
   width: 1103
   height: 510
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 1599
-  srctype: AE_COMP_SRC
   name: "Auryn_Loader.layout"
   width: 100
   height: 100
@@ -264,5 +205,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

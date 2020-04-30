@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 495.5
         y: 600
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 540
         y: 828
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Live-Indicator"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 20
-        z: 0
       }
       scale {
         x: 1.5
@@ -53,23 +43,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 124.99997
-        y: 136.44443
-        z: 0
+        x: 124.999969
+        y: 136.444427
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Title"
@@ -79,7 +61,6 @@ activecomp {
       anchorPoint {
         x: 0.25
         y: 14.9375
-        z: 0
       }
       scale {
         x: 1
@@ -87,25 +68,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 240.94836
+        x: 240.948364
         y: 131.03215
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 55
       fontColor {
         alpha: 1
@@ -114,13 +86,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 337
       boundsHeight: 48
       isLabel: true
       text: "All Channels"
       multiline: true
-      isAllCaps: false
     }
   }
   bgcolor {
@@ -150,7 +120,6 @@ activecomp {
 }
 sources {
   uid: 1587
-  srctype: AE_COMP_SRC
   name: "Auryn_LiveList.layout"
   width: 991
   height: 1200
@@ -158,7 +127,6 @@ sources {
 }
 sources {
   uid: 1439
-  srctype: AE_COMP_SRC
   name: "Auryn_Live-Indicator.layout"
   width: 100
   height: 40

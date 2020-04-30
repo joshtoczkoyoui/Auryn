@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Player-Scrubber-Container"
   width: 1920
   height: 44
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Duration"
     id: 690014625
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 84
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -20,22 +19,13 @@ activecomp {
       }
       position {
         x: 1753
-        y: 320.36017
-        z: 0
+        y: 320.360168
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 37
@@ -46,11 +36,9 @@ activecomp {
         blue: 0.92548996210098267
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 224
       boundsHeight: 52
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -70,9 +58,7 @@ activecomp {
     sourceid: 1813
     transform {
       anchorPoint {
-        x: 0
         y: 30
-        z: 0
       }
       scale {
         x: 1
@@ -82,21 +68,12 @@ activecomp {
       position {
         x: 90
         y: 286
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -116,7 +93,6 @@ sources {
 }
 sources {
   uid: 1813
-  srctype: AE_COMP_SRC
   name: "Auryn_Player-Scrubber.layout"
   width: 1590
   height: 60

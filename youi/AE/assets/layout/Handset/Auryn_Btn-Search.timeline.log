@@ -4,7 +4,6 @@ tracks {
   targetname: "Red Solid 20"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -14,20 +13,14 @@ tracks {
   targetid: 973
   targetname: "Red Solid 20"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 1.1666666
+    timeOffset: 1.16666663
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
@@ -39,7 +32,6 @@ tracks {
   targetname: "Deep Royal Blue Solid 12"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -49,20 +41,16 @@ tracks {
   targetid: 974
   targetname: "Deep Royal Blue Solid 12"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.0166667
+    timeOffset: 2.01666665
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.8
   }
@@ -74,7 +62,6 @@ tracks {
   targetname: "Dark Royal Blue Solid 4"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -84,20 +71,14 @@ tracks {
   targetid: 975
   targetname: "Dark Royal Blue Solid 4"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.0166667
+    timeOffset: 2.01666665
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
@@ -109,26 +90,23 @@ tracks {
   targetname: "SEARCH"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 markers {
   starttime: 1
-  duration: 0.16666667
+  duration: 0.166666672
   name: "FocusIn"
   tracksSelection {
     targetid: 973
     binding: OPACITY
   }
-  alltracks: false
   id: 21
-  looping: false
 }
 markers {
   starttime: 2
-  duration: 0.016666668
+  duration: 0.0166666675
   name: "Press"
   tracksSelection {
     targetid: 974
@@ -138,7 +116,5 @@ markers {
     targetid: 975
     binding: OPACITY
   }
-  alltracks: false
   id: 18
-  looping: false
 }

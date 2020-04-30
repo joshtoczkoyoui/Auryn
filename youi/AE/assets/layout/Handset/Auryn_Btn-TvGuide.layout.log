@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-TvGuide"
   width: 400
   height: 80
-  defaultcameradistance: 555.55554
+  defaultcameradistance: 555.555542
   layer {
     name: "MiniGuide-button-outline.png"
     id: 462
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 40
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 199.75
         y: 38.75
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "MiniGuide-button-filled.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 40
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +45,12 @@ activecomp {
       position {
         x: 199.75
         y: 38.75
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "View TV Guide"
@@ -77,9 +58,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 168.66792
+        x: 168.667923
         y: 21.5
-        z: 0
       }
       scale {
         x: 1
@@ -87,23 +67,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 199.43896
-        y: 49.290142
-        z: 0
+        x: 199.438965
+        y: 49.2901421
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 33
@@ -114,13 +86,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 337
       boundsHeight: 33
       isLabel: true
       text: "View TV Guide"
       multiline: true
-      isAllCaps: false
     }
   }
   classname: "CYIPushButtonView"
@@ -146,7 +116,6 @@ sources {
   width: 400
   height: 80
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -157,7 +126,6 @@ sources {
   width: 400
   height: 80
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

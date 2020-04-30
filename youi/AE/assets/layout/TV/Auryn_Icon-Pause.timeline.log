@@ -4,7 +4,6 @@ tracks {
   targetname: "White Solid 15"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -15,7 +14,6 @@ tracks {
   targetname: "White Solid 15"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }

@@ -2,16 +2,13 @@ activecomp {
   name: "Auryn_Button-UpNext-Alternate"
   width: 398
   height: 228
-  defaultcameradistance: 552.77777
+  defaultcameradistance: 552.777771
   layer {
     name: "Focus"
     id: 177
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -19,62 +16,39 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 178
     shapeLayer {
       name: "Root Group"
       child {
-        type: AE_SHAPE_TYPE_GROUP
         shapeGroup {
           name: "Stroke"
           anchorPoint {
-            x: 0
-            y: 0
           }
           position {
-            x: 0
-            y: 0
           }
           scale {
             x: 100
             y: 100
           }
           skew {
-            x: 0
-            y: 0
           }
-          rotation: 0
           opacity: 100
           child {
             type: AE_SHAPE_TYPE_RECT
             rect {
               name: "Rectangle Path 1"
               position {
-                x: 0
-                y: 0
               }
               size {
                 x: 390
                 y: 219
               }
-              roundness: 0
-              winding: AE_WINDING_ORDER_FORWARD
             }
             subid: 1
           }
@@ -108,9 +82,6 @@ activecomp {
     sourceid: 1491
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -120,21 +91,13 @@ activecomp {
       position {
         x: 199
         y: 114
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Img"
@@ -144,7 +107,6 @@ activecomp {
       anchorPoint {
         x: 780
         y: 438
-        z: 0
       }
       scale {
         x: 0.25
@@ -152,23 +114,13 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 178
   }
   layer {
@@ -177,9 +129,6 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -187,62 +136,41 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: 14.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 178
     shapeLayer {
       name: "Root Group"
       child {
-        type: AE_SHAPE_TYPE_GROUP
         shapeGroup {
           name: "Gradient"
           anchorPoint {
-            x: 0
-            y: 0
           }
           position {
-            x: 0
-            y: 0
           }
           scale {
             x: 100
             y: 100
           }
           skew {
-            x: 0
-            y: 0
           }
-          rotation: 0
           opacity: 100
           child {
             type: AE_SHAPE_TYPE_RECT
             rect {
               name: "Rectangle Path 1"
               position {
-                x: 0
-                y: 0
               }
               size {
                 x: 390
                 y: 190
               }
-              roundness: 0
-              winding: AE_WINDING_ORDER_FORWARD
             }
             subid: 1
           }
@@ -257,18 +185,14 @@ activecomp {
             gradient {
               type: AE_GRADIENT_TYPE_LINEAR
               startPoint {
-                x: 0
                 y: -95
               }
               endPoint {
-                x: 0
                 y: 95
               }
               color {
                 alphaStops {
-                  location: 0
                   midpoint: 0.5
-                  opacity: 0
                 }
                 alphaStops {
                   location: 1
@@ -276,13 +200,9 @@ activecomp {
                   opacity: 1
                 }
                 colorStops {
-                  location: 0
                   midpoint: 0.5
                   color {
                     alpha: 1
-                    red: 0
-                    green: 0
-                    blue: 0
                   }
                 }
                 colorStops {
@@ -290,9 +210,6 @@ activecomp {
                   midpoint: 0.5
                   color {
                     alpha: 1
-                    red: 0
-                    green: 0
-                    blue: 0
                   }
                 }
               }
@@ -310,9 +227,7 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
         y: 14.7998
-        z: 0
       }
       scale {
         x: 1
@@ -321,24 +236,15 @@ activecomp {
       }
       position {
         x: 14
-        y: 204.63342
-        z: 0
+        y: 204.633423
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 20
       fontColor {
         alpha: 1
@@ -347,13 +253,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 246
       boundsHeight: 31
       isLabel: true
       text: "I\'ll Deal with Him Later"
       multiline: true
-      isAllCaps: false
     }
   }
   layer {
@@ -362,9 +266,6 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -373,24 +274,15 @@ activecomp {
       }
       position {
         x: 338
-        y: 35.545776
-        z: 0
+        y: 35.5457764
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.7
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 20
       fontColor {
         alpha: 1
@@ -402,8 +294,6 @@ activecomp {
       isPointText: true
       isLabel: true
       text: "39m"
-      multiline: false
-      isAllCaps: false
     }
   }
   classname: "CYIPushButtonView"
@@ -415,7 +305,6 @@ activecomp {
   }
   properties {
     key: "2D6A9425-7795-4E35-9E4F-B97217435703"
-    value: ""
   }
   properties {
     key: "componentSubtype"
@@ -432,11 +321,9 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
 sources {
   uid: 501
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-UpNext-Alternate.layout"
   width: 1560
   height: 876

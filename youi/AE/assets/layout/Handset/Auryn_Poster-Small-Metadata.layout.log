@@ -2,16 +2,15 @@ activecomp {
   name: "Auryn_Poster-Small-Metadata"
   width: 473
   height: 120
-  defaultcameradistance: 656.94446
+  defaultcameradistance: 656.944458
   layer {
     name: "Text-Details"
     id: 690016227
     sourceid: -1
     transform {
       anchorPoint {
-        x: 225.26991
-        y: 31.870331
-        z: 0
+        x: 225.269913
+        y: 31.8703308
       }
       scale {
         x: 1
@@ -19,25 +18,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 255.93829
-        y: 100.87033
-        z: 0
+        x: 255.938293
+        y: 100.870331
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 34
       fontColor {
         alpha: 1
@@ -46,14 +36,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-SemiBold"
-      isPointText: false
       boundsWidth: 409
       boundsHeight: 44
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -70,9 +57,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 226.35277
-        y: 33.299809
-        z: 0
+        x: 226.352768
+        y: 33.2998085
       }
       scale {
         x: 1
@@ -80,25 +66,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 256.20413
+        x: 256.204132
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 34
       fontColor {
         alpha: 1
@@ -107,14 +84,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 412
       boundsHeight: 90
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -161,8 +135,8 @@ sources {
   srctype: AE_FONT_SRC
   name: "Montserrat-SemiBold"
   copy_source: true
-  file_name: "yi_Montserrat-Semi Bold.otf"
-  style_name: "Semi Bold"
+  file_name: "yi_Montserrat-SemiBold.otf"
+  style_name: "SemiBold"
 }
 sources {
   uid: 2

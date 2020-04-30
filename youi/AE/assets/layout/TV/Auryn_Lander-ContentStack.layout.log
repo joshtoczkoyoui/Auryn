@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Lander-ContentStack"
   width: 1920
   height: 900
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Container-Live"
     id: 259843
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 450
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 960
         y: 3162
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -49,7 +40,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 450
-        z: 0
       }
       scale {
         x: 1
@@ -59,21 +49,13 @@ activecomp {
       position {
         x: 960
         y: 2258
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -87,7 +69,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 450
-        z: 0
       }
       scale {
         x: 1
@@ -97,21 +78,13 @@ activecomp {
       position {
         x: 960
         y: 1354
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -125,7 +98,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 450
-        z: 0
       }
       scale {
         x: 1
@@ -135,21 +107,13 @@ activecomp {
       position {
         x: 960
         y: 450
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -189,7 +153,6 @@ activecomp {
 }
 sources {
   uid: 259897
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Live.layout"
   width: 1920
   height: 900
@@ -197,7 +160,6 @@ sources {
 }
 sources {
   uid: 259885
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Shows.layout"
   width: 1920
   height: 900
@@ -205,7 +167,6 @@ sources {
 }
 sources {
   uid: 259873
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Movies.layout"
   width: 1920
   height: 900
@@ -213,7 +174,6 @@ sources {
 }
 sources {
   uid: 259861
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Discover.layout"
   width: 1920
   height: 900

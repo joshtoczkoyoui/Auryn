@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Nav-List"
   width: 1450
   height: 120
-  defaultcameradistance: 2013.8889
+  defaultcameradistance: 2013.88892
   layer {
     name: "Container-Btn-Nav-List"
     id: 690014269
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 75
         y: 60
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 225
         y: 60
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -44,9 +35,6 @@ activecomp {
   classname: "CYIListView"
   bgcolor {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   properties {
     key: "componentSubtype"
@@ -72,7 +60,6 @@ activecomp {
 }
 sources {
   uid: 690014402
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Btn-Nav-List.layout"
   width: 150
   height: 120

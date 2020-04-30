@@ -2,16 +2,15 @@ activecomp {
   name: "Auryn_Details"
   width: 500
   height: 50
-  defaultcameradistance: 694.44446
+  defaultcameradistance: 694.444458
   layer {
     name: "Text-Detail-2"
     id: 690012596
     sourceid: -1
     transform {
       anchorPoint {
-        x: -1.5919952
-        y: 15.870102
-        z: 0
+        x: -1.59199524
+        y: 15.8701019
       }
       scale {
         x: 1
@@ -20,24 +19,14 @@ activecomp {
       }
       position {
         x: 37.164
-        y: 31.250107
-        z: 0
+        y: 31.2501068
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 16
       fontColor {
         alpha: 1
@@ -46,11 +35,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 454
       boundsHeight: 18
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -70,9 +57,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: -1.5919952
-        y: 15.870102
-        z: 0
+        x: -1.59199524
+        y: 15.8701019
       }
       scale {
         x: 1
@@ -81,24 +67,15 @@ activecomp {
       }
       position {
         x: 37.164
-        y: 31.250107
-        z: 0
+        y: 31.2501068
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 16
       fontColor {
         alpha: 1
@@ -107,11 +84,9 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 454
       boundsHeight: 18
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

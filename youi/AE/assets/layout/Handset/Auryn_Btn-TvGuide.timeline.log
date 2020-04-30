@@ -4,7 +4,6 @@ tracks {
   targetname: "MiniGuide-button-outline.png"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -15,7 +14,6 @@ tracks {
   targetname: "MiniGuide-button-filled.png"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -25,31 +23,22 @@ tracks {
   targetid: 463
   targetname: "MiniGuide-button-filled.png"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.0166667
+    timeOffset: 2.01666665
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.3333333
+    timeOffset: 2.33333325
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2.35
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
@@ -62,32 +51,27 @@ tracks {
   targetname: "View TV Guide"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
 }
 markers {
   starttime: 2
-  duration: 0.016666668
+  duration: 0.0166666675
   name: "Press"
   tracksSelection {
     targetid: 463
     binding: OPACITY
   }
-  alltracks: false
   id: 18
-  looping: false
 }
 markers {
-  starttime: 2.3333333
-  duration: 0.016666668
+  starttime: 2.33333325
+  duration: 0.0166666675
   name: "Press-Checked"
   tracksSelection {
     targetid: 463
     binding: OPACITY
   }
-  alltracks: false
   id: 23
-  looping: false
 }

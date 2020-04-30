@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Container-Details"
   width: 635
   height: 117
-  defaultcameradistance: 881.94446
+  defaultcameradistance: 881.944458
   layer {
     name: "Details"
     id: 690015536
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 250
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 250
         y: 57.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Title"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 0.67199707
         y: 22.25
-        z: 0
       }
       scale {
         x: 1
@@ -54,24 +44,15 @@ activecomp {
       }
       position {
         x: 38
-        y: 29.750198
-        z: 0
+        y: 29.7501984
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 28
       fontColor {
         alpha: 1
@@ -80,11 +61,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 461
       boundsHeight: 64
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -125,7 +104,6 @@ activecomp {
 }
 sources {
   uid: 690012596
-  srctype: AE_COMP_SRC
   name: "Auryn_Details.layout"
   width: 500
   height: 50

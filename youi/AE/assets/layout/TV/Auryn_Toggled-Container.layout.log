@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Toggled-Container"
   width: 150
   height: 120
-  defaultcameradistance: 208.33333
+  defaultcameradistance: 208.333328
   layer {
     name: "title-toggled"
     id: 690015309
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 100
         y: 21.5
-        z: 0
       }
       scale {
         x: 1
@@ -19,23 +18,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 74.159828
-        y: 92.458122
-        z: 0
+        x: 74.1598282
+        y: 92.4581223
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 17
@@ -46,7 +36,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 200
       boundsHeight: 33
       isLabel: true

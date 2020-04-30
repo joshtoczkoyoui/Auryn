@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Layout-PDP-Meta"
   width: 848
   height: 589
-  defaultcameradistance: 1177.7778
+  defaultcameradistance: 1177.77783
   layer {
     name: "Gradient-PDP.png"
     id: 342
@@ -11,31 +11,22 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 294.5
-        z: 0
       }
       scale {
         x: 782
-        y: 1.018676
+        y: 1.01867604
         z: 1
       }
       position {
         x: 424
         y: 294.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "background"
       value: "true"
@@ -48,8 +39,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 368
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -59,21 +48,13 @@ activecomp {
       position {
         x: 424
         y: 263.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Title"
@@ -83,7 +64,6 @@ activecomp {
       anchorPoint {
         x: 226.03476
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -93,23 +73,13 @@ activecomp {
       position {
         x: 282.03476
         y: 91
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 49
       fontColor {
         alpha: 1
@@ -118,11 +88,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 736
       boundsHeight: 218
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -149,7 +117,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -157,25 +124,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 302.74466
+        x: 302.744659
         y: 51
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 21
       fontColor {
         alpha: 1
@@ -184,11 +141,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 737
       boundsHeight: 24
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -242,13 +197,11 @@ sources {
   width: 1
   height: 589
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 690015213
-  srctype: AE_COMP_SRC
   name: "Auryn_Layout-PDP-Meta-Body.layout"
   width: 736
   height: 293

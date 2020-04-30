@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Live-Icon"
   width: 35
   height: 35
-  defaultcameradistance: 48.611111
+  defaultcameradistance: 48.6111107
   bgcolor {
     alpha: 1
     red: 0.086274509803921567

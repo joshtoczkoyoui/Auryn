@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 522
         y: 1620
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 540
         y: 1920
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "height"
       value: "fill-parent"
@@ -63,7 +54,6 @@ activecomp {
 }
 sources {
   uid: 690016966
-  srctype: AE_COMP_SRC
   name: "Auryn_List-Search.layout"
   width: 1044
   height: 1620

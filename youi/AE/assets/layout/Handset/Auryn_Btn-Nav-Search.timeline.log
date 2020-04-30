@@ -4,7 +4,6 @@ tracks {
   targetname: "Icon-Search.png"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -14,31 +13,25 @@ tracks {
   targetid: 724
   targetname: "Icon-Search.png"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.0166667
+    timeOffset: 2.01666665
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 2.3333333
+    timeOffset: 2.33333325
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 2.35
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
@@ -51,7 +44,6 @@ tracks {
   targetname: "Icon-Search.png"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.76
     fvalue2: 0.76
@@ -67,7 +59,7 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.0166667
+    timeOffset: 2.01666665
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.62
     fvalue2: 0.62
@@ -75,7 +67,7 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.3333333
+    timeOffset: 2.33333325
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.76
     fvalue2: 0.76
@@ -93,7 +85,7 @@ tracks {
 }
 markers {
   starttime: 2
-  duration: 0.016666668
+  duration: 0.0166666675
   name: "Press"
   tracksSelection {
     targetid: 724
@@ -103,13 +95,11 @@ markers {
     targetid: 724
     binding: SCALE
   }
-  alltracks: false
   id: 18
-  looping: false
 }
 markers {
-  starttime: 2.3333333
-  duration: 0.016666668
+  starttime: 2.33333325
+  duration: 0.0166666675
   name: "Press-Checked"
   tracksSelection {
     targetid: 724
@@ -119,7 +109,5 @@ markers {
     targetid: 724
     binding: SCALE
   }
-  alltracks: false
   id: 23
-  looping: false
 }

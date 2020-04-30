@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 267
         y: 150
-        z: 0
       }
       scale {
         x: 2.02
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 540
         y: 303
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic"
@@ -45,31 +36,22 @@ activecomp {
       anchorPoint {
         x: 261
         y: 144
-        z: 0
       }
       scale {
-        x: 2.1041667
-        y: 2.1041667
+        x: 2.10416675
+        y: 2.10416675
         z: 1
       }
       position {
         x: 540
         y: 303
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Gradient-Player_2.png"
@@ -79,7 +61,6 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 548
-        z: 0
       }
       scale {
         x: 1080
@@ -89,21 +70,13 @@ activecomp {
       position {
         x: 540
         y: 610
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.7
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Metadata"
@@ -112,8 +85,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 219.09024
-        y: 26.639847
-        z: 0
+        y: 26.6398468
       }
       scale {
         x: 1
@@ -122,24 +94,15 @@ activecomp {
       }
       position {
         x: 296
-        y: 548.63983
-        z: 0
+        y: 548.639832
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 34
       fontColor {
         alpha: 1
@@ -148,14 +111,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-SemiBold"
-      isPointText: false
       boundsWidth: 438
       boundsHeight: 54
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -173,8 +133,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 219.09024
-        y: 26.639847
-        z: 0
+        y: 26.6398468
       }
       scale {
         x: 1
@@ -183,24 +142,15 @@ activecomp {
       }
       position {
         x: 296
-        y: 494.63983
-        z: 0
+        y: 494.639832
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 36
       fontColor {
         alpha: 1
@@ -209,11 +159,9 @@ activecomp {
         blue: 0.92548996210098267
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 438
       boundsHeight: 54
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -253,17 +201,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 534
   height: 300
-  copy_source: false
 }
 sources {
   uid: 1258
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-Half.layout"
   width: 522
   height: 288
@@ -276,7 +219,6 @@ sources {
   width: 1
   height: 548
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -285,8 +227,8 @@ sources {
   srctype: AE_FONT_SRC
   name: "Montserrat-SemiBold"
   copy_source: true
-  file_name: "yi_Montserrat-Semi Bold.otf"
-  style_name: "Semi Bold"
+  file_name: "yi_Montserrat-SemiBold.otf"
+  style_name: "SemiBold"
 }
 sources {
   uid: 5

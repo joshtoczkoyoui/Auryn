@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Nav-Icon-Toggled"
   width: 60
   height: 55
-  defaultcameradistance: 83.333336
+  defaultcameradistance: 83.3333359
   layer {
     name: "ImageNode"
     id: 690015906
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 15
         y: 15
-        z: 0
       }
       scale {
         x: 1.56
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 30
         y: 27
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIImageView"
   bgcolor {
@@ -56,7 +46,6 @@ sources {
   width: 30
   height: 30
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

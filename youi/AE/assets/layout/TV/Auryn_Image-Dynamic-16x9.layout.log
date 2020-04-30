@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Image-Dynamic-16x9"
   width: 961
   height: 540
-  defaultcameradistance: 1334.7222
+  defaultcameradistance: 1334.72217
   layer {
     name: "ImageNode"
     id: 690012547
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 480.5
         y: 270
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 480.5
         y: 270
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIImageView"
   bgcolor {
@@ -60,5 +50,4 @@ sources {
   }
   width: 961
   height: 540
-  copy_source: false
 }

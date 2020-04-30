@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Search"
   width: 200
   height: 74
-  defaultcameradistance: 277.77777
+  defaultcameradistance: 277.777771
   layer {
     name: "Red Solid 20"
     id: 973
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 100
         y: 37
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 100
         y: 37
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Deep Royal Blue Solid 12"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 97
         y: 33
-        z: 0
       }
       scale {
         x: 0.98
@@ -55,21 +44,13 @@ activecomp {
       position {
         x: 100
         y: 37
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Dark Royal Blue Solid 4"
@@ -79,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 97
         y: 33
-        z: 0
       }
       scale {
         x: 0.98
@@ -89,21 +69,12 @@ activecomp {
       position {
         x: 100
         y: 37
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "SEARCH"
@@ -113,7 +84,6 @@ activecomp {
       anchorPoint {
         x: 100
         y: 21.5
-        z: 0
       }
       scale {
         x: 1
@@ -121,23 +91,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 100.78397
-        y: 47.972118
-        z: 0
+        x: 100.783966
+        y: 47.9721184
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 28
@@ -148,13 +110,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 200
       boundsHeight: 33
       isLabel: true
       text: "SEARCH"
       multiline: true
-      isAllCaps: false
     }
   }
   classname: "CYIPushButtonView"
@@ -184,7 +144,6 @@ sources {
   }
   width: 200
   height: 74
-  copy_source: false
 }
 sources {
   uid: 2448
@@ -197,7 +156,6 @@ sources {
   }
   width: 194
   height: 66
-  copy_source: false
 }
 sources {
   uid: 2439
@@ -210,7 +168,6 @@ sources {
   }
   width: 194
   height: 66
-  copy_source: false
 }
 sources {
   uid: 4

@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Featured-Tile"
   width: 970
   height: 550
-  defaultcameradistance: 1347.2222
+  defaultcameradistance: 1347.22217
   layer {
     name: "Red Solid 29"
     id: 690012560
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 485
         y: 275
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 485
         y: 275
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic-16x9"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 480.5
         y: 270
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +44,13 @@ activecomp {
       position {
         x: 485
         y: 275
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Featured-Tile-Gradient-TV.png"
@@ -79,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 480.5
         y: 197
-        z: 0
       }
       scale {
         x: 1
@@ -89,21 +69,13 @@ activecomp {
       position {
         x: 485
         y: 348
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Details"
@@ -113,7 +85,6 @@ activecomp {
       anchorPoint {
         x: 250
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -123,21 +94,13 @@ activecomp {
       position {
         x: 250
         y: 512
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-Title"
@@ -147,7 +110,6 @@ activecomp {
       anchorPoint {
         x: 0.67199707
         y: 37.5
-        z: 0
       }
       scale {
         x: 1
@@ -157,23 +119,14 @@ activecomp {
       position {
         x: 30
         y: 485.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 48
       fontColor {
         alpha: 1
@@ -182,14 +135,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 953
       boundsHeight: 54
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -229,11 +179,9 @@ sources {
   }
   width: 970
   height: 550
-  copy_source: false
 }
 sources {
   uid: 690012547
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-16x9.layout"
   width: 961
   height: 540
@@ -246,13 +194,11 @@ sources {
   width: 961
   height: 394
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 690012596
-  srctype: AE_COMP_SRC
   name: "Auryn_Details.layout"
   width: 500
   height: 50

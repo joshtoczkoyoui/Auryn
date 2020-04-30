@@ -2,16 +2,15 @@ activecomp {
   name: "Auryn_Details"
   width: 366
   height: 172
-  defaultcameradistance: 508.33334
+  defaultcameradistance: 508.333344
   layer {
     name: "Text-Detail-1"
     id: 1172
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0.40800476
+        x: 0.408004761
         y: 15.5
-        z: 0
       }
       scale {
         x: 1
@@ -20,24 +19,15 @@ activecomp {
       }
       position {
         x: 8.352005
-        y: 51.984077
-        z: 0
+        y: 51.9840775
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 31
       fontColor {
         alpha: 1
@@ -46,14 +36,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 357
       boundsHeight: 67
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -72,7 +59,6 @@ activecomp {
       anchorPoint {
         x: 0.67199707
         y: 22.25
-        z: 0
       }
       scale {
         x: 1
@@ -81,24 +67,15 @@ activecomp {
       }
       position {
         x: 10.5
-        y: 26.175156
-        z: 0
+        y: 26.1751556
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 31
       fontColor {
         alpha: 1
@@ -107,11 +84,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 379
       boundsHeight: 102
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

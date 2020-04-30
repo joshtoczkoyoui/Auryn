@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Button-UpNext-Primary"
   width: 787
   height: 325
-  defaultcameradistance: 1093.0555
+  defaultcameradistance: 1093.05554
   layer {
     name: "Dark Gray Solid 1"
     id: 1012
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 393.5
         y: 162.5
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: -36.5
         y: 63.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1019
   }
   layer {
@@ -46,7 +37,6 @@ activecomp {
       anchorPoint {
         x: 310
         y: 162.5
-        z: 0
       }
       scale {
         x: 1
@@ -56,21 +46,13 @@ activecomp {
       position {
         x: 47
         y: 63
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1019
   }
   layer {
@@ -81,31 +63,22 @@ activecomp {
       anchorPoint {
         x: 516
         y: 163
-        z: 0
       }
       scale {
-        x: 1.1996124
+        x: 1.19961238
         y: 1
         z: 1
       }
       position {
         x: 354
         y: 63.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1019
   }
   layer {
@@ -114,33 +87,24 @@ activecomp {
     sourceid: 92
     transform {
       anchorPoint {
-        x: 6.6484391e-15
+        x: 6.64843911e-15
         y: 163
-        z: 0
       }
       scale {
-        x: 0.60975611
+        x: 0.609756112
         y: 1
         z: 1
       }
       position {
         x: -430
         y: 63.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 1019
   }
   layer {
@@ -149,9 +113,6 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -161,23 +122,14 @@ activecomp {
       position {
         x: 30
         y: 293
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 28
       fontColor {
         alpha: 1
@@ -189,8 +141,6 @@ activecomp {
       isPointText: true
       isLabel: true
       text: " 39m"
-      multiline: false
-      isAllCaps: false
     }
   }
   layer {
@@ -199,9 +149,6 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -210,24 +157,15 @@ activecomp {
       }
       position {
         x: 31.5
-        y: 124.02563
-        z: 0
+        y: 124.025635
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 33
       fontColor {
         alpha: 1
@@ -239,8 +177,6 @@ activecomp {
       isPointText: true
       isLabel: true
       text: "S2 E1  \342\200\242  Sorry Baby"
-      multiline: false
-      isAllCaps: false
     }
   }
   layer {
@@ -251,7 +187,6 @@ activecomp {
       anchorPoint {
         x: 201.5
         y: 19.5
-        z: 0
       }
       scale {
         x: 1
@@ -261,23 +196,14 @@ activecomp {
       position {
         x: 231.5
         y: 55.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 55
       fontColor {
         alpha: 1
@@ -286,13 +212,11 @@ activecomp {
         blue: 0.94510000944137573
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 397
       boundsHeight: 48
       isLabel: true
       text: "Killing Eve"
       multiline: true
-      isAllCaps: false
     }
   }
   layer {
@@ -301,9 +225,6 @@ activecomp {
     sourceid: 1492
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -313,21 +234,13 @@ activecomp {
       position {
         x: 430
         y: 99
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -357,11 +270,9 @@ sources {
   }
   width: 787
   height: 325
-  copy_source: false
 }
 sources {
   uid: 1306
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-UpNext-Primary.layout"
   width: 620
   height: 325
@@ -374,7 +285,6 @@ sources {
   width: 516
   height: 325
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -385,7 +295,6 @@ sources {
   width: 451
   height: 325
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -410,5 +319,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

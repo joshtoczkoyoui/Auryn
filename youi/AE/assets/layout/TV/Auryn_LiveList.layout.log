@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_LiveList"
   width: 1775
   height: 784
-  defaultcameradistance: 2465.2778
+  defaultcameradistance: 2465.27783
   classname: "CYIListView"
   bgcolor {
     alpha: 1

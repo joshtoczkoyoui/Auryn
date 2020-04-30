@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Container-Btn-Poster-Small"
   width: 525
   height: 942
-  defaultcameradistance: 729.16669
+  defaultcameradistance: 729.166687
   layer {
     name: "Btn-Poster-Small"
     id: 1086
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 236.5
         y: 445
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 262.5
         y: 471
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -47,7 +38,6 @@ activecomp {
 }
 sources {
   uid: 869
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Poster-Small.layout"
   width: 473
   height: 890

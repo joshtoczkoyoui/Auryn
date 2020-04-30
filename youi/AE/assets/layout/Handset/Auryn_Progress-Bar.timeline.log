@@ -4,7 +4,6 @@ tracks {
   targetname: "BG"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -15,7 +14,6 @@ tracks {
   targetname: "ProgressBar"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -26,9 +24,7 @@ tracks {
   targetname: "ProgressBar"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
     fvalue2: 1
     fvalue3: 1
   }
@@ -36,13 +32,12 @@ tracks {
     datatype: AE_FLOAT_VECTOR_DATA
     timeOffset: 1
     inttype: AE_INTERP_LINEAR
-    fvalue1: 0
     fvalue2: 1
     fvalue3: 1
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 2.6666667
+    timeOffset: 2.66666675
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
     fvalue2: 1
@@ -52,13 +47,11 @@ tracks {
 }
 markers {
   starttime: 1
-  duration: 1.6666666
+  duration: 1.66666663
   name: "ProgressStart"
   tracksSelection {
     targetid: 1848
     binding: SCALE
   }
-  alltracks: false
   id: 27
-  looping: false
 }

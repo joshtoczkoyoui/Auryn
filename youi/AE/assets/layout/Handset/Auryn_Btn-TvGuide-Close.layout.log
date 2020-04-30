@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-TvGuide-Close"
   width: 1420
   height: 1080
-  defaultcameradistance: 1972.2222
+  defaultcameradistance: 1972.22217
   classname: "CYIPushButtonView"
   bgcolor {
     alpha: 1

@@ -2,16 +2,13 @@ activecomp {
   name: "Auryn_UpNext-Countdown"
   width: 272
   height: 64
-  defaultcameradistance: 377.77777
+  defaultcameradistance: 377.777771
   layer {
     name: "Timer"
     id: 767
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -20,24 +17,15 @@ activecomp {
       }
       position {
         x: 141
-        y: 63.661621
-        z: 0
+        y: 63.6616211
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 28
       fontColor {
         alpha: 1
@@ -49,8 +37,6 @@ activecomp {
       isPointText: true
       isLabel: true
       text: "10s"
-      multiline: false
-      isAllCaps: false
     }
   }
   layer {
@@ -59,9 +45,6 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -69,25 +52,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 63.661621
-        z: 0
+        y: 63.6616211
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 28
       fontColor {
         alpha: 1
@@ -99,7 +72,6 @@ activecomp {
       isPointText: true
       isLabel: true
       text: "Up Next"
-      multiline: false
       isAllCaps: true
     }
   }

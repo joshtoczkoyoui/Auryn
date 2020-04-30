@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Nav-List"
   width: 1002
   height: 187
-  defaultcameradistance: 1391.6666
+  defaultcameradistance: 1391.66663
   layer {
     name: "Btn-Nav-List"
     id: 690014353
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 112.5
         y: 70
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 781
         y: 93.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -49,7 +40,6 @@ activecomp {
       anchorPoint {
         x: 112.5
         y: 70
-        z: 0
       }
       scale {
         x: 1
@@ -57,23 +47,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 594.33331
+        x: 594.333313
         y: 93.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -87,7 +69,6 @@ activecomp {
       anchorPoint {
         x: 112.5
         y: 70
-        z: 0
       }
       scale {
         x: 1
@@ -95,23 +76,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 407.66666
+        x: 407.666656
         y: 93.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -125,7 +98,6 @@ activecomp {
       anchorPoint {
         x: 112.5
         y: 70
-        z: 0
       }
       scale {
         x: 1
@@ -135,21 +107,13 @@ activecomp {
       position {
         x: 221
         y: 93.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "placeholder"
       value: "true"
@@ -158,9 +122,6 @@ activecomp {
   classname: "CYIListView"
   bgcolor {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   properties {
     key: "componentSubtype"
@@ -182,7 +143,6 @@ activecomp {
 }
 sources {
   uid: 690014383
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Nav-List.layout"
   width: 225
   height: 140

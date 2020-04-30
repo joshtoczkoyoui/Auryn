@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Max-Track"
   width: 1590
   height: 12
-  defaultcameradistance: 2208.3333
+  defaultcameradistance: 2208.33325
   layer {
     name: "BarBG"
     id: 1624
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 795
         y: 6
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 795
         y: 6
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -55,5 +46,4 @@ sources {
   }
   width: 1590
   height: 12
-  copy_source: false
 }

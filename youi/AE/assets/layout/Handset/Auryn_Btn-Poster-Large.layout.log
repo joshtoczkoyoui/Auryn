@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Poster-Large"
   width: 490
   height: 750
-  defaultcameradistance: 680.55554
+  defaultcameradistance: 680.555542
   layer {
     name: "Background"
     id: 838
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 300
-        z: 0
       }
       scale {
         x: 1.25
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 245
         y: 375
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Image-Dynamic"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 200
         y: 300
-        z: 0
       }
       scale {
         x: 1.25
@@ -55,21 +45,13 @@ activecomp {
       position {
         x: 245
         y: 375
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "PlayIcon.png"
@@ -79,7 +61,6 @@ activecomp {
       anchorPoint {
         x: 38
         y: 38
-        z: 0
       }
       scale {
         x: 1.66
@@ -89,21 +70,13 @@ activecomp {
       position {
         x: 245
         y: 375
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -131,17 +104,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 400
   height: 600
-  copy_source: false
 }
 sources {
   uid: 1222
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-2x3.layout"
   width: 400
   height: 600
@@ -154,7 +122,6 @@ sources {
   width: 76
   height: 76
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

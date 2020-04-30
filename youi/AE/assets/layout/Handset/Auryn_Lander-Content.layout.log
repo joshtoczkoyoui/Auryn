@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 540
         y: 1738
-        z: 0
       }
       scale {
         x: 1.00125
@@ -19,23 +18,16 @@ activecomp {
         z: 1.00125
       }
       position {
-        x: 540.70978
-        y: 1738.3806
+        x: 540.709778
+        y: 1738.38062
         z: -1000
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "margin-bottom"
       value: "188"
@@ -57,7 +49,6 @@ activecomp {
       anchorPoint {
         x: 0.5
         y: 250
-        z: 0
       }
       scale {
         x: 1080
@@ -67,21 +58,14 @@ activecomp {
       position {
         x: 540
         y: 250
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
       rotationZ: 180
       opacity: 0.5
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "layoutable"
       value: "false"
@@ -99,7 +83,6 @@ activecomp {
       anchorPoint {
         x: 540
         y: 960
-        z: 0
       }
       scale {
         x: 1
@@ -109,21 +92,13 @@ activecomp {
       position {
         x: 540
         y: 960
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     properties {
       key: "height"
       value: "fill-parent"
@@ -156,7 +131,6 @@ activecomp {
 }
 sources {
   uid: 1340
-  srctype: AE_COMP_SRC
   name: "Auryn_Lander-ContentStack.layout"
   width: 1080
   height: 1738
@@ -169,13 +143,11 @@ sources {
   width: 1
   height: 500
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
 sources {
   uid: 1673
-  srctype: AE_COMP_SRC
   name: "Auryn_Nav.layout"
   width: 1080
   height: 1920

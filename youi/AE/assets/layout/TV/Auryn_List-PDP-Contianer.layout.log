@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_List-PDP-Contianer"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "List-PDP"
     id: 690012230
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 882
         y: 200
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 950
         y: 883
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Text-ListTitle"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -53,25 +42,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 326.07596
+        x: 326.075958
         y: 664.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 29
       fontColor {
         alpha: 1
@@ -80,7 +59,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 1367
       boundsHeight: 60
       isLabel: true
@@ -107,7 +85,6 @@ activecomp {
 }
 sources {
   uid: 360
-  srctype: AE_COMP_SRC
   name: "Auryn_List-PDP.layout"
   width: 1764
   height: 400

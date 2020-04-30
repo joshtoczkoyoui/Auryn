@@ -4,7 +4,6 @@ tracks {
   targetname: "Btn-Back-noLine.png"
   keytimes {
     datatype: AE_INT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_HOLD
     ivalue1: 1
   }
@@ -14,20 +13,16 @@ tracks {
   targetid: 305
   targetname: "Btn-Back-noLine.png"
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
     timeOffset: 1
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
   }
   keytimes {
-    datatype: AE_FLOAT_DATA
-    timeOffset: 1.0833334
+    timeOffset: 1.08333337
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.6
   }
@@ -39,7 +34,6 @@ tracks {
   targetname: "Btn-Back-noLine.png"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 0
     inttype: AE_INTERP_LINEAR
     fvalue1: 1
     fvalue2: 1
@@ -55,7 +49,7 @@ tracks {
   }
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
-    timeOffset: 1.0833334
+    timeOffset: 1.08333337
     inttype: AE_INTERP_LINEAR
     fvalue1: 0.8
     fvalue2: 0.8
@@ -65,7 +59,7 @@ tracks {
 }
 markers {
   starttime: 1
-  duration: 0.083333336
+  duration: 0.0833333358
   name: "Press"
   tracksSelection {
     targetid: 305
@@ -75,7 +69,5 @@ markers {
     targetid: 305
     binding: SCALE
   }
-  alltracks: false
   id: 18
-  looping: false
 }

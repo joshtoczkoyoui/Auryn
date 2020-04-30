@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Poster-Small"
   width: 376
   height: 776
-  defaultcameradistance: 522.22223
+  defaultcameradistance: 522.222229
   layer {
     name: "Text-Container"
     id: 502
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 188
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 188
         y: 634
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Poster-Shadow-Small.png"
@@ -45,7 +36,6 @@ activecomp {
       anchorPoint {
         x: 211
         y: 317
-        z: 0
       }
       scale {
         x: 1
@@ -54,22 +44,14 @@ activecomp {
       }
       position {
         x: 188
-        y: 288.95239
-        z: 0
+        y: 288.952393
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -80,7 +62,6 @@ activecomp {
       anchorPoint {
         x: 188
         y: 288
-        z: 0
       }
       scale {
         x: 1
@@ -90,21 +71,13 @@ activecomp {
       position {
         x: 188
         y: 288
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -115,7 +88,6 @@ activecomp {
       anchorPoint {
         x: 188
         y: 288
-        z: 0
       }
       scale {
         x: 0.8916
@@ -125,21 +97,13 @@ activecomp {
       position {
         x: 188
         y: 368
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.8
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "Red Solid 10"
@@ -147,9 +111,7 @@ activecomp {
     sourceid: 299
     transform {
       anchorPoint {
-        x: 0
         y: 2
-        z: 0
       }
       scale {
         x: 1
@@ -157,23 +119,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0.037171435
+        x: 0.0371714346
         y: 2
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -184,7 +137,6 @@ activecomp {
       anchorPoint {
         x: 376
         y: 2
-        z: 0
       }
       scale {
         x: 1
@@ -192,23 +144,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 375.96268
+        x: 375.962677
         y: 575
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -218,8 +161,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 2
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -227,23 +168,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 374.00269
-        y: 0.93264604
-        z: 0
+        x: 374.002686
+        y: 0.932646036
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -253,8 +185,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 2
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -262,23 +192,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 2.0026937
-        y: 0.49815357
-        z: 0
+        x: 2.00269365
+        y: 0.498153567
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 505
   }
   layer {
@@ -289,7 +210,6 @@ activecomp {
       anchorPoint {
         x: 87
         y: 87
-        z: 0
       }
       scale {
         x: 0.0001
@@ -299,21 +219,12 @@ activecomp {
       position {
         x: 188
         y: 372
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -339,7 +250,6 @@ activecomp {
 }
 sources {
   uid: 690016656
-  srctype: AE_COMP_SRC
   name: "Auryn_Text-Container.layout"
   width: 376
   height: 96
@@ -352,7 +262,6 @@ sources {
   width: 422
   height: 634
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -361,17 +270,12 @@ sources {
   srctype: AE_SOLID_SRC
   color {
     alpha: 1
-    red: 0
-    green: 0
-    blue: 0
   }
   width: 376
   height: 576
-  copy_source: false
 }
 sources {
   uid: 284
-  srctype: AE_COMP_SRC
   name: "Auryn_Image-Dynamic-2x3.layout"
   width: 376
   height: 576
@@ -388,7 +292,6 @@ sources {
   }
   width: 376
   height: 4
-  copy_source: false
 }
 sources {
   uid: 301
@@ -401,7 +304,6 @@ sources {
   }
   width: 376
   height: 4
-  copy_source: false
 }
 sources {
   uid: 926
@@ -414,7 +316,6 @@ sources {
   }
   width: 4
   height: 576
-  copy_source: false
 }
 sources {
   uid: 924
@@ -427,7 +328,6 @@ sources {
   }
   width: 4
   height: 576
-  copy_source: false
 }
 sources {
   uid: 690015209
@@ -436,7 +336,6 @@ sources {
   width: 174
   height: 174
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

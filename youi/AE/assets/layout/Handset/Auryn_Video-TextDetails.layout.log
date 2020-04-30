@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Video-TextDetails"
   width: 1400
   height: 400
-  defaultcameradistance: 1944.4445
+  defaultcameradistance: 1944.44446
   layer {
     name: "Details"
     id: 1977
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 36
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -20,24 +19,15 @@ activecomp {
       }
       position {
         x: 38.375
-        y: 415.15182
-        z: 0
+        y: 415.151825
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.7
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 28
       fontColor {
         alpha: 1
@@ -46,14 +36,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 1406
       boundsHeight: 82
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -73,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 325
         y: 25
-        z: 0
       }
       scale {
         x: 1
@@ -83,21 +69,13 @@ activecomp {
       position {
         x: 325
         y: 340
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -125,7 +103,6 @@ sources {
 }
 sources {
   uid: 1467
-  srctype: AE_COMP_SRC
   name: "Auryn_Live-Metadata.layout"
   width: 650
   height: 50

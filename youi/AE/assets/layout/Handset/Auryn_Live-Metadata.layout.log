@@ -2,16 +2,15 @@ activecomp {
   name: "Auryn_Live-Metadata"
   width: 650
   height: 50
-  defaultcameradistance: 902.77777
+  defaultcameradistance: 902.777771
   layer {
     name: "Text-Detail-2"
     id: 1467
     sourceid: -1
     transform {
       anchorPoint {
-        x: -1.5919952
-        y: 15.870102
-        z: 0
+        x: -1.59199524
+        y: 15.8701019
       }
       scale {
         x: 1
@@ -19,25 +18,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 98.419937
-        y: 31.516935
-        z: 0
+        x: 98.4199371
+        y: 31.5169353
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.6
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 16
       fontColor {
         alpha: 1
@@ -46,11 +36,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 454
       boundsHeight: 28
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -71,8 +59,7 @@ activecomp {
     transform {
       anchorPoint {
         x: 21.75
-        y: 20.71973
-        z: 0
+        y: 20.7197304
       }
       scale {
         x: 1
@@ -80,23 +67,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 91.772217
-        y: 37.158562
-        z: 0
+        x: 91.7722168
+        y: 37.1585617
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.6
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 16
@@ -107,7 +86,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 41
       boundsHeight: 42
       isLabel: true
@@ -122,9 +100,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 0.40800476
+        x: 0.408004761
         y: 15.5
-        z: 0
       }
       scale {
         x: 1
@@ -132,25 +109,16 @@ activecomp {
         z: 1
       }
       position {
-        x: 5.1702118
-        y: 30.850834
-        z: 0
+        x: 5.17021179
+        y: 30.8508339
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 0.6
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 16
       fontColor {
         alpha: 1
@@ -159,11 +127,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 309
       boundsHeight: 26
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

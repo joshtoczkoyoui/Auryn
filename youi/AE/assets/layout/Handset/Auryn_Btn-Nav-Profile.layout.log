@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Btn-Nav-Profile"
   width: 60
   height: 60
-  defaultcameradistance: 83.333336
+  defaultcameradistance: 83.3333359
   layer {
     name: "Icon-Profile.png"
     id: 672
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 24.5
         y: 22.5
-        z: 0
       }
       scale {
         x: 0.76
@@ -19,23 +18,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 30.034828
-        y: 30.95812
-        z: 0
+        x: 30.0348282
+        y: 30.9581203
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIPushButtonView"
   bgcolor {
@@ -60,7 +51,6 @@ sources {
   width: 49
   height: 45
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

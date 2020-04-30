@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Text-Container"
   width: 376
   height: 96
-  defaultcameradistance: 522.22223
+  defaultcameradistance: 522.222229
   layer {
     name: "Text-Details"
     id: 690016656
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 4.5
-        z: 0
       }
       scale {
         x: 1
@@ -20,22 +19,13 @@ activecomp {
       }
       position {
         x: 256.092
-        y: 59.536484
-        z: 0
+        y: 59.5364838
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 18
@@ -46,14 +36,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 361
       boundsHeight: 124
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
-      isAllCaps: false
     }
     properties {
       key: "text-placeholder"
@@ -72,7 +59,6 @@ activecomp {
       anchorPoint {
         x: 256
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -81,22 +67,13 @@ activecomp {
       }
       position {
         x: 256.02002
-        y: 55.609585
-        z: 0
+        y: 55.6095848
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
       justification: AE_TEXT_CENTER
       fontSize: 30
@@ -107,11 +84,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 374
       boundsHeight: 76
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

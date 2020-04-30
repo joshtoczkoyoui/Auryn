@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Search"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Dark Blue Solid 1"
     id: 743
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 86
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 50
         y: -24
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 750
   }
   layer {
@@ -45,8 +35,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 882
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -56,21 +44,12 @@ activecomp {
       position {
         x: 960
         y: 50
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 748
   }
   layer {
@@ -81,7 +60,6 @@ activecomp {
       anchorPoint {
         x: 440
         y: 60
-        z: 0
       }
       scale {
         x: 1
@@ -90,24 +68,14 @@ activecomp {
       }
       position {
         x: 537.72
-        y: 58.280121
-        z: 0
+        y: 58.2801208
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 29
       fontColor {
         alpha: 1
@@ -116,13 +84,11 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 880
       boundsHeight: 68
       isLabel: true
       text: "0 Results Found"
       multiline: true
-      isAllCaps: false
     }
     parentid: 748
   }
@@ -134,7 +100,6 @@ activecomp {
       anchorPoint {
         x: 512
         y: 37
-        z: 0
       }
       scale {
         x: 1
@@ -144,21 +109,12 @@ activecomp {
       position {
         x: 603
         y: -6
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 751
   }
   layer {
@@ -169,7 +125,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -179,21 +134,13 @@ activecomp {
       position {
         x: 45
         y: -68
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 749
   }
   layer {
@@ -202,9 +149,7 @@ activecomp {
     sourceid: 1480
     transform {
       anchorPoint {
-        x: 0
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -212,23 +157,14 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
         y: 540
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropTopRightAnchor"
@@ -237,8 +173,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 100
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -247,22 +181,13 @@ activecomp {
       }
       position {
         x: 1920
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropTopAnchor"
@@ -271,8 +196,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 50
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -281,22 +204,13 @@ activecomp {
       }
       position {
         x: 960
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropTopLeftAnchor"
@@ -304,9 +218,6 @@ activecomp {
     sourceid: 1480
     transform {
       anchorPoint {
-        x: 0
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -314,23 +225,13 @@ activecomp {
         z: 1
       }
       position {
-        x: 0
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   bgcolor {
     alpha: 1
@@ -361,11 +262,9 @@ sources {
   }
   width: 1920
   height: 172
-  copy_source: false
 }
 sources {
   uid: 690016871
-  srctype: AE_COMP_SRC
   name: "Auryn_List-Search.layout"
   width: 1764
   height: 738
@@ -381,7 +280,6 @@ sources {
 }
 sources {
   uid: 1023
-  srctype: AE_COMP_SRC
   name: "Auryn_TextInput.layout"
   width: 1024
   height: 74
@@ -389,7 +287,6 @@ sources {
 }
 sources {
   uid: 690011939
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Back.layout"
   width: 100
   height: 100
@@ -400,5 +297,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }

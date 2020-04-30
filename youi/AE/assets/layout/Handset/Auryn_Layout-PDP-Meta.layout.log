@@ -9,9 +9,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 98.500023
+        x: 98.5000229
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -19,25 +18,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 103.25999
+        x: 103.259995
         y: 878.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 36
       fontColor {
         alpha: 1
@@ -46,15 +35,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 891
       boundsHeight: 1400
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       leading: 65
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -78,7 +64,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 50.5
-        z: 0
       }
       scale {
         x: 1
@@ -88,23 +73,13 @@ activecomp {
       position {
         x: 246.132
         y: 828.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 42
       fontColor {
         alpha: 1
@@ -113,7 +88,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 953
       boundsHeight: 40
       isLabel: true
@@ -135,7 +109,6 @@ activecomp {
       anchorPoint {
         x: 256.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -145,23 +118,13 @@ activecomp {
       position {
         x: 259.26
         y: 390.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 36
       fontColor {
         alpha: 1
@@ -170,15 +133,12 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Medium"
-      isPointText: false
       boundsWidth: 893
       boundsHeight: 354
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       leading: 65
-      isAllCaps: false
     }
     classname: "CYISDFAtlasTextSceneNode"
     properties {
@@ -202,7 +162,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 48.5
-        z: 0
       }
       scale {
         x: 1
@@ -212,23 +171,13 @@ activecomp {
       position {
         x: 247.508
         y: 338.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 42
       fontColor {
         alpha: 1
@@ -237,7 +186,6 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 953
       boundsHeight: 38
       isLabel: true
@@ -257,9 +205,8 @@ activecomp {
     sourceid: -1
     transform {
       anchorPoint {
-        x: 98.500023
+        x: 98.5000229
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -267,25 +214,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 102.25999
+        x: 102.259995
         y: 114.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 62
       fontColor {
         alpha: 1
@@ -294,11 +231,9 @@ activecomp {
         blue: 1
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 895
       boundsHeight: 180
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true
@@ -321,7 +256,6 @@ activecomp {
       anchorPoint {
         x: 248.5
         y: 40.5
-        z: 0
       }
       scale {
         x: 1
@@ -329,25 +263,15 @@ activecomp {
         z: 1
       }
       position {
-        x: 248.69034
+        x: 248.690338
         y: 56.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     textinfo {
-      justification: AE_TEXT_LEFT
       fontSize: 30
       fontColor {
         alpha: 1
@@ -356,11 +280,9 @@ activecomp {
         blue: 0.50195997953414917
       }
       fontName: "Montserrat-Bold"
-      isPointText: false
       boundsWidth: 1137
       boundsHeight: 24
       isLabel: true
-      text: ""
       multiline: true
       ellipsis: true
       isAllCaps: true

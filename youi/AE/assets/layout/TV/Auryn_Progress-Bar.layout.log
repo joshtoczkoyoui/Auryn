@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_Progress-Bar"
   width: 96
   height: 96
-  defaultcameradistance: 133.33333
+  defaultcameradistance: 133.333328
   layer {
     name: "Progress-Bar10.png"
     id: 690012736
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -46,7 +37,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -56,21 +46,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -81,7 +63,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -91,21 +72,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -116,7 +89,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -126,21 +98,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -151,7 +115,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -161,21 +124,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -186,7 +141,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -196,21 +150,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -221,7 +167,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -231,21 +176,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -256,7 +193,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -266,21 +202,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -291,7 +219,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -301,21 +228,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -326,7 +245,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -336,21 +254,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     ishidden: true
   }
   layer {
@@ -361,7 +271,6 @@ activecomp {
       anchorPoint {
         x: 48
         y: 48
-        z: 0
       }
       scale {
         x: 1
@@ -371,21 +280,13 @@ activecomp {
       position {
         x: 48
         y: 48
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIProgressBarView"
   bgcolor {
@@ -414,7 +315,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -425,7 +325,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -436,7 +335,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -447,7 +345,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -458,7 +355,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -469,7 +365,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -480,7 +375,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -491,7 +385,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -502,7 +395,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -513,7 +405,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }
@@ -524,7 +415,6 @@ sources {
   width: 96
   height: 96
   numberOfFrames: 1
-  fps: 0
   loops: 1
   copy_source: true
 }

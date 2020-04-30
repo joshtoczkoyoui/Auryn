@@ -2,7 +2,7 @@ activecomp {
   name: "Auryn_PDP-Scroller"
   width: 1920
   height: 1080
-  defaultcameradistance: 2666.6667
+  defaultcameradistance: 2666.66675
   layer {
     name: "Deep Blue Solid 1"
     id: 389
@@ -11,7 +11,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 640
-        z: 0
       }
       scale {
         x: 1
@@ -21,21 +20,12 @@ activecomp {
       position {
         x: 960
         y: 640
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "List-PDP-Container"
@@ -45,7 +35,6 @@ activecomp {
       anchorPoint {
         x: 960
         y: 540
-        z: 0
       }
       scale {
         x: 1
@@ -55,21 +44,13 @@ activecomp {
       position {
         x: 50
         y: 740
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 395
   }
   layer {
@@ -80,7 +61,6 @@ activecomp {
       anchorPoint {
         x: 880
         y: 2
-        z: 0
       }
       scale {
         x: 1
@@ -90,21 +70,12 @@ activecomp {
       position {
         x: 50
         y: 764
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 395
   }
   layer {
@@ -115,7 +86,6 @@ activecomp {
       anchorPoint {
         x: 880
         y: 343.5
-        z: 0
       }
       scale {
         x: 1
@@ -125,21 +95,12 @@ activecomp {
       position {
         x: 50
         y: 343.5
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
-      opacity: 0
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 395
   }
   layer {
@@ -150,7 +111,6 @@ activecomp {
       anchorPoint {
         x: 50
         y: 50
-        z: 0
       }
       scale {
         x: 1
@@ -160,21 +120,13 @@ activecomp {
       position {
         x: 46
         y: -122
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
     parentid: 394
   }
   layer {
@@ -184,8 +136,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 100
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -194,22 +144,13 @@ activecomp {
       }
       position {
         x: 1920
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   layer {
     name: "ScaleWidthPropTopAnchor"
@@ -218,8 +159,6 @@ activecomp {
     transform {
       anchorPoint {
         x: 50
-        y: 0
-        z: 0
       }
       scale {
         x: 1
@@ -228,22 +167,13 @@ activecomp {
       }
       position {
         x: 960
-        y: 0
-        z: 0
       }
       orientation {
-        x: 0
-        y: 0
-        z: 0
       }
-      rotationX: 0
-      rotationY: 0
-      rotationZ: 0
       opacity: 1
     }
     acceptsshadows: true
     acceptslights: true
-    castsshadows: false
   }
   classname: "CYIScrollingView"
   bgcolor {
@@ -279,11 +209,9 @@ sources {
   }
   width: 1920
   height: 1280
-  copy_source: false
 }
 sources {
   uid: 690012230
-  srctype: AE_COMP_SRC
   name: "Auryn_List-PDP-Contianer.layout"
   width: 1920
   height: 1080
@@ -300,11 +228,9 @@ sources {
   }
   width: 1760
   height: 4
-  copy_source: false
 }
 sources {
   uid: 690016257
-  srctype: AE_COMP_SRC
   name: "Auryn_Container-Layout-PDP-Top.layout"
   width: 1760
   height: 687
@@ -312,7 +238,6 @@ sources {
 }
 sources {
   uid: 690011939
-  srctype: AE_COMP_SRC
   name: "Auryn_Btn-Back.layout"
   width: 100
   height: 100
@@ -323,5 +248,4 @@ sources {
   srctype: AE_NULL_SRC
   width: 100
   height: 100
-  copy_source: false
 }
