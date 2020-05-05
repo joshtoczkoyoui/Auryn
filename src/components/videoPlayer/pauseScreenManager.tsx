@@ -1,23 +1,44 @@
-import React from 'react';
+import React, { RefObject, createRef, Fragment, Component } from 'react';
+import { connect } from 'react-redux';
 import { ImageRef, ViewRef, TextRef, ButtonRef } from '@youi/react-native-youi';
-import { VideoContext } from './context';
-import { Asset } from './../../adapters/asset';
-import { Timeline } from './../timeline';
 
-interface PauseScreenManagerProps {
-  onClosed?: () => void;
+import { getDetailsByIdAndType } from './../../actions/tmdbActions';
+import { VideoContext, VideoContextType } from './context';
+import { Asset, AssetType } from './../../adapters/asset';
+import { Timeline } from './../timeline';
+import { withNavigation, NavigationInjectedProps } from 'react-navigation';
+import { getVideoSourceByYoutubeId } from '../../actions/youtubeActions';
+import { AdContextConsumer, AdState, AdContextType } from '../adManager/context';
+
+interface PauseScreenManagerProps extends NavigationInjectedProps {
+  related: Asset[];
+  getDetailsByIdAndType: (id: string, type: AssetType) => void;
+  getVideoSourceByYoutubeId: (youtubeId: string) => void;
+  onClosed: () => void;
 }
 
-const END_SQUEEZE_MS = 15 * 1000;
-
-class PauseScreenManager extends React.Component<PauseScreenManagerProps> {
-  declare context: React.ContextType<typeof VideoContext>;
+class PauseScreenManager extends Component<PauseScreenManagerProps> {
+  declare context: VideoContextType;
 
   static contextType = VideoContext;
 
-  endSqueezeCompressTimeline = React.createRef<Timeline>();
+  adContext!: AdContextType;
 
-  endSqueezeExpandTimeline = React.createRef<Timeline>();
+  private END_SQUEEZE_MS = 15 * 1000;
+
+  private endSqueezeCompressTimeline: RefObject<Timeline> = createRef();
+
+  private endSqueezeExpandTimeline: RefObject<Timeline> = createRef();
+
+  constructor(props: PauseScreenManagerProps) {
+    super(props);
+  }
+
+  shouldComponentUpdate(nextProps: PauseScreenManagerProps) {
+    if (nextProps.related !== this.props.related) return true;
+
+    return false;
+  }
 
   componentDidUpdate() {
     const { currentTime, duration, isLive, paused, scrubbingEngaged } = this.context;
@@ -26,7 +47,7 @@ class PauseScreenManager extends React.Component<PauseScreenManagerProps> {
 
     if (paused && scrubbingEngaged) return;
 
-    if (duration && currentTime && duration - currentTime < END_SQUEEZE_MS) {
+    if (duration && currentTime && duration - currentTime < this.END_SQUEEZE_MS) {
       this.context.setIsEnding(true);
       this.compressVideo();
     } else if (this.context.paused) {
@@ -39,14 +60,14 @@ class PauseScreenManager extends React.Component<PauseScreenManagerProps> {
   }
 
   compressVideo = () => {
-    if (this.context.isCompressed || !this.context.currentTime || this.context.currentTime < 1000) return;
+    if (this.context.isCompressed || this.adContext.takeLowerAdState() === AdState.shown) return;
 
     this.context.setIsCompressed(true);
     this.endSqueezeCompressTimeline.current?.play();
   };
 
   expandVideo = async () => {
-    if (!this.context.isCompressed) return;
+    if (!this.context.isCompressed || this.adContext.getIsAdCaptivated()) return;
 
     await this.endSqueezeExpandTimeline.current?.play();
 
@@ -54,7 +75,9 @@ class PauseScreenManager extends React.Component<PauseScreenManagerProps> {
   };
 
   playOnNext = async (asset: Asset) => {
-    this.context.setAsset(asset);
+    this.props.getDetailsByIdAndType(asset.id.toString(), asset.type);
+
+    this.props.getVideoSourceByYoutubeId(asset.youtubeId);
   };
 
   renderUpNextButton = (upNext: Asset) => {
@@ -82,26 +105,45 @@ class PauseScreenManager extends React.Component<PauseScreenManagerProps> {
   };
 
   render() {
-    const { currentTime, duration, paused, asset } = this.context;
+    const { related } = this.props;
+    const { currentTime, duration } = this.context;
 
-    const upnext = asset.similar[0] || asset;
+    const upnext = related[0];
     const timerText = duration && currentTime ? Math.floor((duration - currentTime) / 1000) : '';
-    const isTimerVisible = duration && currentTime ? duration - currentTime < END_SQUEEZE_MS : false;
+    const isTimerVisible = duration && currentTime ? duration - currentTime < this.END_SQUEEZE_MS : false;
 
     return (
-      <React.Fragment>
-        <ImageRef name="Image-Background" visible={paused} />
-        <Timeline name="EndSqueeze-Compress" ref={this.endSqueezeCompressTimeline} />
-        <Timeline name="EndSqueeze-Expand" ref={this.endSqueezeExpandTimeline} />
+      <AdContextConsumer>
+        {(adContext) => {
+          this.adContext = adContext;
+          if (adContext.takePauseAdState() === AdState.closed) {
+            this.props.onClosed();
+          }
 
-        <ViewRef name="UpNext-Countdown" visible={upnext !== null}>
-          <TextRef visible={isTimerVisible} name="Timer" text={timerText.toString()} />
-        </ViewRef>
+          return (
+            <Fragment>
+              <ImageRef name="Image-Background" visible={!adContext.pauseAdEnabled} />
+              <Timeline name="EndSqueeze-Compress" ref={this.endSqueezeCompressTimeline} />
+              <Timeline name="EndSqueeze-Expand" ref={this.endSqueezeExpandTimeline} />
 
-        {this.renderUpNextButton(upnext)}
-      </React.Fragment>
+              <ViewRef name="UpNext-Countdown" visible={upnext != null}>
+                <TextRef visible={isTimerVisible} name="Timer" text={timerText.toString()} />
+              </ViewRef>
+
+              {this.renderUpNextButton(upnext)}
+            </Fragment>
+          );
+        }}
+      </AdContextConsumer>
     );
   }
 }
 
-export default PauseScreenManager;
+const mapStateToProps = () => {};
+
+const mapDispatchToProps = {
+  getDetailsByIdAndType,
+  getVideoSourceByYoutubeId,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(withNavigation(PauseScreenManager));

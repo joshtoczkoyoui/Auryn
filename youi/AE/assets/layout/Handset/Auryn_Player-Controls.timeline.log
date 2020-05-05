@@ -4077,7 +4077,7 @@ tracks {
 tracks {
   binding: IS_VISIBLE
   targetid: 1774
-  targetname: "Live-TvGuide"
+  targetname: "Live-MiniGuide"
   keytimes {
     datatype: AE_INT_DATA
     inttype: AE_INTERP_HOLD

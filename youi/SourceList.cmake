@@ -1,22 +1,5 @@
-###
-# Copyright (c) You i Labs Inc.
-#
-# This source code is licensed under the MIT license found in the
-# LICENSE file in the root directory of this source tree.
-#
-###
+# =============================================================================
+# © You i Labs Inc. 2000-2019. All rights reserved.
+file(GLOB_RECURSE YI_PROJECT_SOURCE "src/*.cpp" "src/*.mm")
 
-set (YI_PROJECT_SOURCE
-    src/App.cpp
-    src/AppFactory.cpp
-    src/OrientationLockModule.cpp
-    src/TrackpadModule.cpp
-    src/RefUtilsModule.cpp
-)
-
-set (YI_PROJECT_HEADERS
-    src/App.h
-    src/OrientationLockModule.h
-    src/TrackpadModule.h
-    src/RefUtilsModule.h
-)
+file(GLOB_RECURSE YI_PROJECT_HEADERS "src/*.h")

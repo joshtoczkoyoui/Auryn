@@ -1,30 +1,38 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import React from 'react';
 import { View, BackHandler } from 'react-native';
-import { FormFactor } from '@youi/react-native-youi';
+import { VideoUriSource, FormFactor } from '@youi/react-native-youi';
+import { connect, DispatchProp } from 'react-redux';
 import { withNavigationFocus, NavigationEventSubscription, NavigationFocusInjectedProps } from 'react-navigation';
+
 import { withOrientation } from './../components';
+import { Asset } from './../adapters/asset';
+import { AurynAppState } from './../reducers/index';
 import { RotationMode, OrientationLock } from './../components/withOrientation';
 import { VideoPlayer, VideoContextProvider, VideoContext } from './../components/videoPlayer';
+import { VideoContextType } from '../components/videoPlayer/context';
+import AdManager from './../components/adManager';
+import { AdContextProvider } from './../components/adManager/context';
 import { AurynHelper } from '../aurynHelper';
 
-interface VideoProps extends NavigationFocusInjectedProps, OrientationLock { }
+interface VideoProps extends NavigationFocusInjectedProps, OrientationLock, DispatchProp {
+  asset: Asset;
+  fetched: boolean;
+  videoId: string;
+  videoSource: VideoUriSource;
+  isLive: boolean;
+}
 
-class VideoScreenComponent extends React.PureComponent<VideoProps> {
-  declare context: React.ContextType<typeof VideoContext>;
+class VideoScreenComponent extends React.Component<VideoProps> {
+  declare context: VideoContextType;
 
   static contextType = VideoContext;
 
-  focusListener!: NavigationEventSubscription;
+  private focusListener!: NavigationEventSubscription;
 
-  blurListener!: NavigationEventSubscription;
+  private blurListener!: NavigationEventSubscription;
+
+  private videoContext = React.createRef<VideoContextProvider>();
 
   componentDidMount() {
     this.focusListener = this.props.navigation.addListener('didFocus', () => {
@@ -34,6 +42,10 @@ class VideoScreenComponent extends React.PureComponent<VideoProps> {
     this.blurListener = this.props.navigation.addListener('didBlur', () => {
       BackHandler.removeEventListener('hardwareBackPress', this.navigateBack);
     });
+
+    this.videoContext.current?.setVideoSource(this.props.videoSource);
+
+    this.videoContext.current?.setIsLive(this.props.isLive);
   }
 
   componentWillUnmount() {
@@ -43,7 +55,29 @@ class VideoScreenComponent extends React.PureComponent<VideoProps> {
     BackHandler.removeEventListener('hardwareBackPress', this.navigateBack);
   }
 
+  componentDidUpdate(prevProps: VideoProps) {
+    // eslint-disable-line max-statements
+    if (this.props.videoId !== prevProps.videoId) {
+      this.videoContext.current?.setVideoSource(this.props.videoSource);
+    }
+    if (!prevProps.fetched && this.props.fetched) this.videoContext.current?.setVideoSource(this.props.videoSource);
+  }
+
+  shouldComponentUpdate(nextProps: VideoProps) {
+    if (nextProps.videoId !== this.props.videoId) {
+      return true;
+    }
+
+    if (nextProps.fetched !== this.props.fetched) {
+      return true;
+    }
+
+    return false;
+  }
+
   navigateBack = () => {
+    if (this.videoContext.current?.state.miniGuideOpen) return true;
+
     if (AurynHelper.isRoku)
       this.props.navigation.navigate({ routeName: 'PDP' });
     else
@@ -55,16 +89,24 @@ class VideoScreenComponent extends React.PureComponent<VideoProps> {
   };
 
   render() {
-    const { isFocused } = this.props;
+    const { fetched, asset, isFocused, isLive } = this.props;
+
+    if (!fetched && !isLive) return <View />;
 
     return (
       <View style={styles.container}>
-        <VideoContextProvider>
-          <VideoPlayer
-            isFocused={isFocused}
-            enablePauseScreen={true}
-            onBackButton={this.navigateBack}
-          />
+        <VideoContextProvider ref={this.videoContext}>
+          <AdContextProvider>
+            <AdManager pauseAdCompositionName={'Example-PlayerPauseAd_Ad-VAWAA-EndSqueeze'}>
+              <VideoPlayer
+                asset={asset}
+                isFocused={isFocused}
+                related={asset.similar}
+                enablePauseScreen={true}
+                onBackButton={this.navigateBack}
+              />
+            </AdManager>
+          </AdContextProvider>
         </VideoContextProvider>
       </View>
     );
@@ -78,7 +120,20 @@ const styles = {
   },
 };
 
+const mapStateToProps = (store: AurynAppState, ownProps: VideoProps) => {
+  const asset: Asset = ownProps.navigation.getParam('asset');
+  return {
+    videoSource: asset?.live?.streams?.[0] ?? (store.youtubeReducer.videoSource || { uri: '', type: '' }),
+    videoId: store.youtubeReducer.videoId || '',
+    asset: store.tmdbReducer.details.data || {},
+    fetched: store.youtubeReducer.fetched || false,
+    isLive: Boolean(asset?.live),
+  };
+};
 
-const withNavigation = withNavigationFocus(VideoScreenComponent);
+const mapDispatchToProps = {};
 
-export const VideoScreen = withOrientation(withNavigation, RotationMode.Landscape);
+const withNavigationAndRedux = withNavigationFocus(
+  connect(mapStateToProps, mapDispatchToProps)(VideoScreenComponent as any),
+);
+export const VideoScreen = withOrientation(withNavigationAndRedux, RotationMode.Landscape);

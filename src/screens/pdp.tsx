@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import React from 'react';
 import {
@@ -29,7 +22,7 @@ import { Asset } from '../adapters/asset';
 import { AurynHelper } from '../aurynHelper';
 import { AurynAppState } from '../reducers';
 import { ListType } from '../components/list';
-import { prefetchDetails, getDetailsByAsset } from '../actions/tmdbActions';
+import { prefetchDetails, getDetailsByIdAndType } from '../actions/tmdbActions';
 import { getVideoSourceByYoutubeId } from '../actions/youtubeActions';
 import { ListItemFocusEvent, ListItemPressEvent } from '../components/listitem';
 
@@ -60,9 +53,7 @@ class PdpScreen extends React.Component<PdpProps> {
   navigateBack = async () => {
     await this.outTimeline.current?.play();
 
-    if (this.props.navigation.getParam('fromSearch'))
-      this.props.navigation.navigate({ routeName: 'Search'});
-    else if (AurynHelper.isRoku)
+    if (AurynHelper.isRoku)
       this.props.navigation.navigate({ routeName: 'Lander' });
     else
       this.props.navigation.popToTop();
@@ -71,10 +62,10 @@ class PdpScreen extends React.Component<PdpProps> {
   };
 
   onPressItem: ListItemPressEvent = async (asset) => {
-    const { id } = asset;
+    const { id, type } = asset;
+    this.props.getDetailsByIdAndType(id, type);
     await this.contentOutTimeline.current?.play();
-    this.props.getDetailsByAsset(asset);
-    this.props.navigation.navigate({ routeName: 'PDP', params: { asset, fromSearch: this.props.navigation.getParam('fromSearch') }, key: id.toString() });
+    this.props.navigation.navigate({ routeName: 'PDP', params: { asset }, key: id.toString() });
     if (this.posterButton.current) FocusManager.focus(this.posterButton.current);
     await this.contentInTimeline.current?.play();
   };
@@ -86,11 +77,8 @@ class PdpScreen extends React.Component<PdpProps> {
   componentDidMount() {
     this.focusListener = this.props.navigation.addListener('didFocus', () => {
       BackHandler.addEventListener('hardwareBackPress', this.navigateBack);
+
       this.videoOutTimeline.current?.play();
-      setTimeout(() => {
-        if (this.posterButton.current)
-          FocusManager.focus(this.posterButton.current)
-      }, 1);
     });
 
     this.blurListener = this.props.navigation.addListener('didBlur', () =>
@@ -104,6 +92,16 @@ class PdpScreen extends React.Component<PdpProps> {
     this.focusListener.remove();
     this.blurListener.remove();
     BackHandler.removeEventListener('hardwareBackPress', this.navigateBack);
+  }
+
+  shouldComponentUpdate(nextProps: PdpProps) {
+    // Re-render if lost/gained focus
+    if (nextProps.isFocused !== this.props.isFocused) return true;
+
+    if (nextProps.fetched && !this.props.fetched) return true;
+
+    // Only render if the asset.id matches the requested pdp asset id
+    return nextProps.asset.id === nextProps.navigation.getParam('asset').id;
   }
 
   playVideo = async () => {
@@ -123,7 +121,7 @@ class PdpScreen extends React.Component<PdpProps> {
     const { asset } = this.props;
 
     // Asset Type
-    let metadataString = `${asset.type}`;
+    var metadataString = `${asset.type}`;
 
     // Season # or Runtime #
     switch (asset.type) {
@@ -138,10 +136,10 @@ class PdpScreen extends React.Component<PdpProps> {
         if (!asset.runtime)
           break;
 
-        const hours = (asset.runtime / 60);
-        const roundedHours = Math.floor(hours);
-        const minutes = (hours - roundedHours) * 60;
-        const roundedMinutes = Math.round(minutes);
+        var hours = (asset.runtime / 60);
+        var roundedHours = Math.floor(hours);
+        var minutes = (hours - roundedHours) * 60;
+        var roundedMinutes = Math.round(minutes);
 
         metadataString = metadataString.concat(` | ${roundedHours} hr ${roundedMinutes} min`)
 
@@ -155,6 +153,7 @@ class PdpScreen extends React.Component<PdpProps> {
   }
 
   render() {
+    // eslint-disable-line max-lines-per-function
     const { asset, fetched, isFocused } = this.props;
 
     if (!fetched || !isFocused) return <View />;
@@ -228,7 +227,7 @@ const mapStateToProps = (store: AurynAppState) => ({
 const mapDispatchToProps = {
   getVideoSourceByYoutubeId,
   prefetchDetails,
-  getDetailsByAsset,
+  getDetailsByIdAndType,
 };
 
 export const Pdp = withNavigationFocus(connect(mapStateToProps, mapDispatchToProps)(PdpScreen as any));

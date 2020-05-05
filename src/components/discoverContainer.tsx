@@ -1,17 +1,12 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
+/* eslint-disable max-len */
 
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 import { ListItem } from '.';
 import { Asset } from '../adapters/asset';
 import { ListItemPressEvent, ListItemFocusEvent } from './listitem';
 import { FormFactor } from '@youi/react-native-youi';
+import { AdListItem } from './adManager/list-item-ad';
 
 interface DiscoverContainerProps {
   data: Asset[];
@@ -21,6 +16,7 @@ interface DiscoverContainerProps {
   index: number;
 }
 
+// eslint-disable-next-line max-lines-per-function
 export const DiscoverContainer: React.FunctionComponent<DiscoverContainerProps> = ({
   data,
   onPressItem,
@@ -31,23 +27,27 @@ export const DiscoverContainer: React.FunctionComponent<DiscoverContainerProps> 
   if (data.length !== 3) return null;
 
   const smallItems = (
-    <View style={styles.smallContainer}>
+    <View style={{ flexDirection: 'row', justifyContent: FormFactor.isHandset ? 'space-between' : 'flex-start' }}>
       <ListItem
         focusable={focusable}
         onPress={onPressItem}
         onFocus={onFocusItem}
-        nextFocusDirection={index % 2 !== 0 ? 'up' : undefined}
+        shouldChangeFocus={index % 2 !== 0}
         imageType={{ type: 'Backdrop', size: 'Small' }}
         data={data[0]}
       />
-      <ListItem
-        focusable={focusable}
-        onPress={onPressItem}
-        onFocus={onFocusItem}
-        nextFocusDirection={index % 2 !== 0 ? 'up' : undefined}
-        imageType={{ type: 'Backdrop', size: 'Small' }}
-        data={data[1]}
-      />
+      {index !== 1 ? (
+        <ListItem
+          focusable={focusable}
+          onPress={onPressItem}
+          onFocus={onFocusItem}
+          shouldChangeFocus={index % 2 !== 0}
+          imageType={{ type: 'Backdrop', size: 'Small' }}
+          data={data[1]}
+        />
+      ) : (
+        <AdListItem focusable={focusable} onPress={onPressItem} onFocus={onFocusItem} />
+      )}
     </View>
   );
   const largeItem = (
@@ -55,14 +55,14 @@ export const DiscoverContainer: React.FunctionComponent<DiscoverContainerProps> 
       focusable={focusable}
       onPress={onPressItem}
       onFocus={onFocusItem}
-      nextFocusDirection={index % 2 === 0 ? 'up' : undefined}
+      shouldChangeFocus={index % 2 === 0}
       imageType={{ type: 'Backdrop', size: 'Large' }}
       data={data[2]}
     />
   );
   if (index % 2) {
     return (
-      <View style={styles.transparent}>
+      <View style={{ backgroundColor: 'transparent' }}>
         {smallItems}
         {largeItem}
       </View>
@@ -70,19 +70,9 @@ export const DiscoverContainer: React.FunctionComponent<DiscoverContainerProps> 
   }
 
   return (
-    <View style={styles.transparent}>
+    <View style={{ backgroundColor: 'transparent' }}>
       {largeItem}
       {smallItems}
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  smallContainer: {
-    flexDirection: 'row',
-    justifyContent: FormFactor.isHandset ? 'space-between' : 'flex-start'
-  },
-  transparent: {
-    backgroundColor: 'transparent'
-  }
-})

@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import * as Screens from './screens';
 import { createStackNavigator, createSwitchNavigator, StackNavigatorConfig } from 'react-navigation';
@@ -34,7 +27,8 @@ const AppStack = createNavigator(
     PDP: { screen: Screens.Pdp },
     Search: { screen: Screens.Search },
     Profile: { screen: Screens.Profile },
-    Video: { screen: Screens.Video }
+    Video: { screen: Screens.Video },
+    AdOverlay: { screen: Screens.AdOverlay },
   },
   {
     ...stackOptions,

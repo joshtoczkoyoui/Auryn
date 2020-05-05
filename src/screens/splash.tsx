@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import * as React from 'react';
 import { Composition, ViewRef } from '@youi/react-native-youi';
@@ -50,7 +43,7 @@ class SplashScreen extends React.Component<SplashProps> {
 
   render() {
     if (!tmdbApiKey)
-      return <Error message="Missing Tmdb API token, please add a token to secrets.ts"/>;
+      return <Error message="Missing TMDB API key. Please add a key to secrets.ts. See the README.md."/>;
 
     if (this.props.error)
       return <Error message={this.props.error}/>;

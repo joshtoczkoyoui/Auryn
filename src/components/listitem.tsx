@@ -1,28 +1,21 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
-import React from 'react';
-import { Composition, TextRef, ButtonRef, ImageRef, FormFactor, FocusDirection } from '@youi/react-native-youi';
+import React, { Fragment } from 'react';
+import { Composition, TextRef, ButtonRef, ImageRef, FormFactor } from '@youi/react-native-youi';
 import { Asset } from '../adapters/asset';
-import { View, StyleSheet } from 'react-native';
+import { View } from 'react-native';
 
-export type ListItemFocusEvent =
-  (asset: Asset, innerRef: React.RefObject<ButtonRef>, nextFocusDirection?: FocusDirection)
-  => void | Promise<void>
+export type ListItemFocusEvent = (
+  asset: Asset,
+  innerRef: React.RefObject<ButtonRef>,
+  shouldChangeFocus?: boolean,
+) => void | Promise<void>;
 
-export type ListItemPressEvent =
-  (asset: Asset, innerRef?: React.RefObject<ButtonRef>)
-  => void | Promise<void>
+export type ListItemPressEvent = (asset: Asset, innerRef?: React.RefObject<ButtonRef>) => void | Promise<void>;
 
 interface ListItemProps {
   imageType: ImageType;
   data: Asset;
-  nextFocusDirection?: FocusDirection;
+  shouldChangeFocus?: boolean;
   onFocus?: ListItemFocusEvent;
   onPress?: ListItemPressEvent;
   focusable?: boolean;
@@ -51,14 +44,14 @@ export class ListItem extends React.Component<ListItemProps> {
   }
 
   onFocus = () => {
-    this.props.onFocus?.(this.props.data, this.innerRef, this.props.nextFocusDirection);
-  }
+    this.props.onFocus?.(this.props.data, this.innerRef, this.props.shouldChangeFocus);
+  };
 
   onPress = () => {
     this.props.onPress?.(this.props.data, this.innerRef);
-  }
+  };
 
-  getGenresString = () => this.props.data.genres?.map(genre => genre?.name).join(', ');
+  getGenresString = () => this.props.data.genres?.map((genre) => genre?.name).join(', ');
 
   getTileMetadata = () => {
     const metadata = [];
@@ -70,8 +63,8 @@ export class ListItem extends React.Component<ListItemProps> {
       }
     }
 
-    if(FormFactor.isHandset && this.props.imageType.size === 'Wide'){
-      metadata.push(<TextRef name="Text-Metadata" text={`Season ${Math.ceil(Math.random()*6)}`} />);
+    if (FormFactor.isHandset && this.props.imageType.size === 'Wide') {
+      metadata.push(<TextRef name="Text-Metadata" text={`Season ${Math.ceil(Math.random() * 6)}`} />);
     }
 
     if (FormFactor.isHandset && this.props.imageType.size === 'Large' && this.props.imageType.type === 'Backdrop') {
@@ -82,13 +75,13 @@ export class ListItem extends React.Component<ListItemProps> {
       metadata.push(<TextRef name="Text-Details" text={this.getGenresString()} />);
     }
 
-    return <React.Fragment>{metadata}</React.Fragment>
-  }
+    return <Fragment>{metadata}</Fragment>;
+  };
   render() {
     const { data, imageType, focusable } = this.props;
 
     return (
-      <View style={!FormFactor.isHandset && imageType.size === 'Basic' ? styles.listItem : null}>
+      <View style={!FormFactor.isHandset && imageType.size === 'Basic' ? { marginRight: 22, marginBottom: 22 } : null}>
         <Composition source={this.compositionName}>
           <ButtonRef
             focusable={focusable}
@@ -99,11 +92,18 @@ export class ListItem extends React.Component<ListItemProps> {
           >
             <ImageRef
               name="Image-Dynamic"
-              source={{ uri: ['Small', 'Basic'].includes(imageType.size) ? data.thumbs[imageType.type] : data.images[imageType.type] }}
+              source={{
+                uri: ['Small', 'Basic'].includes(imageType.size)
+                  ? data.thumbs[imageType.type]
+                  : data.images[imageType.type],
+              }}
             />
 
-            {imageType.size !== 'Basic' ? <TextRef name="Text-Title" text={data.title} style={{ color:'#f6f1ee' }}/> : null}
+            {imageType.size != 'Basic' ? (
+              <TextRef name="Text-Title" text={data.title} style={{ color: '#f6f1ee' }} />
+            ) : null}
 
+            {/* Handset designs are not complete yet */}
             {this.getTileMetadata()}
           </ButtonRef>
         </Composition>
@@ -111,10 +111,3 @@ export class ListItem extends React.Component<ListItemProps> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  listItem: {
-    marginRight: 22,
-    marginBottom: 22
-  }
-})

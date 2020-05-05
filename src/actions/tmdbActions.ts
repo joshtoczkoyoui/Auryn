@@ -1,17 +1,9 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
 /* eslint-disable max-len */
 
 import { tmdbApiKey } from '../secrets';
 import { Dispatch } from 'redux';
 import { TmdbApi } from '../adapters/tmdbAdapter';
-import { AssetType, Asset } from '../adapters/asset';
+import { AssetType } from '../adapters/asset';
 import { TmdbActionTypes, TmdbStore } from '../typings/tmdbReduxTypes';
 
 const familyFilter = false;
@@ -79,18 +71,13 @@ export const prefetchDetails = (id: number | string, type: AssetType) => (dispat
   });
 };
 
-export const getDetailsByAsset = (asset: Asset, config?: { isLive?: boolean}) => (dispatch: Dispatch, getState: () => TmdbStore) => {
-  const { id, type } = asset;
+export const getDetailsByIdAndType = (id: number | string, type: AssetType) => (dispatch: Dispatch, getState: () => TmdbStore) => {
   const { tmdbReducer: { cache: { data } } } = getState();
-
   const cachedPayload = (data as TmdbApi[]).find(it => it.id === id && it.type === type);
   if (cachedPayload) {
     return dispatch({
       type: 'TMDB_DETAILS',
       payload: Promise.resolve(cachedPayload),
-      meta: {
-        isLive: config?.isLive
-      }
     });
   }
 
@@ -102,9 +89,6 @@ export const getDetailsByAsset = (asset: Asset, config?: { isLive?: boolean}) =>
         json.type = type;
         return json;
       }),
-    meta: {
-      isLive: config?.isLive
-    }
   });
 };
 

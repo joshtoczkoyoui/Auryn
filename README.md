@@ -1,8 +1,8 @@
 # Auryn
 <p float="left">
-  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/Auryn-Handset.png" alt="" width="257">
-  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/Auryn-Tablet.png" alt="" width="610">
-  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/Auryn-TV.png" alt="" width="872">
+  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/screenshots/Auryn-Handset.png" alt="" width="257">
+  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/screenshots/Auryn-Tablet.png" alt="" width="610">
+  <img src="https://raw.githubusercontent.com/YOU-i-Labs/Auryn/develop/screenshots/Auryn-TV.png" alt="" width="872">
 </p>
 
 Auryn is a simple React-Native sample application running on You.i Engine one.
@@ -55,14 +55,9 @@ cd Auryn
 yarn install
 ```
 
-Building the app is done via the `generate` and `build` scripts in the `youi`
-folder. Change directories to the `youi` folder.
+Building the app is done via the CLI. You can find the full documentations for this on our developer portal but we'll walk through the basics here.
 
-```shell
-cd youi/
-```
-
-`generate` will create the relevant project based on platform (Xcode,
+`youi-tv generate` will create the relevant project based on platform (Xcode,
 Android Studio, Visual Studio, etc.) in the corrosponding `build` folder.
 
 Additional supported platforms are: `osx, android, ios, tvos, tizen-nacl, uwp,
@@ -70,8 +65,8 @@ ps4, linux`
 
 For example, to build for OSX:
 ```shell
-./generate.rb -p osx [-c debug|release]
-./build.rb -b build/osx [-c debug|release]
+youi-tv generate -p osx [-c Debug|Release]
+youi-tv build -p osx [-c Debug|Release]
 ```
 For additional information on the build scripts please refer to [this
 page.](https://developer.youi.tv/latest/Content/RN_BuildingAppsTopics/H2RNBuildProc.htm)
@@ -84,7 +79,7 @@ yarn start
 
 Finally, in your other terminal window, start the app (the other terminal window should be still in the `Auryn/youi` directory):
 ```shell
-open build/osx/Debug/Auryn
+youi-tv run -p osx [-c Debug|Release]
 ```
 
 ## Debugging
@@ -107,7 +102,7 @@ Splash Screen will not navigate to the main Lander.
 You.i Engine apps provide a verbose amount of information in debug mode which
 is useful for development, but taxing on most devices. You will see significant
 performance improvements in Release mode. To build in Release pass the `-c
-release` flag to the build scripts, or choose the proper configuration in your
+Release` flag to the build scripts, or choose the proper configuration in your
 IDE.
 
 ## Support

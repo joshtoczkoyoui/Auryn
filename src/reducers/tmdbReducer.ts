@@ -1,11 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
-
 /* eslint-disable complexity */
 import { fromApi, TmdbApi } from '../adapters/tmdbAdapter';
 import { TmdbReducerState, TmdbActionTypes } from '../typings/tmdbReduxTypes';
@@ -184,14 +176,10 @@ export const tmdbReducer = (state = initialState, action: TmdbActionTypes): Tmdb
       };
 
     case 'TMDB_DETAILS_FULFILLED':
-      const asset = fromApi(action.payload);
-      if (action.meta.isLive) {
-        asset.live = state.live.data?.find(it => it.id === asset.id && it.type == asset.type)?.live;
-      }
       return {
         ...state,
         details: {
-          data: asset,
+          data: fromApi(action.payload),
           fetching: false,
           fetched: true,
         },

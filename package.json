@@ -3,7 +3,7 @@
 	"version": "2.0.0",
 	"private": true,
 	"scripts": {
-		"start": "react-native start",
+		"start": "node node_modules/react-native/local-cli/cli.js start",
 		"prettier": "prettier --config ./.prettierrc --loglevel warn --write \"*/**/*.{ts,tsx,js}\"",
 		"lint": "eslint \"*/**/*.{ts,tsx}\"",
 		"tsc": "tsc --noEmit --skipLibCheck",
@@ -12,7 +12,7 @@
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.0.4",
 		"@ungap/url-search-params": "^0.1.2",
-		"@youi/react-native-youi": "5.14.0",
+		"@youi/react-native-youi": "5.15.0",
 		"react": "16.6.3",
 		"react-native": "0.58.6",
 		"react-navigation": "matanbareketyoui/react-navigation#2.18.4",
@@ -23,7 +23,7 @@
 		"youtube-stream-url": "matanbareketyoui/youtube-stream-url"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.0.0",
+		"@babel/core": "7.0.0",
 		"@types/jest": "^24.0.0",
 		"@types/lodash": "^4.14.147",
 		"@types/node": "^12.0.2",
@@ -45,13 +45,34 @@
 		"eslint-plugin-prettier": "^3.1.1",
 		"eslint-plugin-react": "^7.11.1",
 		"eslint-plugin-react-native": "^3.8.1",
-		"jest": "^24.9.0",
+		"jest": "^24.0.0",
 		"jest-fetch-mock": "^2.1.2",
-		"metro-react-native-babel-preset": "0.45.0",
+		"metro-react-native-babel-preset": "^0.45.0",
 		"prettier": "^1.17.1",
 		"react-native-typescript-transformer": "^1.2.12",
-		"react-test-renderer": "16.6.3",
+		"react-test-renderer": "^16.6.3",
 		"ts-jest": "^24.1.0",
-		"typescript": "^3.7.2"
+		"typescript": "^3.7.2",
+		"babel-preset-react-native": "4.0.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"babel-register": "^6.26.0"
+	},
+	"jest": {
+		"preset": "@youi/react-native-youi",
+		"transform": {
+			"^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+		},
+		"transformIgnorePatterns": [
+			"<rootDir>/node_modules/(?!(jest-)?react-native|@youi)"
+		],
+		"testPathIgnorePatterns": [
+			"/node_modules/",
+			"/appium/"
+		]
+	},
+	"youi": {
+		"entryFile": "index.youi.js",
+		"defaultBundleMode": "remote"
 	}
 }

@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import React from 'react';
 import { View, BackHandler } from 'react-native';
@@ -15,7 +8,7 @@ import { connect } from 'react-redux';
 import { Asset } from '../adapters/asset';
 import { AurynHelper } from '../aurynHelper';
 import { AurynAppState } from '../reducers';
-import { getDetailsByAsset, prefetchDetails, search } from '../actions/tmdbActions';
+import { getDetailsByIdAndType, prefetchDetails, search } from '../actions/tmdbActions';
 import { ListItemFocusEvent, ListItemPressEvent } from '../components/listitem';
 import { ListType } from '../components/list';
 
@@ -63,10 +56,10 @@ class SearchScreen extends React.Component<SearchProps> {
   }
 
   onPressItem: ListItemPressEvent = async asset => {
-    this.props.getDetailsByAsset(asset);
+    this.props.getDetailsByIdAndType(asset.id, asset.type);
     const navigateAction = NavigationActions.navigate({
       routeName: 'PDP',
-      params: { asset, fromSearch: true },
+      params: { asset },
       key: asset.id.toString(),
     });
     await this.outTimeline.current?.play();
@@ -79,7 +72,7 @@ class SearchScreen extends React.Component<SearchProps> {
 
   search = (query: string) => this.props.search(query);
 
-  render() {
+  render() { // eslint-disable-line max-lines-per-function
     const { isFocused, data } = this.props;
 
     if (!isFocused)
@@ -98,10 +91,10 @@ class SearchScreen extends React.Component<SearchProps> {
           onChangeText={this.search}
         />
 
-        <TextRef name="Results" text={`${data.length} Results Found`} visible={data.length !== 0}/>
+        <TextRef name="Popular Shows 2" text={`${data.length} Results Found`} />
 
         {data || !AurynHelper.isRoku ? <List
-          name="List-Search"
+          name="List-PDP"
           data={data}
           type={ListType.Search}
           horizontal={false}
@@ -109,7 +102,7 @@ class SearchScreen extends React.Component<SearchProps> {
           onPressItem={this.onPressItem}
           onFocusItem={this.onFocusItem}
           extraData={data}
-          numColumns={FormFactor.isHandset ? 3 : 6}
+          numColumns={FormFactor.isHandset?3:6}
         />
           : null
         }
@@ -126,7 +119,7 @@ const mapStateToProps = (store: AurynAppState) => ({
 });
 
 const mapDispatchToProps = {
-  getDetailsByAsset,
+  getDetailsByIdAndType,
   prefetchDetails,
   search,
 };

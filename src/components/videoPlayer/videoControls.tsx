@@ -1,13 +1,6 @@
 /* eslint-disable max-lines-per-function */
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
-import React from 'react';
+import React, { RefObject } from 'react';
 import {
   ViewRef,
   TextRef,
@@ -22,8 +15,8 @@ import {
 import { BackButton, Timeline, ToggleButton } from './../index';
 import { debounce } from 'lodash';
 import { Asset } from './../../adapters/asset';
-import { VideoContext } from './context';
-import { TvGuide } from './tvGuide';
+import { VideoContext, VideoContextType } from './context';
+import { MiniGuide } from './miniGuide';
 import { LiveListItem } from '../liveListitem';
 import { connect } from 'react-redux';
 import { AurynAppState } from '../../reducers';
@@ -33,7 +26,7 @@ interface PlayerControlProps {
   isFocused?: boolean;
   isLive?: boolean;
   asset: Asset;
-  videoPlayerRef: React.RefObject<VideoRef>;
+  videoPlayerRef: RefObject<VideoRef>;
   onBackButton: () => void;
 }
 
@@ -60,23 +53,21 @@ const keys = [
 
 const MIN_DURATION = 3000;
 
-const initialState = {
-  controlsActive: false,
-  pausedByScrubbing: false,
-};
-
 class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerControlState> {
-  declare context: React.ContextType<typeof VideoContext>;
+  declare context: VideoContextType;
 
   static contextType = VideoContext;
 
-  state = initialState
+  state = {
+    controlsActive: false,
+    pausedByScrubbing: false,
+  };
 
-  controlsHideTimeline = React.createRef<Timeline>();
+  private controlsHideTimeline = React.createRef<Timeline>();
 
-  controlsShowTimeline = React.createRef<Timeline>();
+  private controlsShowTimeline = React.createRef<Timeline>();
 
-  playButton = React.createRef<ToggleButton>();
+  private playButton = React.createRef<ToggleButton>();
 
   componentDidMount() {
     keys.concat(mediaKeys).forEach((key) => Input.addEventListener(key, this.registerUserActivity));
@@ -89,7 +80,7 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
   }
 
   componentDidUpdate() {
-    if (this.context.tvGuideOpen && this.state.controlsActive) {
+    if (this.context.miniGuideOpen && this.state.controlsActive) {
       this.debounceHidingControls.cancel();
       this.hideControls();
     }
@@ -108,15 +99,13 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
   showControls = () => {
     this.setState({ controlsActive: true });
 
-    if (this.playButton.current)
-      FocusManager.focus(this.playButton.current);
+    if (this.playButton.current) FocusManager.focus(this.playButton.current);
 
     this.controlsShowTimeline.current?.play();
   };
 
   hideControls = () => {
-    if (!this.context.isLive && this.playButton.current)
-      FocusManager.focus(this.playButton.current);
+    if (!this.context.isLive && this.playButton.current) FocusManager.focus(this.playButton.current);
 
     this.controlsHideTimeline.current?.play();
     this.setState({ controlsActive: false });
@@ -127,20 +116,17 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
       if (mediaKeys.includes(keyEvent.keyCode) && keyEvent.eventType === 'up') this.playPause();
     }
 
-    if (!this.state.controlsActive && !this.context.tvGuideOpen) {
+    if (!this.state.controlsActive && !this.context.miniGuideOpen) {
       this.showControls();
       this.debounceHidingControls();
     }
   };
 
   seekAndResume = (time: number) => {
-    if (this.context.mediaState !== 'ready')
-      return;
-
+    if (this.context.mediaState !== 'ready') return;
     this.props.videoPlayerRef.current?.seek(time);
 
-    if (!this.state.pausedByScrubbing)
-      return;
+    if (!this.state.pausedByScrubbing) return;
 
     this.props.videoPlayerRef.current?.play();
 
@@ -148,8 +134,7 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
   };
 
   onScrub = debounce((value: number) => {
-    if (value === this.context.currentTime)
-      return;
+    if (value === this.context.currentTime) return;
 
     this.context.setScrubbingEngaged(true);
 
@@ -174,8 +159,9 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
   debounceHidingControls = debounce(this.hideControls, 5000);
 
   render() {
-    const { isFocused } = this.props;
-    const { asset, duration, isLive, paused, formattedTime, currentTime } = this.context;
+    const { asset, isFocused } = this.props;
+    const { duration } = this.context;
+
     const isSliderVisible = duration && duration > MIN_DURATION ? true : false;
 
     return (
@@ -185,43 +171,42 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
           <BackButton focusable={isFocused} onPress={this.props.onBackButton} />
           <Timeline name="Show" ref={this.controlsShowTimeline} />
           <Timeline name="Hide" ref={this.controlsHideTimeline} />
-          <Timeline name="Set-Live" playOnTrue={this.state.controlsActive && isLive} />
+          <Timeline name="Set-Live" playOnTrue={this.state.controlsActive && this.context.isLive} />
 
           <ToggleButton
             name="Btn-PlayPause"
             onPress={this.playPause}
-            toggled={!paused || this.state.pausedByScrubbing}
-            focusable={!isLive}
+            toggled={!this.context.paused || this.state.pausedByScrubbing}
+            focusable={!this.context.isLive}
             ref={this.playButton}
-            visible={this.state.controlsActive && !isLive}
+            visible={this.state.controlsActive && !this.context.isLive}
           />
           <ViewRef name="Player-Scrubber-Container">
-            <TextRef name="Duration" text={formattedTime} visible={!isLive}/>
+            <TextRef name="Duration" text={this.context.formattedTime} visible={!this.context.isLive} />
             <SliderRef
               visible={isSliderVisible}
               name="Bar"
               minimumTrackTintColor="#DA1B5B"
-              maximumValue={duration}
-              value={currentTime}
+              maximumValue={this.context.duration}
+              value={this.context.currentTime}
               thumbImage={{ uri: 'res://drawable/default/Player-Thumb.png' }}
               onSlidingComplete={this.onSlidingComplete}
               onValueChange={this.onScrub}
               step={1}
             />
           </ViewRef>
+          <MiniGuide asset={this.props.asset} />
 
-          <TvGuide />
-          <ButtonRef
-            name="Btn-TvGuide"
-            visible={isLive}
-          />
-
+          <ButtonRef name="Btn-MiniGuide" visible={this.context.isLive} />
           {FormFactor.isHandset ? <TextRef name="Title" text={asset.title} /> : null}
           <ViewRef name="Video-TextDetails">
             {!FormFactor.isHandset ? <TextRef name="Title" text={asset.title} /> : null}
-            <ViewRef name="Live-Metadata" visible={isLive}>
-              <TextRef name="Text-Detail-1" text={LiveListItem.getRemainingString(this.props.liveData.find(it => it.id === asset.id))}/>
-              <TextRef name="Text-Detail-2" text={asset.genres?.map(genre => genre?.name).join(', ')}/>
+            <ViewRef name="Live-Metadata" visible={this.context.isLive}>
+              <TextRef
+                name="Text-Detail-1"
+                text={LiveListItem.getRemainingString(this.props.liveData.find((it) => it.id === this.props.asset.id))}
+              />
+              <TextRef name="Text-Detail-2" text={this.props.asset.genres?.map((genre) => genre?.name).join(', ')} />
             </ViewRef>
             <TextRef name="Details" visible={false} text={asset.details} />
           </ViewRef>

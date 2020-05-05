@@ -1,5 +1,6 @@
-import { DeviceInfo } from '@youi/react-native-youi';
+import { DeviceInfo, Ref } from '@youi/react-native-youi';
 import { NativeModules, findNodeHandle } from 'react-native';
+import { once } from 'lodash';
 
 const systemName = DeviceInfo.getSystemName();
 const { Cloud, RefUtils } = NativeModules;
@@ -8,7 +9,8 @@ interface AurynHelper {
   hasHardwareBackButton: boolean;
   isRoku: boolean;
   updateCloudScene: (component: React.RefObject<any>) => void;
-  togglePointerEvents: (ref: React.RefObject<any>, enabled: boolean, onParentComp?: boolean) => void;
+  togglePointerEvents: (ref: Ref, enabled: boolean) => boolean;
+  toggleParentPointerEvents: (ref: Ref, enabled: boolean) => boolean;
 }
 
 export const AurynHelper: AurynHelper = {
@@ -21,13 +23,12 @@ export const AurynHelper: AurynHelper = {
       Cloud.sendFocusMap();
     }, 300);
   },
-  togglePointerEvents: (ref, enabled, onParentComp = false) => {
-    if (!ref.current) return;
-
-    if (onParentComp) {
-      RefUtils.setParentCompositionPointerEvents(findNodeHandle(ref.current), enabled);
-    } else {
-      RefUtils.setPointerEvents(findNodeHandle(ref.current), enabled);
-    }
-  },
+  togglePointerEvents: once((ref: Ref, enabled: boolean) => {
+    RefUtils.setPointerEvents(findNodeHandle(ref), enabled);
+    return true;
+  }),
+  toggleParentPointerEvents: once((ref: Ref, enabled: boolean) => {
+    RefUtils.setParentCompositionPointerEvents(findNodeHandle(ref), enabled);
+    return true;
+  }),
 };

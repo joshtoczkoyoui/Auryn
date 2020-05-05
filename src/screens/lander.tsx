@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import React from 'react';
 import { BackHandler, StyleSheet } from 'react-native';
@@ -22,7 +15,7 @@ import { AurynAppState } from '../reducers';
 import { ListItemFocusEvent, ListItemPressEvent } from '../components/listitem';
 import { ToggleButtonPress, ToggleButton } from '../components/toggleButton';
 import { ListType } from '../components/list';
-import { prefetchDetails, getDetailsByAsset } from '../actions/tmdbActions';
+import { prefetchDetails, getDetailsByIdAndType } from '../actions/tmdbActions';
 import { NavigationBar } from '../components/navigationBar';
 import { AurynHelper } from '../aurynHelper';
 
@@ -44,7 +37,9 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
 
   lists = Array.from(Array(4)).map(() => React.createRef<List>());
 
-  lastFocusItem? = React.createRef<ButtonRef>();
+  lastFocusItem = React.createRef<ButtonRef>();
+
+  lastFocusItemIsAd = false;
 
   lastFocusNavItem = React.createRef<ButtonRef>();
 
@@ -82,8 +77,10 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
         FocusManager.focus(this.lastFocusItem.current);
       }
 
-      this.navInTimeline.current?.play();
-      this.inTimeline.current?.play();
+      if (!this.lastFocusItemIsAd) {
+        this.navInTimeline.current?.play();
+        this.inTimeline.current?.play();
+      }
     });
     this.blurListener = this.props.navigation.addListener('didBlur', () =>
       BackHandler.removeEventListener('hardwareBackPress', this.navigateBack),
@@ -94,9 +91,7 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
     if (this.menuButtons[this.state.currentListIndex].current)
       FocusManager.focus(this.menuButtons[this.state.currentListIndex].current);
 
-    // Scroll up the live page to prevent overflow
-    if (this.state.currentListIndex === 3)
-      this.lists[3].current?.scrollToIndex(0);
+    if (this.state.currentListIndex === 3) this.lists[3].current?.scrollToIndex(0);
     return true;
   };
 
@@ -109,12 +104,11 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
   navigateToScreen = async (screen: string) => {
     const navigateAction = NavigationActions.navigate({ routeName: screen });
 
-    if (screen === 'Search')
-      this.lastFocusNavItem = this.searchButton;
-    else if (screen === 'Profile')
-      this.lastFocusNavItem = this.profileButton;
+    if (screen === 'Search') this.lastFocusNavItem = this.searchButton;
+    else if (screen === 'Profile') this.lastFocusNavItem = this.profileButton;
 
-    await Promise.all([this.navOutTimeline.current?.play(), this.outTimeline.current?.play()]);
+    this.outTimeline.current?.play();
+    await this.navOutTimeline.current?.play();
     this.props.navigation.dispatch(navigateAction);
   };
 
@@ -145,15 +139,23 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
     });
   };
 
-  onFocusItem: ListItemFocusEvent = (asset, ref, nextFocusDirection) => {
+  // eslint-disable-next-line max-params
+  onFocusItem: ListItemFocusEvent = (asset, ref, shouldChangeFocus) => {
     const { id, type } = asset;
     this.props.prefetchDetails(id, type);
     this.lastFocusItem = ref;
+    this.lastFocusItemIsAd = asset.id === 1234567;
 
-    if (!nextFocusDirection || AurynHelper.isRoku || !ref.current) return;
+    if (shouldChangeFocus === false || AurynHelper.isRoku || !ref.current) return;
+
+    // Live right focus
+    if (this.state.currentListIndex === 3) {
+      FocusManager.setNextFocus(ref.current, ref.current, 'right');
+      return;
+    }
 
     if (this.menuButtons[this.state.currentListIndex].current) {
-      FocusManager.setNextFocus(ref.current, this.menuButtons[this.state.currentListIndex].current, nextFocusDirection);
+      FocusManager.setNextFocus(ref.current, this.menuButtons[this.state.currentListIndex].current, 'up');
       for (let index = 0; index < this.lists.length; index++)
         FocusManager.setNextFocus(this.menuButtons[index].current, ref.current, 'down');
     }
@@ -164,19 +166,22 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
     }
   };
 
+  // eslint-disable-next-line max-params
   onPressItem: ListItemPressEvent = async (asset, ref) => {
+    const { id, type } = asset;
     this.lastFocusItem = ref;
     const navigateAction = NavigationActions.navigate({
       routeName: asset.live ? 'Video' : 'PDP',
+      params: { asset },
     });
-    this.props.getDetailsByAsset(asset, { isLive: Boolean(asset.live)});
-    await Promise.all([this.navOutTimeline.current?.play(), this.outTimeline.current?.play()]);
+    this.props.getDetailsByIdAndType(id, type);
+    this.outTimeline.current?.play();
+    await this.navOutTimeline.current?.play();
     this.props.navigation.dispatch(navigateAction);
   };
 
   componentDidUpdate(_prevProps: LanderProps, prevState: LanderState) {
-    if (this.state.currentListIndex !== prevState.currentListIndex)
-      AurynHelper.updateCloudScene(this.scroller);
+    if (this.state.currentListIndex !== prevState.currentListIndex) AurynHelper.updateCloudScene(this.scroller);
   }
 
   onViewableItemsChanged = () => {
@@ -289,6 +294,7 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
         <Timeline name="LanderOut" ref={this.outTimeline} />
         <ListRef
           name="Stack"
+          pointerEvents="auto"
           ref={this.scroller}
           scrollEnabled={false}
           horizontal={FormFactor.isHandset}
@@ -302,6 +308,8 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
           <Timeline name="In" ref={this.navInTimeline} />
           <Timeline name="Out" ref={this.navOutTimeline} />
         </ViewRef>
+
+        <ViewRef name="Nav-Logo">{/* <Timeline name="Loop" loop={true} /> */}</ViewRef>
       </Composition>
     );
   }
@@ -309,7 +317,7 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
 
 const styles = StyleSheet.create({
   listOffset: {
-    marginTop: FormFactor.isHandset ? 232 : 0,
+    marginTop: FormFactor.isHandset ? 232 : undefined,
   },
 });
 
@@ -322,7 +330,7 @@ const mapStateToProps = (store: AurynAppState) => ({
 
 const mapDispatchToProps = {
   prefetchDetails,
-  getDetailsByAsset,
+  getDetailsByIdAndType,
 };
 
 export const Lander = withNavigationFocus(connect(mapStateToProps, mapDispatchToProps)(LanderScreen as any));

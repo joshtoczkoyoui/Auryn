@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Composition, TextRef, ButtonRef, ImageRef, ViewRef, FormFactor, FocusDirection, FocusManager } from '@youi/react-native-youi';
+import { StyleProp, ViewStyle } from 'react-native';
+import { Composition, TextRef, ButtonRef, ImageRef, ViewRef, FormFactor } from '@youi/react-native-youi';
 
 import { Timeline } from '.';
 import { Asset } from '../adapters/asset';
@@ -8,10 +9,11 @@ import { ListItemFocusEvent, ListItemPressEvent } from './listitem';
 interface LiveListItemProps {
   onPress?: ListItemPressEvent;
   onFocus?: ListItemFocusEvent;
-  nextFocusDirection?: FocusDirection;
+  shouldChangeFocus: boolean;
   data: Asset;
   focusable?: boolean;
   visible?: boolean;
+  style?: StyleProp<ViewStyle>;
 }
 
 export class LiveListItem extends Component<LiveListItemProps> {
@@ -38,11 +40,7 @@ export class LiveListItem extends Component<LiveListItemProps> {
   progressTimeline = React.createRef<Timeline>();
 
   onFocus = () => {
-    if (this.props.nextFocusDirection === 'right' && this.buttonRef.current) {
-      FocusManager.setNextFocus(this.buttonRef.current, this.buttonRef.current, this.props.nextFocusDirection);
-    }
-
-    this.props.onFocus?.(this.props.data, this.buttonRef);
+    this.props.onFocus?.(this.props.data, this.buttonRef, this.props.shouldChangeFocus);
   };
 
   onPress = () => {
@@ -53,7 +51,7 @@ export class LiveListItem extends Component<LiveListItemProps> {
 
   render() {
     return (
-      <Composition source="Auryn_Live-Asset-Root">
+      <Composition source="Auryn_Live-Asset-Root" style={this.props.style}>
         <ButtonRef
           name="Live-Asset"
           ref={this.buttonRef}

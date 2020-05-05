@@ -7,21 +7,24 @@ interface ErrorProps {
 
 export const Error: React.FunctionComponent<ErrorProps> = ({ message }) => (
   <View style={styles.container}>
-    <Text style={styles.text}>{message}</Text>
+    <Text style={styles.errorText}>Error</Text>
+    <Text style={styles.messageText}>{message}</Text>
   </View>
 );
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    borderColor: 'black',
-    borderWidth: 3,
     backgroundColor: '#143672',
     alignItems: 'center',
     justifyContent: 'center',
-    flexWrap: 'wrap',
   },
-  text: {
+  errorText: {
+    fontSize: 40,
+    color: 'red',
+    padding: 15
+  },
+  messageText: {
     fontSize: 36,
     color: 'white',
   },

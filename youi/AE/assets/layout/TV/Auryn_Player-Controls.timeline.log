@@ -1525,7 +1525,7 @@ tracks {
 tracks {
   binding: IS_VISIBLE
   targetid: 519921
-  targetname: "Btn-TvGuide"
+  targetname: "Btn-MiniGuide"
   keytimes {
     datatype: AE_INT_DATA
     inttype: AE_INTERP_HOLD
@@ -1534,7 +1534,7 @@ tracks {
 }
 tracks {
   targetid: 519921
-  targetname: "Btn-TvGuide"
+  targetname: "Btn-MiniGuide"
   keytimes {
     datatype: AE_FLOAT_VECTOR_DATA
     inttype: AE_INTERP_LINEAR
@@ -3342,7 +3342,7 @@ tracks {
 tracks {
   binding: IS_VISIBLE
   targetid: 519924
-  targetname: "Live-TvGuide"
+  targetname: "Live-MiniGuide"
   keytimes {
     datatype: AE_INT_DATA
     inttype: AE_INTERP_HOLD

@@ -13,7 +13,7 @@ declare module '@youi/react-native-youi' {
     NativeEventSubscription,
     NativeSyntheticEvent,
     ScrollView,
-    Slider,
+    SliderProps,
     StyleProp,
     ViewStyle,
     ImageResizeMode,
@@ -75,14 +75,6 @@ declare module '@youi/react-native-youi' {
 
     maximumTrackTintColor?: string;
 
-    maximumValue?: number;
-
-    thumbImage?: ImageURISource;
-
-    step?: number;
-
-    onSlidingComplete?: (value: number) => void;
-
     onValueChange?: (value: number) => void;
 
     onFocus?: () => void;
@@ -140,8 +132,6 @@ declare module '@youi/react-native-youi' {
     source: VideoUriSource;
 
     muted?: boolean;
-
-    mediaPlaybackControlsEnabled?: boolean;
 
     metadata?: any;
   }
@@ -210,10 +200,7 @@ declare module '@youi/react-native-youi' {
   interface VideoUriSource {
     uri: string;
     type: string;
-    startTimeMs?: number;
-    drmScheme?: string;
-    headers?: any;
-    id?: any;
+    startTimeMs: number;
   }
 
   export type VideoRefFunction = (video: VideoRef) => void;
@@ -297,8 +284,6 @@ declare module '@youi/react-native-youi' {
 
   type Ref = any;
 
-  export type FocusDirection = 'up' | 'down' | 'right' | 'left' | 'forward' | 'reverse';
-
   interface FocusManagerInterface {
     getTag(refOrTag: Ref): void;
 
@@ -334,7 +319,7 @@ declare module '@youi/react-native-youi' {
     setNextFocus(
       fromRefOrTag: Ref,
       toRefOrTag: Ref,
-      focusDirection: FocusDirection,
+      focusDirection: 'up' | 'down' | 'right' | 'left' | 'forward' | 'reverse',
     ): void;
   }
 
@@ -547,7 +532,7 @@ declare module '@youi/react-native-youi' {
 
     onStartedReverse?(): void;
 
-    onCompositionDidLoad?(ref: TimelineRef): void;
+    onCompositionDidLoad(ref: TimelineRef): void;
   }
 
   export class TimelineRef extends React.Component<RefProps & TimelineRefProps> {}
@@ -564,9 +549,7 @@ declare module '@youi/react-native-youi' {
     stop: () => void;
   }
 
-  export class SliderRef extends React.Component<RefProps & SliderProps> {
-
-  }
+  export class SliderRef extends React.Component<RefProps & SliderProps> {}
 
   export interface ViewRefProps {
     name: string;
@@ -576,8 +559,6 @@ declare module '@youi/react-native-youi' {
     onFocus?: () => void;
 
     visible?: boolean;
-
-    style?: StyleProp<ViewStyle>;
   }
 
   export class ViewRef extends React.Component<RefProps & ViewRefProps> {}

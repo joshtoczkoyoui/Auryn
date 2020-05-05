@@ -1,10 +1,3 @@
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 import React from 'react';
 import { ListRef, ListItem as ListItemType, FormFactor } from '@youi/react-native-youi';
@@ -25,7 +18,7 @@ interface ListProps<T>  {
   onPressItem?: ListItemPressEvent;
   onFocusItem?: ListItemFocusEvent;
   name: string;
-  horizontal?: boolean;
+  horizontal: boolean;
   data: T[];
   snapToAlignment?: "start" | "center" | "end";
   numColumns?: number;
@@ -35,6 +28,10 @@ interface ListProps<T>  {
 interface ImageSettings extends ImageType { length: number }
 
 export class List extends React.Component<ListProps<Asset>> {
+  static defaultProps = {
+    extraData: [],
+    type: ListType.None,
+  };
 
   listRef = React.createRef<ListRef<Asset>>();
 
@@ -105,13 +102,11 @@ export class List extends React.Component<ListProps<Asset>> {
       switch (this.props.type) {
         case ListType.Grid:
         case ListType.Live:
-          return (<View style={{height:232}} />);
+          return (<View style={{height:232}}></View>);
         default:
           return null;
       }
-    }
-
-    return null;
+    } else {return null;}
   }
 
   isHorizontal = () => {
@@ -173,6 +168,7 @@ export class List extends React.Component<ListProps<Asset>> {
           initialNumToRender={AurynHelper.isRoku ? 100 : 2}
           getItemLayout={this.getItemLayout}
           renderItem={this.renderMultipleItems}
+          // ListHeaderComponent={this.renderHeaderItem}
           extraData={this.props.focusable}
           keyExtractor={this.keyExtractor}
           snapToAlignment={this.props.snapToAlignment}

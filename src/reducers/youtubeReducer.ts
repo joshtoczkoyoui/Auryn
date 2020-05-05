@@ -1,13 +1,6 @@
 import {  YoutubeApiActions } from '../actions/youtubeActions';
 import { VideoUriSource } from '@youi/react-native-youi';
 
-/**
- * Copyright (c) You i Labs Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- */
 
 export interface YoutubeReducerState {
   videoSource: VideoUriSource;
