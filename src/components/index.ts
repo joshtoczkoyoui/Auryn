@@ -1,5 +1,3 @@
-
-
 export { BackButton } from './backButton';
 export { DiscoverContainer } from './discoverContainer';
 export { List } from './list';

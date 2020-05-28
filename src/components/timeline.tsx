@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { TimelineRef, TimelineRefProps } from '@youi/react-native-youi';
 

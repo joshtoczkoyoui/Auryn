@@ -6,7 +6,6 @@
 #define APP_WIDTH (1920)
 #define APP_HEIGHT (1080)
 
-
 std::unique_ptr<CYIApp> AppFactory::Create()
 {
     return std::make_unique<App>();

@@ -1,4 +1,3 @@
-
 import * as React from 'react';
 import { Composition, ViewRef } from '@youi/react-native-youi';
 import { View, StyleSheet } from 'react-native';
@@ -31,22 +30,19 @@ class SplashScreen extends React.Component<SplashProps> {
 
   async componentDidUpdate() {
     if (this.props.fetched) {
-      if (!AurynHelper.isRoku)
-        await this.outTimeline.current?.play();
+      if (!AurynHelper.isRoku) await this.outTimeline.current?.play();
       const landerNavigationAction = NavigationActions.navigate({
         routeName: 'Lander',
       });
       this.props.navigation.dispatch(landerNavigationAction);
     }
-
   }
 
   render() {
     if (!tmdbApiKey)
-      return <Error message="Missing TMDB API key. Please add a key to secrets.ts. See the README.md."/>;
+      return <Error message="Missing TMDB API key. Please add a key to secrets.ts. See the README.md." />;
 
-    if (this.props.error)
-      return <Error message={this.props.error}/>;
+    if (this.props.error) return <Error message={this.props.error} />;
 
     return (
       <View style={styles.container}>
@@ -71,13 +67,13 @@ const styles = StyleSheet.create({
 
 const mapStateToProps = (store: AurynAppState, ownProps: SplashProps) => ({
   fetched:
-    (store.tmdbReducer.discover.fetched
-    && store.tmdbReducer.movies.fetched
-    && store.tmdbReducer.tv.fetched) || false,
+    (store.tmdbReducer.discover.fetched && store.tmdbReducer.movies.fetched && store.tmdbReducer.tv.fetched) || false,
   error:
-    store.tmdbReducer.discover.error
-    || store.tmdbReducer.movies.error
-    || store.tmdbReducer.tv.error || ownProps.error || '',
+    store.tmdbReducer.discover.error ||
+    store.tmdbReducer.movies.error ||
+    store.tmdbReducer.tv.error ||
+    ownProps.error ||
+    '',
 });
 
 const mapDispatchToProps = {

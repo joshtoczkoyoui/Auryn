@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View, BackHandler } from 'react-native';
 import { VideoUriSource, FormFactor } from '@youi/react-native-youi';
@@ -78,10 +77,8 @@ class VideoScreenComponent extends React.Component<VideoProps> {
   navigateBack = () => {
     if (this.videoContext.current?.state.miniGuideOpen) return true;
 
-    if (AurynHelper.isRoku)
-      this.props.navigation.navigate({ routeName: 'PDP' });
-    else
-      this.props.navigation.goBack(null);
+    if (AurynHelper.isRoku) this.props.navigation.navigate({ routeName: 'PDP' });
+    else this.props.navigation.goBack(null);
 
     if (FormFactor.isHandset) this.props.setRotationMode(RotationMode.Portrait);
 

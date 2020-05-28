@@ -1,7 +1,6 @@
 import {  YoutubeApiActions } from '../actions/youtubeActions';
 import { VideoUriSource } from '@youi/react-native-youi';
 
-
 export interface YoutubeReducerState {
   videoSource: VideoUriSource;
   videoId: string;

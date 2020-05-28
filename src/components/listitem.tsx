@@ -1,4 +1,3 @@
-
 import React, { Fragment } from 'react';
 import { Composition, TextRef, ButtonRef, ImageRef, FormFactor } from '@youi/react-native-youi';
 import { Asset } from '../adapters/asset';

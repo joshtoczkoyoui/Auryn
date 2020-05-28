@@ -1,4 +1,3 @@
-
 import React, { Fragment } from 'react';
 import { ButtonRef, RefProps, TextRef, ImageRef, FocusManager, FormFactor } from '@youi/react-native-youi';
 import { Timeline } from '.';

@@ -1,4 +1,3 @@
-
 import promise from 'redux-promise-middleware';
 import createDebounce from 'redux-debounced';
 import thunk from 'redux-thunk';

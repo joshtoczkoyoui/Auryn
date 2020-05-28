@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ButtonRef, ButtonRefProps } from '@youi/react-native-youi';
 import { AurynHelper } from '../aurynHelper';

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ToggleButton } from '.';
 import { ToggleButtonProps } from './toggleButton';
@@ -25,10 +24,8 @@ export class ToggleGroup extends React.PureComponent<ToggleGroupProps, { activeB
 
             this.setState({ activeButtonIndex: index });
 
-            if (this.props.onPressItem)
-              this.props.onPressItem(index);
-            else if (typedChild.props.onPress)
-              typedChild.props.onPress(index);
+            if (this.props.onPressItem) this.props.onPressItem(index);
+            else if (typedChild.props.onPress) typedChild.props.onPress(index);
           },
           toggled: this.initialToggleIndex === index || this.state.activeButtonIndex === index,
           focusOnMount: this.initialToggleIndex === index,

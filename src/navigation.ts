@@ -1,4 +1,3 @@
-
 import * as Screens from './screens';
 import { createStackNavigator, createSwitchNavigator, StackNavigatorConfig } from 'react-navigation';
 import { AurynHelper } from './aurynHelper';

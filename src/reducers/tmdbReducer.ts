@@ -6,21 +6,22 @@ import { Asset } from '../adapters/asset';
 import { shuffle } from 'lodash';
 
 const normalize = (array: TmdbApi[], length = 10, imagePath: 'poster' | 'backdrop' = 'backdrop') =>
-  array.filter(asset => {
-    const hasImage = imagePath === 'poster' ? asset.poster_path : asset.backdrop_path;
-    return asset.original_language === 'en' && hasImage && !asset.adult;
-  })
+  array
+    .filter((asset) => {
+      const hasImage = imagePath === 'poster' ? asset.poster_path : asset.backdrop_path;
+      return asset.original_language === 'en' && hasImage && !asset.adult;
+    })
     .slice(0, length)
-    .map(it => fromApi(it));
+    .map((it) => fromApi(it));
 
 const getLiveData = (movies: TmdbApi[]): Asset[] => {
   const channels = shuffle(liveChannels);
   return movies.map((movie, index) => {
     // Series between 20 and 55min, movies between 1h20 and 2h00
-    const duration = Math.floor(80 + (Math.random() * 40));
+    const duration = Math.floor(80 + Math.random() * 40);
 
     // Elapsed time randomly picked between 5min from the beginning and 5min before the end
-    const elapsed = Math.floor(5 + (Math.random() * (duration - 10)));
+    const elapsed = Math.floor(5 + Math.random() * (duration - 10));
 
     const asset = fromApi(movie);
     asset.live = {
@@ -34,7 +35,8 @@ const getLiveData = (movies: TmdbApi[]): Asset[] => {
           id: 'weather1',
         },
         {
-          uri: 'https://livestream.chdrstatic.com/7ab3250ab8cbce90487ec1d6f5ab5b4de073a4d71ec3fe83d677230882ce5729/cheddar-42620/CheddarOwnedStream/cheddardigital/index.m3u8',
+          uri:
+            'https://livestream.chdrstatic.com/7ab3250ab8cbce90487ec1d6f5ab5b4de073a4d71ec3fe83d677230882ce5729/cheddar-42620/CheddarOwnedStream/cheddardigital/index.m3u8',
           type: 'HLS',
           id: 'cheddar',
         },
@@ -70,7 +72,7 @@ const initialState: TmdbReducerState = { // eslint-disable-line max-lines-per-fu
     error: null,
   },
   details: {
-    data: {} as unknown as Asset,
+    data: ({} as unknown) as Asset,
     fetching: false,
     fetched: false,
     error: null,
@@ -201,13 +203,12 @@ export const tmdbReducer = (state = initialState, action: TmdbActionTypes): Tmdb
       };
 
     case 'TMDB_CACHE_FULFILLED':
-      const cache = [...state.cache.data as TmdbApi[]];
-      const index = cache.findIndex(it => it && it.id === action.payload.id);
+      const cache = [...(state.cache.data as TmdbApi[])];
+      const index = cache.findIndex((it) => it && it.id === action.payload.id);
       if (index >= 0) {
         const asset = cache.splice(index, 1);
         cache.unshift(asset[0]);
-      } else
-        cache.unshift(action.payload);
+      } else cache.unshift(action.payload);
 
       if (cache.length > 5) cache.pop();
 

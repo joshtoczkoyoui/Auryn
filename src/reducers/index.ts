@@ -1,4 +1,3 @@
-
 import { combineReducers } from 'redux';
 
 import { tmdbReducer } from './tmdbReducer';
@@ -16,4 +15,4 @@ export type StoreState = {
   youtubeReducer: YoutubeReducerState;
 };
 
-export type AurynAppState = ReturnType<typeof rootReducer>
+export type AurynAppState = ReturnType<typeof rootReducer>;

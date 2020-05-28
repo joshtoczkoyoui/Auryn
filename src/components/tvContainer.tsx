@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { View } from 'react-native';
 import { FormFactor } from '@youi/react-native-youi';
@@ -13,16 +12,21 @@ interface TvContainerProps {
 }
 
 // eslint-disable-next-line max-len
-export const TvContainer: React.FunctionComponent<TvContainerProps> = ({ data, onPressItem, onFocusItem, focusable }) => {
+export const TvContainer: React.FunctionComponent<TvContainerProps> = ({
+  data,
+  onPressItem,
+  onFocusItem,
+  focusable,
+}) => {
   if (data.length !== 2) return null;
   return (
-    <View style={{flexDirection:FormFactor.isHandset?'row':'column', justifyContent:'center'}}>
+    <View style={{ flexDirection: FormFactor.isHandset ? 'row' : 'column', justifyContent: 'center' }}>
       <ListItem
         focusable={focusable}
         onPress={onPressItem}
         onFocus={onFocusItem}
         shouldChangeFocus={false}
-        imageType={{ type: FormFactor.isHandset?'Poster':'Backdrop', size: 'Small' }}
+        imageType={{ type: FormFactor.isHandset ? 'Poster' : 'Backdrop', size: 'Small' }}
         data={data[0]}
       />
       <ListItem
@@ -30,7 +34,7 @@ export const TvContainer: React.FunctionComponent<TvContainerProps> = ({ data, o
         onPress={onPressItem}
         onFocus={onFocusItem}
         shouldChangeFocus={false}
-        imageType={{ type: FormFactor.isHandset?'Poster':'Backdrop', size: 'Small' }}
+        imageType={{ type: FormFactor.isHandset ? 'Poster' : 'Backdrop', size: 'Small' }}
         data={data[1]}
       />
     </View>
