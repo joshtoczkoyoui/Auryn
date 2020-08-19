@@ -11,6 +11,7 @@ import { Asset } from '../../adapters/asset';
 import { getDetailsByIdAndType } from '../../actions/tmdbActions';
 import { getVideoSourceByYoutubeId } from '../../actions/youtubeActions';
 import { AurynHelper } from '../../aurynHelper';
+import { TimelineType } from '../timeline';
 
 type MiniGuideDispatchProps = typeof mapDispatchToProps;
 
@@ -29,15 +30,14 @@ const initialState = {
 };
 
 class MiniGuideComponent extends React.Component<MiniGuideProps> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
+  context!: VideoContextType;
 
   miniGuideCloseButtonRef = React.createRef<ButtonRef>();
 
-  showGuideTimeline = React.createRef<Timeline>();
+  showGuideTimeline = React.createRef<TimelineType>();
 
-  hideGuideTimeline = React.createRef<Timeline>();
+  hideGuideTimeline = React.createRef<TimelineType>();
 
   firstListItem = React.createRef<LiveListItem>();
 

@@ -20,6 +20,7 @@ import { MiniGuide } from './miniGuide';
 import { LiveListItem } from '../liveListitem';
 import { connect } from 'react-redux';
 import { AurynAppState } from '../../reducers';
+import { TimelineType } from '../timeline';
 
 interface PlayerControlProps {
   liveData: Asset[];
@@ -54,20 +55,19 @@ const keys = [
 const MIN_DURATION = 3000;
 
 class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerControlState> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
+  context!: VideoContextType;
 
   state = {
     controlsActive: false,
     pausedByScrubbing: false,
   };
 
-  private controlsHideTimeline = React.createRef<Timeline>();
+  private controlsHideTimeline = React.createRef<TimelineType>();
 
-  private controlsShowTimeline = React.createRef<Timeline>();
+  private controlsShowTimeline = React.createRef<TimelineType>();
 
-  private playButton = React.createRef<ToggleButton>();
+  private playButton = React.createRef<ButtonRef>();
 
   componentDidMount() {
     keys.concat(mediaKeys).forEach((key) => Input.addEventListener(key, this.registerUserActivity));
@@ -171,14 +171,14 @@ class VideoControlsComponent extends React.Component<PlayerControlProps, PlayerC
           <BackButton focusable={isFocused} onPress={this.props.onBackButton} />
           <Timeline name="Show" ref={this.controlsShowTimeline} />
           <Timeline name="Hide" ref={this.controlsHideTimeline} />
-          <Timeline name="Set-Live" playOnTrue={this.state.controlsActive && this.context.isLive} />
+          <Timeline name="Set-Live" autoplay={this.state.controlsActive && this.context.isLive} />
 
           <ToggleButton
             name="Btn-PlayPause"
-            onPress={this.playPause}
-            toggled={!this.context.paused || this.state.pausedByScrubbing}
-            focusable={!this.context.isLive}
             ref={this.playButton}
+            toggled={!this.context.paused || this.state.pausedByScrubbing}
+            onPress={this.playPause}
+            focusable={!this.context.isLive}
             visible={this.state.controlsActive && !this.context.isLive}
           />
           <ViewRef name="Player-Scrubber-Container">

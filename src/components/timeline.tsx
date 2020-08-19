@@ -1,69 +1,67 @@
-import React from 'react';
+import React, { forwardRef, useRef, useEffect, useImperativeHandle } from 'react';
 import { TimelineRef, TimelineRefProps } from '@youi/react-native-youi';
 
 interface TimelineProps extends TimelineRefProps {
-  onCompleted: () => void;
-  name: string;
-  autoplay: boolean;
-  playOnChange?: any;
-  playOnTrue?: boolean;
+  autoplay?: boolean;
 }
 
-export class Timeline extends React.PureComponent<TimelineProps> {
-  static defaultProps = {
-    onCompleted: () => {},
-    onCompositionDidLoad: () => {},
-    direction: 'forward',
-    autoplay: false,
-  };
+export interface TimelineType {
+  play: (seek?: number) => Promise<undefined>;
+  start(): void;
+  stop(): void;
+  pause(): void;
+  abort(): void;
+  seek(percentage: number | string): void;
+}
 
-  innerRef = React.createRef<TimelineRef>();
+export const Timeline = forwardRef<TimelineType, TimelineProps>(
+  ({ name, loop, direction = 'forward', onCompleted, autoplay = false, ...rest }, ref) => {
+    const timelineRef = useRef<TimelineRef>(null);
 
-  resolve?: (value?: string) => void;
+    type ResolveType = () => void;
+    const resolve = useRef<ResolveType | null>(null);
 
-  componentDidMount() {
-    if (this.props.autoplay) this.play();
-  }
+    useImperativeHandle(ref, () => ({
+      play: (seek = 0) =>
+        new Promise((resolveArg) => {
+          resolve.current = resolveArg;
+          if (seek) timelineRef.current?.seek(direction === 'forward' ? seek : 1 - seek);
+          else timelineRef.current?.play();
+        }),
+      stop: () =>
+        new Promise((resolveArg) => {
+          resolve.current = resolveArg;
+          timelineRef.current?.stop();
+        }),
 
-  componentDidUpdate(prevProps: TimelineProps) {
-    if (this.props.playOnChange !== prevProps.playOnChange) {
-      this.play();
-    }
+      /* eslint-disable @typescript-eslint/no-non-null-assertion */
+      start: timelineRef.current!.start,
+      pause: timelineRef.current!.pause,
+      abort: timelineRef.current!.abort,
+      seek: timelineRef.current!.seek,
+      /* eslint-enable @typescript-eslint/no-non-null-assertion */
+    }));
 
-    if (this.props.playOnTrue && !prevProps.playOnTrue) {
-      this.play();
-    }
-  }
+    useEffect(() => {
+      if (autoplay) timelineRef.current?.play();
+    }, [autoplay]);
 
-  render() {
+    const onCompletedInner = () => {
+      if (!loop) resolve.current?.();
+
+      onCompleted?.();
+    };
+
     return (
       <TimelineRef
-        {...this.props}
-        name={this.props.name}
-        ref={this.innerRef}
-        loop={this.props.loop || this.props.name.toLowerCase() === 'loop'}
-        onCompositionDidLoad={(ref) => this.props.onCompositionDidLoad(ref)}
-        onCompleted={this.onCompleted}
+        {...rest}
+        name={name}
+        ref={timelineRef}
+        direction={direction}
+        loop={loop || name.toLowerCase() === "loop"}
+        onCompleted={onCompletedInner}
       />
     );
-  }
-
-  play = (seek = 0) =>
-    new Promise((resolve) => {
-      this.resolve = resolve;
-      if (seek) this.innerRef.current?.seek(this.props.direction === 'forward' ? seek : 1 - seek);
-      else this.innerRef.current?.play();
-    });
-
-  stop = () =>
-    new Promise((resolve) => {
-      this.resolve = resolve;
-      this.innerRef.current?.stop();
-    });
-
-  onCompleted = () => {
-    if (!this.props.loop) this.resolve?.('onCompleted');
-
-    this.props.onCompleted();
-  };
-}
+  },
+);
+Timeline.displayName = 'Timeline';

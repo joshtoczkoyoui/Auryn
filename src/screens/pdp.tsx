@@ -6,15 +6,7 @@ import {
   NavigationFocusInjectedProps,
 } from 'react-navigation';
 import { View, BackHandler } from 'react-native';
-import {
-  ButtonRef,
-  Composition,
-  ImageRef,
-  TextRef,
-  ViewRef,
-  FocusManager,
-  FormFactor,
-} from '@youi/react-native-youi';
+import { ButtonRef, Composition, ImageRef, TextRef, ViewRef, FocusManager, FormFactor } from '@youi/react-native-youi';
 import { connect } from 'react-redux';
 import { Timeline, List, BackButton } from '../components';
 import { Asset } from '../adapters/asset';
@@ -24,6 +16,7 @@ import { ListType } from '../components/list';
 import { prefetchDetails, getDetailsByIdAndType } from '../actions/tmdbActions';
 import { getVideoSourceByYoutubeId } from '../actions/youtubeActions';
 import { ListItemFocusEvent, ListItemPressEvent } from '../components/listitem';
+import { TimelineType } from '../components/timeline';
 
 type PdpDispatchProps = typeof mapDispatchToProps;
 
@@ -33,15 +26,15 @@ interface PdpProps extends NavigationFocusInjectedProps, PdpDispatchProps {
 }
 
 class PdpScreen extends React.Component<PdpProps> {
-  outTimeline = React.createRef<Timeline>();
+  outTimeline = React.createRef<TimelineType>();
 
-  videoOutTimeline = React.createRef<Timeline>();
+  videoOutTimeline = React.createRef<TimelineType>();
 
-  videoInTimeline = React.createRef<Timeline>();
+  videoInTimeline = React.createRef<TimelineType>();
 
-  contentOutTimeline = React.createRef<Timeline>();
+  contentOutTimeline = React.createRef<TimelineType>();
 
-  contentInTimeline = React.createRef<Timeline>();
+  contentInTimeline = React.createRef<TimelineType>();
 
   posterButton = React.createRef<ButtonRef>();
 
@@ -52,10 +45,8 @@ class PdpScreen extends React.Component<PdpProps> {
   navigateBack = async () => {
     await this.outTimeline.current?.play();
 
-    if (AurynHelper.isRoku)
-      this.props.navigation.navigate({ routeName: 'Lander' });
-    else
-      this.props.navigation.popToTop();
+    if (AurynHelper.isRoku) this.props.navigation.navigate({ routeName: 'Lander' });
+    else this.props.navigation.popToTop();
 
     return true;
   };
@@ -125,28 +116,26 @@ class PdpScreen extends React.Component<PdpProps> {
     // Season # or Runtime #
     switch (asset.type) {
       case 'tv':
-        if (!asset.seasons)
-          break;
+        if (!asset.seasons) break;
 
-        metadataString = metadataString.concat(` | ${asset.seasons} Season${asset.seasons > 1 ? 's' : ''}`)
+        metadataString = metadataString.concat(` | ${asset.seasons} Season${asset.seasons > 1 ? 's' : ''}`);
         break;
 
       case 'movie':
-        if (!asset.runtime)
-          break;
+        if (!asset.runtime) break;
 
-        var hours = (asset.runtime / 60);
+        var hours = asset.runtime / 60;
         var roundedHours = Math.floor(hours);
         var minutes = (hours - roundedHours) * 60;
         var roundedMinutes = Math.round(minutes);
 
-        metadataString = metadataString.concat(` | ${roundedHours} hr ${roundedMinutes} min`)
+        metadataString = metadataString.concat(` | ${roundedHours} hr ${roundedMinutes} min`);
 
         break;
     }
 
     // Genres
-    metadataString = metadataString.concat(` | ${this.props.asset.genres?.map(genre => genre.name).join(', ')}`)
+    metadataString = metadataString.concat(` | ${this.props.asset.genres?.map((genre) => genre.name).join(', ')}`);
 
     return metadataString;
   }
@@ -200,11 +189,7 @@ class PdpScreen extends React.Component<PdpProps> {
           ) : null}
 
           <ViewRef name="Layout-PDP-Meta">
-            <TextRef
-              name="Text-Metadata"
-              text={this.getMetadataString()}
-              style={{ color: '#808080' }}
-            />
+            <TextRef name="Text-Metadata" text={this.getMetadataString()} style={{ color: '#808080' }} />
             <TextRef name="Text-Title" text={asset.title} style={{ color: '#ececec' }} />
             <TextRef name="Text-Overview" text={asset.details} style={{ color: '#ececec' }} />
             <TextRef name="Text-Featured" text={asset.extra} style={{ color: '#ececec' }} />

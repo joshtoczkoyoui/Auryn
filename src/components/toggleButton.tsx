@@ -1,97 +1,56 @@
-import React, { Fragment } from 'react';
-import { ButtonRef, RefProps, TextRef, ImageRef, FocusManager, FormFactor } from '@youi/react-native-youi';
+import React, { forwardRef, useEffect, useRef } from 'react';
+import { ButtonRef, FocusManager, RefProps } from '@youi/react-native-youi';
 import { Timeline } from '.';
+import useSharedForwardedRef from './useSharedForwardedRef';
 import { AurynHelper } from '../aurynHelper';
+import { TimelineType } from './timeline';
 
 export type ToggleButtonPress = (index: number) => void;
 
-export interface ToggleButtonProps extends Omit<RefProps, 'name'> {
-  name?: string;
-  index: number;
+export interface ToggleButtonProps extends RefProps {
+  index?: number;
   toggled?: boolean;
-  onToggle?: (index: number) => void;
-  onFocus?: (buttonRef: React.RefObject<ButtonRef>) => void;
   onPress?: ToggleButtonPress;
-  isRadio?: boolean;
-  icon?: string;
-  iconToggled?: string;
-  title?: string;
   focusOnMount?: boolean;
 }
 
-export class ToggleButton extends React.PureComponent<ToggleButtonProps, { toggled?: boolean }> {
-  static defaultProps = {
-    onToggle: () => {},
-    onFocus: () => {},
-    onPress: () => {},
-    index: 0,
-  };
+// forwardRef allows parent components to take a ref to this component for the purposes of e.g. taking focus.
+// Since it's a functional component, it doesn't have an instance and therefore can't provide a ref to itself.
+// forwardRef allows us to point the ref (i.e. "forward") to the internal ButtonRef's ref.
+// Docs: https://reactjs.org/docs/forwarding-refs.html
+// Because we also want to make use of this ref internally (focusOnMount), we use useSharedForwardedRef (see definition for more info).
+export const ToggleButton = forwardRef<ButtonRef, ToggleButtonProps>(
+  (
+    { name, index = -1, toggled = false, onPress = () => {}, focusOnMount = false, focusable, visible, children },
+    ref,
+  ) => {
+    const buttonRef = useSharedForwardedRef(ref);
 
-  state = { toggled: this.props.index === 0 };
+    useEffect(() => {
+      // setTimeout is a hack to delay until the SceneNode is ready to receive focus
+      if (focusOnMount) setTimeout(() => FocusManager.focus(buttonRef.current), 0);
+    }, []);
 
-  toggleOffTimeline = React.createRef<Timeline>();
+    const toggleOnTimeline = useRef<TimelineType>(null);
+    const toggleOffTimeline = useRef<TimelineType>(null);
 
-  toggleOnTimeline = React.createRef<Timeline>();
+    useEffect(() => {
+      if (toggled || !AurynHelper.isRoku) toggleOnTimeline.current?.play();
+      else toggleOffTimeline.current?.play();
+    }, [toggled]);
 
-  innerRef = React.createRef<ButtonRef>();
-
-  componentDidMount() {
-    // setTimeout to get around timing issue when focusing within a ScrollRef
-    // The alternative is to use onCompositionDidLoad on the ButtonRef.
-    if (this.props.focusOnMount) setTimeout(() => FocusManager.focus(this.innerRef.current), 0);
-  }
-
-  componentDidUpdate(prevProps: ToggleButtonProps) {
-    if (this.props.toggled !== prevProps.toggled) {
-      if (this.props.toggled || !AurynHelper.isRoku) this.toggleOnTimeline.current?.play();
-      else this.toggleOffTimeline.current?.play();
-    }
-  }
-
-  onFocus = () => {
-    if (this.props.onFocus) this.props.onFocus(this.innerRef);
-  };
-
-  onPress = () => {
-    if (this.props.onPress) this.props.onPress(this.props.index);
-
-    if (this.props.onToggle) this.props.onToggle(this.props.index);
-
-    this.setState({
-      toggled: !this.state.toggled,
-    });
-  };
-
-  render = () => (
-    <ButtonRef
-      focusable={this.props.focusable}
-      name={this.props.name || 'Btn-Nav-List'}
-      ref={this.innerRef}
-      onFocus={this.onFocus}
-      onPress={this.onPress}
-      visible={this.props.visible}
-    >
-      <Timeline
-        name="Toggle-On"
-        direction={this.props.toggled || AurynHelper.isRoku ? 'forward' : 'reverse'}
-        ref={this.toggleOnTimeline}
-        autoplay={this.props.toggled}
-      />
-      {this.props.title ? (
-        <Fragment>
-          <TextRef name="title" text={this.props.title} style={{ color: '#F1F1F1' }} />
-          {this.props.name === 'Btn-Nav-List' ? <ImageRef name="Nav-Icon" source={{ uri: this.props.icon }} /> : null}
-          {this.props.name === 'Btn-Nav-List' ? (
-            <ImageRef name="Nav-Icon-Toggled" style={{ resize: 'contain' }} source={{ uri: this.props.iconToggled }} />
-          ) : null}
-          {/*this.props.name === 'Btn-Nav-List' && FormFactor.isTV ? (
-            <ImageRef name="Nav-Icon-Focused" style={{resizeMode:'contain'}} source={{ uri: this.props.iconToggled }} />
-          ) : null*/}
-          {/* {FormFactor.isTV ? <TextRef name="title-focused" text={this.props.title} /> : null} */}
-          {!FormFactor.isHandset ? <TextRef name="title-toggled" text={this.props.title} /> : null}
-        </Fragment>
-      ) : null}
-      {AurynHelper.isRoku ? <Timeline name="Toggle-Off" ref={this.toggleOffTimeline} /> : null}
-    </ButtonRef>
-  );
-}
+    return (
+      <ButtonRef name={name} ref={buttonRef} visible={visible} focusable={focusable} onPress={() => onPress(index)}>
+        <Timeline
+          name="Toggle-On"
+          direction={toggled || AurynHelper.isRoku ? 'forward' : 'reverse'}
+          ref={toggleOnTimeline}
+        />
+        {AurynHelper.isRoku ? <Timeline name="Toggle-Off" ref={toggleOffTimeline} /> : null}
+        {children}
+      </ButtonRef>
+    );
+  },
+);
+// When using forwardRef, we need to give the component an explicit displayName
+ToggleButton.displayName = 'ToggleButton';

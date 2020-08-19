@@ -5,7 +5,7 @@ import { ImageRef, ViewRef, TextRef, ButtonRef } from '@youi/react-native-youi';
 import { getDetailsByIdAndType } from './../../actions/tmdbActions';
 import { VideoContext, VideoContextType } from './context';
 import { Asset, AssetType } from './../../adapters/asset';
-import { Timeline } from './../timeline';
+import { Timeline, TimelineType } from './../timeline';
 import { withNavigation, NavigationInjectedProps } from 'react-navigation';
 import { getVideoSourceByYoutubeId } from '../../actions/youtubeActions';
 import { AdContextConsumer, AdState, AdContextType } from '../adManager/context';
@@ -18,17 +18,15 @@ interface PauseScreenManagerProps extends NavigationInjectedProps {
 }
 
 class PauseScreenManager extends Component<PauseScreenManagerProps> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
-
+  context!: VideoContextType;
   adContext!: AdContextType;
 
   private END_SQUEEZE_MS = 15 * 1000;
 
-  private endSqueezeCompressTimeline: RefObject<Timeline> = createRef();
+  private endSqueezeCompressTimeline: RefObject<TimelineType> = createRef();
 
-  private endSqueezeExpandTimeline: RefObject<Timeline> = createRef();
+  private endSqueezeExpandTimeline: RefObject<TimelineType> = createRef();
 
   constructor(props: PauseScreenManagerProps) {
     super(props);

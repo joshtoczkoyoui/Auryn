@@ -1,7 +1,7 @@
 import React, { Component, RefObject } from 'react';
 import { Composition } from '@youi/react-native-youi';
 
-import { Timeline } from './../timeline';
+import { Timeline, TimelineType } from './../timeline';
 import { VideoContext } from './../videoPlayer/index';
 import { VideoContextType } from '../videoPlayer/context';
 import { View } from 'react-native';
@@ -14,8 +14,8 @@ interface Props {
 }
 
 export interface LowerThirdAdsTimelines {
-  in: RefObject<Timeline>;
-  out: RefObject<Timeline>;
+  in: RefObject<TimelineType>;
+  out: RefObject<TimelineType>;
 }
 
 const initialState = {
@@ -31,10 +31,8 @@ const ads = [
 ];
 
 class LowerThirdAd extends Component<Props> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
-
+  context!: VideoContextType;
   adContext!: AdContextType;
 
   static defaultProps = {
@@ -43,7 +41,7 @@ class LowerThirdAd extends Component<Props> {
 
   composition = ads[Math.floor(Math.random() * ads.length)];
 
-  private adTimeline = React.createRef<Timeline>();
+  private adTimeline = React.createRef<TimelineType>();
 
   state = initialState;
 

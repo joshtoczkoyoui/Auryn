@@ -1,57 +1,52 @@
 module.exports = {
-  parser:  "@typescript-eslint/parser",
-  extends:  [
-    "eslint:recommended",
-    "prettier/@typescript-eslint",
-    "plugin:jest/recommended",
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended",
+  parser: '@typescript-eslint/parser',
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:jest/recommended',
+    'plugin:react/recommended',
+    'prettier/@typescript-eslint',
   ],
-  plugins: [
-    "react",
-    "react-native",
-    "@typescript-eslint",
-    "jest",
-    "prettier",
-    "import"
-  ],
+
+  plugins: ['@typescript-eslint', 'import', 'jest', 'prettier', 'react', 'react-native'],
   env: {
-    "browser": true,
-    "node": true,
-    "es6": true
+    browser: true,
+    node: true,
+    es6: true,
   },
   parserOptions: {
-    "emcaVersion": 9,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true
-    }
+    emcaVersion: 9,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   globals: {
-    "fetch": false
+    fetch: false,
   },
   settings: {
     react: {
-      "version": "detect"
-    }
+      version: 'detect',
+    },
   },
   overrides: [
     {
-      "files": ["*.js"],
-      "rules": {
-        "@typescript-eslint/no-var-requires": "off"
-      }
-    }
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
   ],
   rules: {
-    "@typescript-eslint/explicit-member-accessibility": "off",
-    "@typescript-eslint/explicit-function-return-type": "off",
-    "@typescript-eslint/no-explicit-any": "off",
-    "@typescript-eslint/no-use-before-define": "off",
-    "no-case-declarations": "off",
-    "react/prop-types": "off",
-    "jest/no-mocks-import": "off",
-    "indent": "off",
-    "@typescript-eslint/indent": ["error", 2]
-  }
-}
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-use-before-define': 'off',
+    'jest/no-mocks-import': 'off',
+    'no-case-declarations': 'off',
+    'react/prop-types': 'off',
+    indent: 'off',
+  },
+};

@@ -9,6 +9,7 @@ import { VideoControls } from './videoControls';
 import { Asset } from '../../adapters/asset';
 import { VideoContext, VideoContextType } from './context';
 import PauseScreenManager from './pauseScreenManager';
+import { TimelineType } from '../timeline';
 
 interface Props {
   asset: Asset;
@@ -23,9 +24,9 @@ interface State {
 }
 
 export class VideoPlayer extends Component<Props, State> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
+  context!: VideoContextType;
+
   static defaultProps: Pick<Props, 'onBackButton'> = {
     onBackButton: () => {},
   };
@@ -35,8 +36,8 @@ export class VideoPlayer extends Component<Props, State> {
     type: 'HLS',
   };
 
-  private inTimeline = React.createRef<Timeline>();
-  private outTimeline = React.createRef<Timeline>();
+  private inTimeline = React.createRef<TimelineType>();
+  private outTimeline = React.createRef<TimelineType>();
 
   private videoPlayer = React.createRef<VideoRef>();
   private videoViewRef = React.createRef<ViewRef>();
@@ -124,8 +125,7 @@ export class VideoPlayer extends Component<Props, State> {
             onDurationChanged={this.onDurationChanged}
             onCurrentTimeUpdated={this.onCurrentTimeUpdated}
             onStateChanged={this.onStateChanged}
-            muted
-            metadata={{mute: true}}
+            metadata={{ mute: true }}
           />
         </VideoControls>
       </Composition>

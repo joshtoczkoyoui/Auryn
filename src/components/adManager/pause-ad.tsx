@@ -1,7 +1,7 @@
 import React, { Component, createRef, RefObject } from 'react';
 import { Composition, ButtonRef } from '@youi/react-native-youi';
 
-import { Timeline } from './../timeline';
+import { Timeline, TimelineType } from './../timeline';
 import { VideoContext } from './../videoPlayer/index';
 import { VideoContextType } from '../videoPlayer/context';
 import { View } from 'react-native';
@@ -17,18 +17,16 @@ interface State {
 }
 
 class PauseAd extends Component<Props, State> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
-
+  context!: VideoContextType;
   adContext!: AdContextType;
 
   static defaultProps = {
     name: '',
   };
 
-  private adInTimeline: RefObject<Timeline> = createRef();
-  private adOutTimeline: RefObject<Timeline> = createRef();
+  private adInTimeline: RefObject<TimelineType> = createRef();
+  private adOutTimeline: RefObject<TimelineType> = createRef();
 
   constructor(props: Props) {
     super(props);

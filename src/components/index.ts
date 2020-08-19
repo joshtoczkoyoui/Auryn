@@ -4,7 +4,6 @@ export { List } from './list';
 export { ListItem } from './listitem';
 export { Timeline } from './timeline';
 export { ToggleButton } from './toggleButton';
-export { ToggleGroup } from './toggleGroup';
 export { NavigationBar } from './navigationBar';
 export { TvContainer } from './tvContainer';
 export { Error } from './error';

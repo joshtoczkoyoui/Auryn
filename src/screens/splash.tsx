@@ -8,6 +8,7 @@ import { AurynHelper } from '../aurynHelper';
 import { AurynAppState } from '../reducers';
 import { tmdbApiKey } from '../secrets';
 import { getDiscover, getMovies, getTv } from '../actions/tmdbActions';
+import { TimelineType } from '../components/timeline';
 
 type SplashDispatchProps = typeof mapDispatchToProps;
 
@@ -17,9 +18,9 @@ interface SplashProps extends NavigationScreenProps, SplashDispatchProps {
 }
 
 class SplashScreen extends React.Component<SplashProps> {
-  outTimeline = React.createRef<Timeline>();
+  outTimeline = React.createRef<TimelineType>();
 
-  inTimeline = React.createRef<Timeline>();
+  inTimeline = React.createRef<TimelineType>();
 
   async componentDidMount() {
     this.props.getDiscover();

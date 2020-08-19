@@ -1,6 +1,15 @@
 import React from 'react';
 import { BackHandler, StyleSheet } from 'react-native';
-import { Composition, ViewRef, ButtonRef, FocusManager, ListRef, FormFactor } from '@youi/react-native-youi';
+import {
+  ButtonRef,
+  Composition,
+  FocusManager,
+  FormFactor,
+  ImageRef,
+  ListRef,
+  TextRef,
+  ViewRef,
+} from '@youi/react-native-youi';
 import { Timeline, List } from '../components';
 import {
   withNavigationFocus,
@@ -17,6 +26,7 @@ import { ListType } from '../components/list';
 import { prefetchDetails, getDetailsByIdAndType } from '../actions/tmdbActions';
 import { NavigationBar } from '../components/navigationBar';
 import { AurynHelper } from '../aurynHelper';
+import { TimelineType } from '../components/timeline';
 
 type LanderDispatchProps = typeof mapDispatchToProps;
 
@@ -46,15 +56,15 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
 
   blurListener!: NavigationEventSubscription;
 
-  outTimeline = React.createRef<Timeline>();
+  outTimeline = React.createRef<TimelineType>();
 
-  navOutTimeline = React.createRef<Timeline>();
+  navOutTimeline = React.createRef<TimelineType>();
 
-  navInTimeline = React.createRef<Timeline>();
+  navInTimeline = React.createRef<TimelineType>();
 
-  inTimeline = React.createRef<Timeline>();
+  inTimeline = React.createRef<TimelineType>();
 
-  menuButtons = Array.from(Array(4)).map(() => React.createRef<ToggleButton>());
+  menuButtons = Array.from(Array(4)).map(() => React.createRef<ButtonRef>());
 
   searchButton = React.createRef<ButtonRef>();
 
@@ -242,6 +252,15 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
 
     const rokuList = [lists[currentListIndex]];
 
+    const ToggleButtonContents = ({ title, uri }: { title: string; uri: string }) => (
+      <>
+        <TextRef name="title" text={title} />
+        {!FormFactor.isHandset ? <TextRef name="title-toggled" text={title} /> : null}
+        <ImageRef name="Nav-Icon" source={{ uri: uri }} />
+        <ImageRef name="Nav-Icon-Toggled" source={{ uri: uri.replace('-', '-Toggled-') }} />
+      </>
+    );
+
     return (
       <Composition source="Auryn_Lander">
         <NavigationBar
@@ -252,30 +271,18 @@ class LanderScreen extends React.Component<LanderProps, LanderState> {
           onPressItem={this.scrollToViewByIndex}
           initialToggleIndex={0}
         >
-          <ToggleButton
-            title="Discover"
-            icon="res://drawable/default/Default-Nav-Icon.png"
-            iconToggled="res://drawable/default/Default-Toggled-Nav-Icon.png"
-            ref={this.menuButtons[0]}
-          />
-          <ToggleButton
-            title="Movies"
-            icon="res://drawable/default/Movie-Nav-Icon.png"
-            iconToggled="res://drawable/default/Movie-Toggled-Nav-Icon.png"
-            ref={this.menuButtons[1]}
-          />
-          <ToggleButton
-            title="Shows"
-            icon="res://drawable/default/Series-Nav-Icon.png"
-            iconToggled="res://drawable/default/Series-Toggled-Nav-Icon.png"
-            ref={this.menuButtons[2]}
-          />
-          <ToggleButton
-            title="Live"
-            icon="res://drawable/default/Live-Nav-Icon.png"
-            iconToggled="res://drawable/default/Live-Toggled-Nav-Icon.png"
-            ref={this.menuButtons[3]}
-          />
+          <ToggleButton name="Btn-Nav-List" ref={this.menuButtons[0]}>
+            <ToggleButtonContents title="Discover" uri="res://drawable/default/Default-Nav-Icon.png" />
+          </ToggleButton>
+          <ToggleButton name="Btn-Nav-List" ref={this.menuButtons[1]}>
+            <ToggleButtonContents title="Movies" uri="res://drawable/default/Movie-Nav-Icon.png" />
+          </ToggleButton>
+          <ToggleButton name="Btn-Nav-List" ref={this.menuButtons[2]}>
+            <ToggleButtonContents title="Shows" uri="res://drawable/default/Series-Nav-Icon.png" />
+          </ToggleButton>
+          <ToggleButton name="Btn-Nav-List" ref={this.menuButtons[3]}>
+            <ToggleButtonContents title="Live" uri="res://drawable/default/Live-Nav-Icon.png" />
+          </ToggleButton>
         </NavigationBar>
         <ButtonRef
           name="Btn-Nav-Search"

@@ -5,6 +5,7 @@ import { Composition, TextRef, ButtonRef, ImageRef, ViewRef, FormFactor } from '
 import { Timeline } from '.';
 import { Asset } from '../adapters/asset';
 import { ListItemFocusEvent, ListItemPressEvent } from './listitem';
+import { TimelineType } from './timeline';
 
 interface LiveListItemProps {
   onPress?: ListItemPressEvent;
@@ -37,7 +38,7 @@ export class LiveListItem extends Component<LiveListItemProps> {
 
   buttonRef = React.createRef<ButtonRef>();
 
-  progressTimeline = React.createRef<Timeline>();
+  progressTimeline = React.createRef<TimelineType>();
 
   onFocus = () => {
     this.props.onFocus?.(this.props.data, this.buttonRef, this.props.shouldChangeFocus);

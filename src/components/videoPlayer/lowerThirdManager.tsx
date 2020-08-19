@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getDetailsByIdAndType } from './../../actions/tmdbActions';
 import { VideoContext, VideoContextType } from './context';
 import { Asset, AssetType } from './../../adapters/asset';
-import { Timeline } from './../timeline';
+import { Timeline, TimelineType } from './../timeline';
 import { withNavigation, NavigationInjectedProps } from 'react-navigation';
 import { getVideoSourceByYoutubeId } from '../../actions/youtubeActions';
 import { AdContextConsumer, AdState } from '../adManager/context';
@@ -16,13 +16,12 @@ interface LowerThirdManagerProps extends NavigationInjectedProps {
 }
 
 class LowerThirdManager extends Component<LowerThirdManagerProps> {
-  declare context: VideoContextType;
-
   static contextType = VideoContext;
+  context!: VideoContextType;
 
-  private lowerThirdInTimeline = React.createRef<Timeline>();
+  private lowerThirdInTimeline = React.createRef<TimelineType>();
 
-  private lowerThirdOutTimeline = React.createRef<Timeline>();
+  private lowerThirdOutTimeline = React.createRef<TimelineType>();
 
   compressVideo = () => {
     if (this.context.isCompressed || this.context.isLive) return;

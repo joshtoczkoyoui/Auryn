@@ -11,15 +11,14 @@ interface AdManagerProps {
 }
 
 class AdManager extends Component<AdManagerProps> {
-  declare context: AdContextType;
-
   static contextType = AdContext;
-
+  context!: AdContextType;
+  
   static defaultProps = {
     pauseAdClosed: () => {},
   };
 
-  private pausAdRef: RefObject<PauseAd> = createRef();
+  private pauseAdRef: RefObject<PauseAd> = createRef();
 
   handleOnClose = () => this.context.setPauseAdState(AdState.closed);
 
@@ -30,19 +29,21 @@ class AdManager extends Component<AdManagerProps> {
 
     this.context.setPauseAdEnabled(true);
 
-    return <PauseAd ref={this.pausAdRef} name={pauseAdCompositionName} onClose={this.handleOnClose} />;
+    return <PauseAd ref={this.pauseAdRef} name={pauseAdCompositionName} onClose={this.handleOnClose} />;
   };
 
   renderLowerThirdAd = () => {
     return <LowerThirdAd />;
-  }
+  };
 
   render() {
-    return <View style={styles.container}>
-      {this.renderPauseAd()}
-      {this.props.children}
-      {this.renderLowerThirdAd()}
-    </View>;
+    return (
+      <View style={styles.container}>
+        {this.renderPauseAd()}
+        {this.props.children}
+        {this.renderLowerThirdAd()}
+      </View>
+    );
   }
 }
 
